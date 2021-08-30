@@ -771,7 +771,7 @@ li a{
 /* 4.5.1 - se fija color de fondo a la seccion pasion --*/
 
 #sectionPasion{
-    background-image: url('../images/imgburgers/FondoIndexCocina.jpg');
+    background-image: url('../images/imgburgers/fondoIndexCocina.jpg'); 
     background-repeat: no-repeat;
     background-size: cover ;
     background-attachment: fixed ;
