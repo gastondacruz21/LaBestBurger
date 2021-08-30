@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/main.scss Css/main.css",
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "",
@@ -16,10 +16,10 @@
   "description": "Aquí, tendrás la posibilidad de poder visualizar y efectuar compras, sobre los distintos menúes que estén disponibles para el cliente.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gastondacruz21/Best_Burger.git"
+    "url": "git+https://github.com/gastondacruz21/LaBestBurger.git"
   },
   "bugs": {
-    "url": "https://github.com/gastondacruz21/Best_Burger/issues"
+    "url": "https://github.com/gastondacruz21/LaBestBurger/issues"
   },
-  "homepage": "https://github.com/gastondacruz21/Best_Burger#readme"
+  "homepage": "https://github.com/gastondacruz21/LaBestBurger#readme"
 }
