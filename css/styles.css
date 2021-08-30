@@ -309,7 +309,7 @@ li a{
 /* -- Se agrega Burger de fondo con formato -- */
 
 #accesosMenNov{
- background-image: url(../Images/fondo_img.jpg);
+ background-image: url(../images/fondo_img.jpg);
  position: relative;
  background-repeat: no-repeat;
  height: 599px;
@@ -401,7 +401,7 @@ li a{
     }
 
     #accesosMenNov{
-        background-image: url(../Images/fondo_img.jpg);
+        background-image: url(../images/fondo_img.jpg);
         background-size: 200%;
         position: relative;
         background-repeat: no-repeat;
@@ -771,7 +771,7 @@ li a{
 /* 4.5.1 - se fija color de fondo a la seccion pasion --*/
 
 #sectionPasion{
-    background-image: url('../Images/imgburgers/FondoIndexCocina.jpg');
+    background-image: url('../images/imgburgers/FondoIndexCocina.jpg');
     background-repeat: no-repeat;
     background-size: cover ;
     background-attachment: fixed ;
@@ -1363,7 +1363,7 @@ blockquote::before{
 
 /* formato imagen de fondo */
 .errorPage__formato {
-    background-image: url('../Images/Error404.jpg') !important;
+    background-image: url('../images/Error404.jpg') !important;
     background-repeat: no-repeat !important;
     background-size:contain !important;
     background-position: center !important;
