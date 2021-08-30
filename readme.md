@@ -4,7 +4,7 @@ Aquí, tendrás la posibilidad de poder visualizar y efectuar compras, sobre los
 
 ## Acceso al sitio
 
-Puedes acceder a la página mediante al [siguiente link](https://gastondacruz21.github.io/Best_Burger/).
+Puedes acceder a la página mediante al [siguiente link](https://gastondacruz21.github.io/LaBestBurger/).
 
 ### Medios de acceso
 
