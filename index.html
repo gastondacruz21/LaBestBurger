@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--icono de la pagina + titulo del page-->
+    <link rel="shortcut icon" href="./images/log.jpg" >
+    <title>Best Burguer - Página Principal</title>
+    <meta name="description" content="Bienvenido al sitio donde podrás encontrar las mejores hamburguesas de Zona sur - Best Burger">
+    <meta name="keywords" content="BestBurger,Hamburguesas,ZonaSur,BuenosAires,WelcometoBestBurger,BienvenidotoBestBurger">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body> 
+
+    <!-- Encabezado Pagina -> Se puede redirigir al home desde el logo principal-->
+    <header class="header__formato">
+        <div>
+            <a href="./index.html" title="Ir al Home" alt="Ir al home">
+            <img src="images/logo.png" class="header__formato__imgHead header__formato__imgHead--transition" title="logo de Best" alt="logo de Best Burger"></a>
+        </div>
+
+    <!-- Barra navegación -->
+    
+        <nav id="navegador">
+            <ul class="menu">
+                <li class="menuItemChildren"><a href="./pages/menu.html">Menu</a>
+                    <ul class="subMenu">
+                        <li><a href="./pages/menu.html#sectionMenu">Listado Menu</a></li>
+                        <li><a href="./pages/menu.html#seccionPago">Medio pago</a></li>
+                        <li><a href="./pages/menu.html#sectionCocina">Nuestra Cocina</a></li>
+                    </ul>
+                </li>
+                <li class="menuItemChildren"><a href="./pages/promos.html">Promos</a>
+                    <ul class="subMenu">
+                        <li><a href="./pages/promos.html#sectionTest">Recomendaciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/novedades.html">Novedades</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+                <li><a href="pages/carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Inicio del mail en boostrap -->
+    <main>
+
+        <!--Div donde se agrega color de fondo-->
+        <div class="divBlack">
+
+            <div class="container g-0">
+                <!--inicio de seccion Carrousel -->
+                <section id="section" class="row">
+
+                    <div id="carrousel" class="carousel slide slider col-12 mb-4" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carrousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carrousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carrousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+
+                        <!--inicio de bloques con imagenes y texto -->
+
+                        <div class="carousel-item active">
+                            <img src="./images/slide-1.jpg" class="d-block w-100" alt="Welcome to Best Burger">
+                            <div class="carousel-caption d-md-block">
+                                <h1 id="h1" class="encabezado_h1">
+                                    <span class="efectito">Welcome to Best Burger</span></h1>
+                                <p class="carrousel__parrafo carrousel__parrafo--color sinSeleccion">Vení a probar nuestras deliciosas hamburguesas</p>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img src="./images/slide-2.jpg" class="d-block w-100" alt="Welcome to Best Burger">
+                            <div class="carousel-caption d-md-block">
+                                <h1 id="h1" class="encabezado_h1">
+                                    <span class="efectito">Welcome to Best Burger</span></h1>
+                                <p class="carrousel__parrafo carrousel__parrafo--color sinSeleccion">Vení a probar nuestras deliciosas hamburguesas</p>
+
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img src="./images/slide-3.jpg" class="d-block w-100" alt="Welcome to Best Burger">
+                            <div class="carousel-caption d-md-block">
+                                <h1 id="h1" class="encabezado_h1">
+                                    <span class="efectito">Welcome to Best Burger</span></h1>
+                                <p class="carrousel__parrafo carrousel__parrafo--color sinSeleccion">Vení a probar nuestras deliciosas hamburguesas</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!--botones sobre el slider -->
+                        
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carrousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carrousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+
+                </section>
+
+                <!--Fin de seccion carrousel -->
+            </div>              
+        </div>
+            
+        <!--Sección de introducción de la pagina - Nosotros-->
+        <div class="container g-0">    
+
+            <section id="sectionNosotros" class="row">  
+
+                    <!--inicio de bloques con imagenes y texto -->        
+                    <article class="articleH4">
+
+                        <div class="gridNosotros">
+                            <div class="rowh2 col-12">
+                                <h2 id="h2" class="encabezado_h2">Nuestra Historia</h2>
+                            </div>
+
+                            <!--inicio de bloques con imagen + estilo de homero-->
+                        
+                            <div class="rowArea1 col-10 col-sm-10 col-md-9 col-lg-9 d-flex">  
+                                    <img src="./images/homero.png" loading="lazy" class="imgHomer img-fluid" alt="Seccion nosotros"> 
+                            </div>
+
+                            <!--Fin del bloque -->
+                            
+                            <!--inicio de bloques con el contenido texto + efecto  -->
+
+                            <div class="rowArea2 col-10 col-sm-10 col-md-9 col-lg-9 d-flex">
+                                <div class="divHome">
+                                    <p class="clsPindex sinSeleccion">
+                                    Nacimos en el 2001 en Avellaneda, provenientes de una extensa tradición gastronómica familiar. Con más de 20 años en el mercado, los clientes nos siguen eligiendo y disponemos de locales en gran parte del conurbano bonaerense.</p>
+                                    <p class="clsPindex sinSeleccion">
+                                    A inicios del 2010, tuvimos la oportunidad de expandirnos a Miami, Madrid y Rio de Janeiro, contando con más de 50 locales y ese crecimiento se debe al foto de confianza que ponen sobre nosotros, para dar lo máximo cada día.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!--Fin del bloque -->
+                        
+                        </div>
+                    </article>
+                    
+                </section>
+                <!--Fin de la seccion nosotros -->
+            </div>
+
+            <!-- Sección donde se podrá acceder al menú y a las novedades. A traves de los mismos, se accederá a los html -->
+            
+            <!--Div donde se agrega color de fondo-->
+            <div class="divMenu">
+
+                <div class="container g-0">
+                    <section id="sectionIndexMenu" class="row">    
+                        
+                        <!-- Sección Menú -->
+                        <article>
+
+                            <div id="accesosMenNov">
+                                <div class="indexMenuNov d-flex col-12">
+                                    <div class="indexMenuContenedor">
+                                        
+                                        <!--bloque con estilo que contiene el texto + referencia al menu -->
+                                        <div class="indexMenuDetalle col-12">
+                                            <p class="w-75 mx-5">
+                                                Aquí podrás encontrar una gran cantidad de menues y nuevas hamburguesas, con diversos sabores para cualquier gusto y necesidad. Si te gustan las hamburguesas sabrosas, de gran tamaño y a un precio accesible, no dudes en visitar nuestro menú.
+                                            </p>
+                                            <a href="./pages/menu.html" title="ir al menú"><button>Ir a Menú</button></a>
+                                        </div>
+                                        
+                                        <!--Fin bloque -->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </article>
+                
+                    </section>
+                </div>
+            </div>
+            <!--Fin seccion de menu -->
+            
+            <!-- Sección donde irán las cards con el detalle de las hamburguesas -->
+            <div class="container g-0">
+                <section id="cards" class="row">        
+
+                    <div class="notHover col-12 my-5">
+                        <h3 id="h3" class="encabezado_h3">Conocé nuestras hamburguesas</h3>
+                    </div>
+
+                    <!--Card 1 - Index -->
+                
+                    <div class="col-12 my-3 mx-3 d-flex flex-column flex-lg-row justify-content-evenly align-items-center mb-5">
+
+                        <div class="card artiCleIndex my-2" style="width: 10rem;">
+                            <img class="tartIndexPlatos card-img-top" loading="lazy" src="./images/imgburgers/burger1.png" alt="Big Messi Burger"> 
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-center">Big Messi <span class="badge bg-secondary">Nuevo</span></h5>
+                                    <p class="card-text text-center">300g de Carne Vacuna, Queso y doble bacon y panceta</p>
+
+                                    <!--Se llamará a offcanvas -->
+
+                                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Ver más info.</button>
+
+                                        <div class="offcanvas offcanvas-end text-center" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                            <div class="offcanvas-header">
+                                                <h5 id="offcanvasRightLabel" class="card-title">Descripción</h5>
+                                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+                                            
+                                            <div class="offcanvas-body">
+                                            
+                                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                    <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="flush-headingOne">
+                                                        <button class="accordion-button collapsed borders" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                        Ver más detalles
+                                                        </button>
+                                                    </h2>
+                                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                        <div class="accordion-body">
+                                                        <p>La siguiente hamburguesa fue escogida como una de las mejores del año, según la prensa y nuestros consumidores.
+                                                            La misma está compuesta por ingredientes 100% naturales, saludables y de la mejor calidad.
+                                                        </p>
+                                                        <a href="./pages/menu.html" class="swagButton">Para más detalles, ve al menú</a> 
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                        <!--Fin Card 1 - Index -->
+
+                        <!--Card 2 - Index -->
+                        <div class="card artiCleIndex my-2" style="width: 10rem;">
+                            <img class="tartIndexPlatos card-img-top" loading="lazy" src="./images/imgburgers/burger2.png" alt="Big Messi Burger">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-center">Big Lele</h5>
+                                    <p class="card-text text-center">300g de Carne Vacuna, Queso, Cebolla y doble bacon</p>
+                                    
+                                    <!--Se llamará a offcanvas -->
+                                    <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Ver más info.</button>
+
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                            <div class="offcanvas-header">
+                                                <h5 id="offcanvasRightLabel" class="card-title">Descripción</h5>
+                                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+                                            
+                                            <div class="offcanvas-body">
+                                            
+                                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                    <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="flush-headingOne">
+                                                        <button class="accordion-button collapsed borders" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                        Ver más detalles
+                                                        </button>
+                                                    </h2>
+                                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                        <div class="accordion-body">
+                                                            <p>La siguiente hamburguesa fue escogida como una de las mejores del año, según la prensa y nuestros consumidores.
+                                                                La misma está compuesta por ingredientes 100% naturales, saludables y de la mejor calidad.
+                                                            </p>
+                                                            <a href="./pages/menu.html" class="swagButton">Para más detalles, ve al menu</a>     
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <!--Card 2 - Index -->
+
+                        <!--Card 3 - Index -->
+                        <div class="card artiCleIndex my-2" style="width: 10rem;">
+                            <img class="tartIndexPlatos card-img-top" loading="lazy" src="./images/imgburgers/burger4.png" alt="Big Messi Burger">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-center">Big Tasty <span class="badge bg-secondary">Nuevo</span></h5>
+                                    <p class="card-text text-center">300g de Carne Vacuna, Queso y doble bacon y salsa especial</p>
+                            
+                                    <!--Se llamará a offcanvas -->
+                                    <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Ver más info.</button>
+
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 id="offcanvasRightLabel" class="card-title">Descripción</h5>
+                                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        
+                                        <div class="offcanvas-body">
+                                        
+                                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingOne">
+                                                    <button class="accordion-button collapsed borders" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    Ver más detalles
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <!--Fin Card 3 - Index -->
+                    </div>
+
+                </section>
+            </div>
+        
+    </main>
+    
+    <!--Fin del main -->
+   
+    <!--Fin de la seccion de las cards de comida -->
+        
+    <!-- Sección nuestra pasión + video iframe para acompañar -->
+
+    <!--Coloca imagen de fondo-->
+
+    <div id="sectionPasion">
+        
+        <!--Arranca el bloque de nuestra pasion -->
+        <div class="container">         
+            <div class="row">
+                <section>
+                    <div class="fondoPasion">
+                            
+
+                        <div class="rowTitulo col-12">
+                            <h4 id="h4Index" class="encabezado_h4Index">Nuestra Pasión</h4>
+                        </div>
+                        
+    
+
+                        <div class="rowPasion1 col-12 col-md-11 col-lg-10">
+                            <p class="pPasion sinSeleccion w-100 mx-1">
+                            El periodismo especializado los posiciono en reiteradas ocasiones como la mejor hamburguesa de Argentina. Tienen 12 sucursales en Buenos Aires, conquistaron Miami, Estados Unidos y Madrid, España.</p>
+                            <p class="pPasion sinSeleccion w-100 mx-1">
+                            Además, hemos sido nominados a los galardones de las mejores hamburguesas del país y proyectados que en un rango de 10 años, disponer de 50 sucursales en Argentina.</p>
+                        </div>
+
+
+                        <div class="rowPasion2 col-12 col-md-11 col-lg-10">                   
+                            <iframe width="300" height="215" src="https://www.youtube.com/embed/uMktbiDm8x8?autoplay=1&mute=1" title="YouTube video player"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        </div>
+
+
+                        <div class="rowFoot col-12 fw-bold d-flex justify-content-center">   
+                            <a href="./pages/menu.html#section" class="pLink"><p class="w-100 mx-5 my-1">Queres ver más videos? Ve al menu</p></a>
+                        </div> 
+
+                    </div>
+                </section>
+            
+            </div>
+        </div>
+    </div>
+    <!--Fin de la seccion nuestra pasion -->        
+    
+    <!--Links que me llevarán a las redes sociales-->
+
+    <aside class="aside__formato">
+        <div class="social__formato social__formato--posicion">
+            <a href="#"><img src="./images/fb.ico" alt="facebook" title="facebook"></a>
+        
+            <a href="#"><img src="./images/tw.ico" alt="Twitter" title="Twitter"></a>
+    
+            <a href="#"><img src="./images/instagram.ico" alt="instagram" title="instagram"></a>
+        </div>
+        
+    </aside>
+    <!--Fin de aside-->
+    
+    <!--Pie de pagina-->
+    <footer class="footer__format footer__format--flex" >
+    
+        <div class="container g-0">
+
+            <div class="row">
+            
+                <div class="footer__container">
+                    <section class="ftMain">
+                        
+                        <div class="ftMainAcerca col-sm-12 col-md-6 col-lg-3 order-last order-sm-first ">
+                            <h5 class="encabezado_h5">Acerca</h5>
+                            <ul>
+                                <li><a href="./pages/menu.html">Menu</a></li>
+                                <li><a href="./pages/promos.html">Promociones</a></li>
+                                <li><a href="./pages/novedades.html">Novedades</a></li>
+                                <li><a href="./pages/contacto.html">Contacto</a></li>
+                                <li><a href="./pages/carrito.html">Carrito</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="ftMainAcerca col-sm-12 col-md-6 col-lg-3 order-first order-sm-last my-3">
+                            <h5 class="encabezado_h5">Ubicación</h5>
+                            <ul>
+                                <li id="iFrame"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.1360305105786!2d-58.3425069852691!3d-34.70174877019767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbdc5325591f%3A0xdaa4ed8b1d56f058!2sBlack%20%26%20Burger!5e0!3m2!1ses-419!2sar!4v1626064492854!5m2!1ses-419!2sar" width="140" height="100" style="border:0; align-self: center;" allowfullscreen="" loading="lazy"></iframe></li>
+
+                                <li><address class="notHover">Av.Mitre 470 - Avellaneda - 4207.3333</address></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!--Seccion para el Botón volver al inicio de pagina -->
+                    <section class="ftHome col-sm-12 col-12">
+                        <!--Botón para volver al index -->
+                        <div>
+                           <a href="#section" title="Home" alt="Home"> <button id="btnMainIndex" class="btnFooter"></button></a>
+                        </div>
+                    </section>
+
+                    <section class="ftLegal col-sm-12 col-12"">
+                        <ul class="ftLegalList">
+                            <li><small>&copy; Copy Right 2021<span>&nbsp;Best burguer</span></small></li>
+                        </ul>
+                    </section>
+
+
+                </div>
+            </div>
+        </div>
+    </footer> 
+    <!--Fin del footer-->
+    
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

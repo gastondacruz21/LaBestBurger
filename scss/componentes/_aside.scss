@@ -1,0 +1,48 @@
+$aside_width: 10%;
+$aside_margen: auto;
+$social_width: 60px; 
+$social_position_right: 0;
+
+/* Formato del aside - Flex */
+
+.aside__formato{
+    width:$aside_width;
+    max-width:15%;
+    margin:$aside_margen;
+    display: flex;
+        flex:
+        {
+            wrap: wrap;
+            direction: row;
+        }
+
+    /* Formato al div contenedor de los iconos de las redes */
+    .social__formato{
+        width: $social_width;
+        right: $social_position_right;
+        height:205px;
+        top:30%;
+        margin-top: -100px;
+
+        &--posicion{
+            position:fixed;
+        }
+    }
+}
+
+/*===================================================================================
+================== QUERY MEDIA - ASIDE ==============================================
+=====================================================================================*/
+
+@media screen and (max-width: 768px) {
+    .aside__formato .social__formato{
+          display: flex;
+          flex-direction: row;
+          justify-content:flex-end;
+          width: $social_width;
+          position:fixed;
+          right: $social_position_right;
+          top:130%;
+          margin-top: -360px;
+    }
+}

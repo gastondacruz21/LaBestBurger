@@ -1,0 +1,1379 @@
+/*===================================================================================
+==================CONFIGURACIONES GLOBALES ===========================================
+=====================================================================================*/
+
+/* 1. Configuracion margenes */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (prefers-reduced-motion: reduce) { 
+    :root{
+        scroll-behavior: smooth;
+    }
+    
+}
+   
+/* 1.1.  Fuentes Google */
+
+@font-face {
+    font-family: courgette;
+    src: url(../css/font/courgette-Regular.ttf);
+}
+
+@font-face {
+    font-family: meriendaReg;
+    src: url(../css/font/handlee-Regular.ttf);
+}
+
+@font-face {
+    font-family: meriendaBold;
+    src: url(../css/font/merienda-Bold.ttf);
+}
+
+@font-face {
+    font-family: handlee;
+    src: url(../css/font/handlee-Regular.ttf);
+}
+
+
+body{
+    font-family: courgette;
+}
+
+
+/* 1.1.1 - Formato encabezados */
+
+#h2{
+    text-shadow: 2px 15px 9px rgb(0 0 0 / 69%);
+}
+
+.h4Index {
+            text-shadow: 5px 8px 7px rgb(10 24 50);
+ 
+}
+
+
+/* --- 1.1.2 - Edición de barra horizontal --- */
+
+hr{
+    height: 1px;
+    background-color: grey;
+    border: 1px solid black;
+    width: 100%;
+}
+
+
+/*===================================================================================
+==================SECCION - HEADER ===========================================
+=====================================================================================*/
+
+/* Ver en el main */
+
+/*===================================================================================
+==================SECCION - NAVEGADOR ===========================================
+=====================================================================================*/
+
+/* 3.1 --- Navegador - Formato Flexbox al Nav */
+
+ul{
+    margin:0; 
+    padding:0;
+}
+
+#navegador{
+    background-color: black;
+    width: 100%;
+}
+
+.menu{
+    display:flex;  
+    flex-flow:column wrap;    
+}
+ 
+/* 3.1.1 --- Navegador: Formato a la listas - Flexbox */
+
+#navegador li{
+      display: block;
+      list-style-type:none;
+      text-transform:uppercase;
+      border: 1px solid white;
+      line-height: 1.5rem;
+      flex-basis: 20%;
+      
+}
+    
+li a{
+      display:flex;
+      text-align:center;
+      text-decoration:none;
+      color: white;
+      padding:1rem;
+      justify-content: center;
+}
+
+/* 3.1.2 --- Navegador: Hover al 1er menu  - Flexbox */
+
+#navegador li > a:hover{
+    background-color:rgb(161, 120, 106);
+    color: white;
+    text-decoration:none;
+    font-size: 1.3rem;
+    transition: all .6s;
+    border: 1px solid transparent;
+    border-top: 5px solid rgb(119, 1, 1);
+}
+
+
+/* 3.1.2 --- Navegador: Formato al submenu  - Flexbox */
+
+#navegador .menu .subMenu {
+      display: none;
+      z-index: 200;
+}
+
+
+#navegador .menu li:hover > .subMenu {
+    display:block;
+    color:#fff;
+    padding-left:2rem;
+}
+  
+    
+#navegador .menu li:hover > .subMenu a{
+    color: white;
+    text-transform: capitalize;
+    width: 100%;
+}
+    
+.subMenu li{
+    display:flex;
+
+}
+      
+
+/*===================================================================================
+==================QUERY MEDIA - NAVEGADOR ===========================================
+=====================================================================================*/
+
+@media (min-width: 768px) {
+    .menu{
+          flex-direction:row;
+          justify-content:space-between;
+          
+    }
+    
+}
+
+@media (min-width: 768px) {
+    #navegador .menu .subMenu {
+         display: none;
+         position:absolute;
+         width: 230px;
+         z-index: 200;
+    }
+}
+
+@media (min-width: 768px) {
+    #navegador .menu li:hover > .subMenu {
+    padding-left:0;
+    background-color: black;
+        z-index: 200;
+    }
+}
+
+@media (max-width: 600px) {
+    #navegador .menu li:hover > .subMenu {
+    padding-left:0;
+    background-color: brown;
+    
+    }
+}
+
+
+/*===================================================================================
+==================SECCION - CARROUSEL ===========================================
+=====================================================================================*/
+
+/* 4.1. - Seccion CarRousel - Slider: formato carrousel */
+
+/* 4.1.1 - Formato al Slider y la lista que contiene las imagenes */
+
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow:hidden;
+    margin-bottom: 0px !important;
+}
+
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 300%;
+    animation: slider 15s infinite alternate linear;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+
+.slider img{
+    width: 100%;
+    z-index: -1;
+}
+
+/* 4.1.2 - Posicionamiento de los textos del Slider*/
+
+.h1Carrousel > h1
+{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    text-align: center;
+}
+
+
+.h1Carrousel > p
+{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    word-spacing: 0.4rem;
+    color:white;
+    text-decoration:wavy ;
+    text-shadow: 5px 3px 2px rgba(21,24,24,0.62);
+    text-transform: capitalize;
+}
+
+/* 4.1.3 - Función del Slider para rotar imagenes */
+
+@keyframes slider{
+    0% {margin-left: 0;}
+    33% {margin-left: 0;}
+    34% {margin-left: -100%;}
+    66% {margin-left: -100%;}
+    67% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+
+
+/*===================================================================================
+==================QUERY MEDIA - CARROUSEL: INDEX.HTML ===============================
+=====================================================================================*/
+
+@media (max-width: 768px) {
+ 
+    /* --- Se ajusta el posicionamiento del encabezado H1 + su formato --- */
+
+
+    /*--- Se ajusta el texto en la QM para el carrousel -- */
+        #h1 {
+            color:rgb(80, 47, 27);
+            font-weight: bolder;
+            text-decoration:wavy ;
+            text-shadow: 0px 5px 7px  rgb(218, 200, 200);
+            text-transform: capitalize;
+            font-size: 2rem !important;
+            top: 95% !important;
+        }
+    
+        .span.efectito{
+            font: size 2rem !important;
+            animation:animate 4.2s linear infinite;
+            color:rgb(207, 192, 192);
+        }
+           
+    /* --- Se ajusta el posicionamiento del parrafo que acompaña el slider  --- */
+        
+        .carrousel__parrafo{
+            font-size: 1.2rem;
+        }
+
+    }
+    
+
+/* -------------------- FIN SECCION CARROUSEL -----------------------*/
+
+/*===================================================================================
+==================SECCION - ACCESOS: INDEX.HTML=================================
+=====================================================================================*/
+
+/*  4.2. - Seccion Menu - Se asigna formato a la sección del acceso a menu, desde el index -- */
+
+/* -- Se agrega Burger de fondo con formato -- */
+
+#accesosMenNov{
+ background-image: url(../Images/fondo_img.jpg);
+ position: relative;
+ background-repeat: no-repeat;
+ height: 599px;
+ width: 100%;
+ animation: fondoMov 7s linear infinite alternate;
+
+}
+
+/* -- Formato a los div de la seccion --*/
+
+.indexMenuNov{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(to left, black, rgb(89, 89, 105));
+    opacity: 0.5;
+}
+
+.indexMenuContenedor{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    height: 600px;
+}
+
+.indexMenuDetalle{
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: 120px;
+    color: rgb(255, 255, 255);
+    margin: auto;
+}
+
+.indexMenuDetalle p{
+    margin-top: 50px;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255) !important;
+    font-weight: 700;
+}
+
+/* -- Formato al botón y texto dentro + Hover --*/
+
+.indexMenuDetalle button{
+    padding: 15px 20px;
+    font-size: 16px;
+    background: none;
+    border: 3px solid white;
+    color: white;
+    font-weight: bold;
+    margin: 20px 0 0 180px;
+    border-radius: 10px;
+    transition: all 300ms;
+    cursor:pointer;
+}
+
+.indexMenuDetalle button a{
+    text-decoration: none;
+    color: white;
+}
+
+.indexMenuDetalle button:hover{
+    background: white;
+    color: black;
+}
+
+
+/* -- Se agrega efecto del desplazamiento de la hamburguesa de fondo */
+
+@keyframes fondoMov{
+    from{
+        background-position: left;
+    }to{
+        background-position: right ;
+    }
+}
+
+/*===================================================================================
+==================QUERY MEDIA - ACCESO MENU DEL INDEX ===============================
+=====================================================================================*/
+
+/* Se le da Responsive al fondo + contenido de la seccion */
+
+@media screen and (max-width:768px) {
+    
+    #sectionIndexMenu{
+        height: 500px;
+    }
+
+    #accesosMenNov{
+        background-image: url(../Images/fondo_img.jpg);
+        background-size: 200%;
+        position: relative;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 500px;
+        animation: fondoMov 20s linear infinite alternate;
+    }
+    
+    .indexMenuDetalle p{
+        margin-top: 100px;
+        font-size: 1rem;
+    }
+
+}
+
+
+/*===================================================================================
+==================SECCION - CARDS: INDEX.HTML=================================
+=====================================================================================*/
+
+/* 4.3 - Seccion Card Comida - Formato Grid */
+
+.card-title{
+    color:#00465d;
+    text-shadow: 6px 2px 4px rgba(75,46,46,0.69);
+    text-align: center;
+    margin: 10px 0 0 20px;
+}
+
+.borders{
+    border: 1px solid black;
+    background-color: #1a837c;
+    color: white;
+    font-weight: 600
+
+}
+
+.swagButton{
+    font-weight: 100;
+    font-size: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid blueviolet;
+    border-radius: 50px;
+    padding: 10px 40px;
+}
+
+.swagButton:hover{
+    background-color: rgb(177, 221, 221);
+    border: 2px solid black;    
+    color: black;
+    font-weight: 800;
+    font-size: 1rem;
+    transition: 0.9s;
+}
+
+
+.gridCard{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.20fr 1fr 0.10fr;
+    gap: 5px;
+    grid-template-areas: "rowH3 rowH3 rowH3 rowH3"
+                          "rowCard1 rowCard2 rowCard3 rowCard4"
+                          "rowNov rowNov rowNov rowNov";
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1240px;
+}
+           
+/*  4.3.1 - Se da flexibilidad a los bloques de la grilla*/
+
+.gridCard > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;    
+}
+
+/* 4.3.2 - Se asignar las areas a los bloques */
+
+.rowH3 { 
+        grid-area: rowH3;
+        margin-top: 30px;
+        grid-column: 1 / span 4;
+}
+
+.rowCard1{ 
+    grid-area: rowCard1;
+    margin-top: 30px;
+    grid-column: 1 / 2;
+}
+
+.rowCard2{ 
+    grid-area: rowCard2;
+    margin-top: 30px;
+    grid-column: 2 / 3;
+}
+
+.rowCard3{ 
+    grid-area: rowCard3;
+    margin-top: 30px;
+    grid-column: 3 / 4;
+}
+
+.rowCard4{ 
+    grid-area: rowCard4;
+    margin-top: 30px;
+    grid-column: 4 / 5;
+}
+
+.rowNov{
+    grid-area: rowNov;
+    margin-top: 30px;
+    grid-column: span 4;
+    margin-bottom: 30px;
+}
+
+/* 4.3.3 - Se asigna formato al texto de los bloques*/
+
+.artiCleIndex{
+    padding: 10px;
+    border: 3px solid black;
+    background-color: antiquewhite;
+    width: 250px !important;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px -3px rgba(40,8,8,0.8);
+    transition: all .6s;
+}
+
+
+
+/* Se asigna formato al link de la sesion */
+
+.rowNov a{
+    position: relative;
+    padding: 10px 13px;
+    margin: 7px;
+    color: #282f30;
+    cursor: pointer;
+    font-size: 1.15rem;
+    text-decoration: none;
+    transition: 0.9s;
+    letter-spacing: 2px;
+    
+}
+
+.rowNov a:hover{
+    text-decoration: none;
+    background: #7d9496 ;
+    color: #050801 ;
+    box-shadow: 0 0 5px #7d9496,
+                0 0 20px #7d9496,
+                0 0 50px #7d9496,
+                0 0 100px #7d9496,
+}
+
+/*===================================================================================
+==================QUERY MEDIA - SECCION CARDS: INDEX.HTML ======================
+=====================================================================================*/
+
+@media screen and (max-width:768px) {
+    .gridCard{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        grid-template-areas: "rowH3 rowH3"
+                              "rowCard1 rowCard2" 
+                              "rowCard3 rowCard4"
+                              "rowNov rowNov";
+        justify-items:center ;
+        align-items: center;
+        margin: auto;
+    }
+                      
+    .gridCard > div{
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            flex-flow: row wrap;
+            margin-left: 20px;    
+    }
+
+    .rowH3 { 
+        grid-area: rowH3;
+        margin-top: 45px;
+        grid-column: 1 / span 2;
+    }
+
+    .rowCard1{ 
+        grid-area: rowCard1;
+        margin-top: 30px;
+        grid-column: 1 / 2;
+    }
+    
+    .rowCard2{ 
+        grid-area: rowCard2;
+        margin-top: 30px;
+        grid-column: 2 / 3;
+    }
+    
+    .rowCard3{ 
+        grid-area: rowCard3;
+        margin-top: 30px;
+        grid-column: 1 / 2;
+    }
+    
+    .rowCard4{ 
+        grid-area: rowCard4;
+        margin-top: 30px;
+        grid-column: 2 / 3;
+    }
+    
+    .rowNov{
+        grid-area: rowNov;
+        margin-top: 30px;
+        grid-column: 1 / span 2;
+        margin-bottom: 30px;
+        margin-bottom: 45px;
+    }
+    
+
+}
+
+
+/*===================================================================================
+==================SECCION: NOSOTROS : INDEX.HTML ===========================
+=====================================================================================*/
+
+/* - 4.4 - Se le da espaciado a la seccion */
+
+#sectionNosotros{
+    margin-bottom: 50px;
+}
+
+/* 4.4.1 - Se asigna formato a la seccion nosotros */
+
+.gridNosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr;
+        gap: 3px 0px;
+        grid-template-areas:
+          "rowh2 rowh2"
+          "rowArea1 rowArea2";
+        justify-items: center;
+        align-items: center;
+    }
+
+.gridNosotros > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.rowh2 { 
+        grid-area: rowh2;
+         margin-top: 30px;
+}
+
+/* 4.4.1 - Se asigna formato a la imagen de homero + hover */
+
+.imgHomer{
+    height: 400px;
+    width: 400px;
+    transition: transform 1.7s ease;
+}
+
+.imgHomer:hover{
+    transform: scale(1.2);
+}
+
+/* 4.4.1 - Se asigna formato a la seccion de los parrafos + hover */
+
+.rowArea1{ 
+    grid-area: rowArea1;
+    border: 4px solid black;
+    box-shadow: 3px 5px 7px 20px grey;
+    height: 400px;
+    background: rgb(48,48,56);
+    background: linear-gradient(90deg, rgba(48,48,56,1) 11%, rgba(104,104,119,1) 30%, rgba(205,221,224,1) 100%);
+    border-radius: 50%;
+};  
+
+.divHome{
+    width: 40%;
+    transition: transform 3s ease 2s;
+} 
+
+
+.divHome:hover{
+    background-color: grey;
+    transform: scale(1.1);
+    box-shadow: 19px 19px 20px 9px rgba(0,0,0,0.7);
+    border-radius: 13%;   
+    color: white;
+
+}
+
+.divHome p:hover{
+    color: white !important;
+}
+
+.rowArea2 { 
+    grid-area: rowArea2;
+    border: 2px solid rgb(53, 11, 11);
+    margin: 70px;
+    box-shadow: 3px 4px 3px 10px rgb(82, 49, 49);
+    border-radius: 10%;
+}
+
+/*===================================================================================
+==================QUERY MEDIA: NOSOTROS INDEX.HTML ===========================
+=====================================================================================*/
+
+@media screen and (max-width: 768px) {
+    .gridNosotros {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        gap: 5px 0px;
+        grid-template-areas:
+          "rowh2"
+          "rowArea1" 
+          "rowArea2";
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+
+.articleH4 .clsPindex{
+    color: rgb(24, 21, 21);
+    font-size:1rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    text-indent: 30px;
+    text-align: center;
+    word-spacing: 2px;
+    margin: 2rem;
+}
+
+/* 4.4.2 - Control para no habilitar copiado de texto - */
+
+.sinSeleccion
+{
+    user-select: none;
+}
+
+/* 4.4.3 - Formato al hipervinculo del video - */
+
+.pLink{
+    color: rgb(10, 10, 10);
+    font-style: italic;
+    font: size 0.9rem;
+    text-decoration: none;
+}
+
+/*===================================================================================
+==================SECCION PASION:  INDEX.HTML ===========================
+=====================================================================================*/
+
+/* 4.5.1 - se fija color de fondo a la seccion pasion --*/
+
+#sectionPasion{
+    background-image: url('../Images/imgburgers/FondoIndexCocina.jpg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-attachment: fixed ;
+    background-position: center ;
+}
+
+/* 4.5.2 - se fija formato grid --*/
+
+.fondoPasion{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rowTitulo { 
+    grid-area: 1 / 1 / 2 / 3; 
+}
+
+.rowPasion1 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    border: 3px solid #a38888;
+    border-radius: 23%;
+    margin-left: 30px;
+    background-color: rgba(47, 99, 96, 0.6);
+    padding: 30px;
+    box-shadow: 6px 6px 5px #af9c61;
+    
+}
+
+.rowPasion2 { 
+    grid-area: 2 / 2 / 3 / 3; 
+    padding-left: 100px;
+}
+
+.rowFoot { 
+    grid-area: 3 / 1 / 4 / 3;
+    margin-bottom: 40px;
+}
+
+/* 4.5.2 - Formato a los textos de pasion*/
+
+.pPasion{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e3e3e3;
+}
+
+.rowFoot > a{
+    color:#e3e7e7 ;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 800;
+    position: relative;
+    text-decoration: none;
+    transition: 0.9s;
+}
+
+.rowFoot  a:hover{
+
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    font-weight: 800;
+ 
+}
+
+/*===================================================================================
+================== QUERY MEDIA: PASION - INDEX.HTML =================================
+=====================================================================================*/
+
+
+@media screen and (max-width: 768px) {
+
+    .fondoPasion{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
+        grid-template-areas: "rowTitulo"
+                              "rowPasion1"
+                              "rowPasion2"
+                              "rowFoot";
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rowTitulo { 
+        grid-area: rowTitulo; 
+    }
+
+    .rowPasion1 { 
+        grid-area: rowPasion1; 
+        margin: 3px;        
+    }
+
+    .rowPasion2 { 
+        grid-area: rowPasion2;
+        margin: 0 30px;    
+    }
+
+    .rowFoot { 
+        grid-area: rowFoot;
+        margin-bottom: 40px;
+    }
+
+}
+
+/*===================================================================================
+================== ASIDE: FORMATO + ICONOS SOCIALES =================================
+=====================================================================================*/
+
+
+/* 4.5. Aside: ajustes a los iconos FB, TW e Inst */
+
+aside{
+    width:10%;
+    max-width:15%;
+    margin:auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.social{
+    width:60px;
+    position:fixed;
+    right:0;
+    height:205px;
+    top:30%;
+    margin-top: -100px;
+}
+
+
+/*===================================================================================
+================== QUERY MEDIA - ASIDE ==============================================
+=====================================================================================*/
+
+@media screen and (max-width: 768px) {
+    aside .social{
+          display: flex;
+          flex-direction: row;
+          justify-content:flex-end;
+          width:60px;
+          position:fixed;
+          right:0;
+          top:130%;
+          margin-top: -360px;
+    }
+}
+
+
+/*===================================================================================
+================== FOOTER + ICONOS  + ACCESOS =======================================
+=====================================================================================*/
+
+/* 4.6. Footer: ajustes al pie pagina */
+
+/* Formato lo encontrará en Main.css */
+
+
+/* 4.6.2 Footer: formato al main del footer */
+  
+  .ftMain {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .ftMainAcerca {
+    min-width: 12.5rem; 
+  }
+
+  .ftMainAcerca ul{
+    list-style: none;
+  }
+
+  .ftMainAcerca ul #iFrame{
+    display: inline-block;
+    padding-left: 30%;
+  }
+   
+
+/* 4.6.3 Footer: formato al bloque copyright */
+
+  
+  .ftLegal {
+    padding: 0.25rem 1.9rem;
+  }
+
+  .ftLegalList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+  }
+
+  .ftLegalList li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+    color: white;
+
+  }
+
+/* 4.6.4 Footer: Button para volver al home */
+
+  .ftHome{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+
+  }
+  
+/* 4.6.5 - Se agrega efecto al botón de Home - */
+
+  .ftHome .btnFooter{
+    height: 55px;
+    padding: 0;
+    width: 55px;
+    border:2px solid black;
+    background-size: auto;
+    background-repeat: no-repeat; 
+    background-color: grey;
+    border-radius: 40%;
+    box-shadow: inset 6px 6px 5px black;
+    opacity: 0.5;
+    transition: ease-out 0.3s;
+    cursor: pointer;
+
+   }
+
+   .ftHome .btnFooter:hover{
+    box-shadow: inset 20px 20px 5px aqua ;
+   } 
+
+/*===================================================================================
+==================QUERY MEDIA - FOOTER ==============================================
+=====================================================================================*/
+
+@media only screen and (min-width: 600px) {
+    .ftMain {
+      display: flex;
+      justify-content: space-evenly;
+      flex-flow: row wrap;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .ftMain {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+  }
+
+
+/*===================================================================================
+================== FORMATO TABLES: MENU/PROMOS.HTML =================================
+=====================================================================================*/
+
+/*---- Paginas Menu y Promos: Formato -----*/
+
+/* se le da espaciado a la seccióny articulos de la pagina */
+
+#sectionMenu{
+    margin-bottom: 40px;
+}
+
+#sectionCocina{
+    margin-bottom: 40px;
+}
+
+.articleCocina{
+    margin: 40px 0;
+}
+
+/* 5.1 - Formato Tables */
+
+/* Formato de las tablas lo encontrará en main.css*/
+
+
+/* 5.1.6.1 - Se le dará espaciado a los bloques que contienen el texto, previo a la tabla. Se utilizará
+              en los formularios de Menu.html y Promociones.html */
+
+.articleProd p {
+    color:rgb(84, 84, 84);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-indent: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* 5.1.7 - Se le da efecto de blink al encabezado */
+
+span.efectito{
+    font-size:1em;
+    animation:animate 4.2s linear infinite;
+    color:rgb(196, 162, 162);
+}
+   
+@keyframes animate{
+       0%,18%,38%,68%,80%
+       {
+           color: rgb(43, 25, 122);
+           text-shadow: none;
+       }
+       18.1%,39%,69%,81%,100%
+       {
+           color:rgb(58, 71, 71);
+       }
+}
+
+
+/* Formato seccion Card - Forma de pago */
+
+.formaPago{
+    margin: 0;
+    padding: 0;
+    max-width: 1250px;
+}
+
+
+.formatTest{
+    margin: 40px auto !important;
+    padding-left: 60px;
+}
+
+.medio{
+    padding: 30px 10px 10px;
+    background-color: grey;
+    width: 80%;
+}
+
+.medio img{
+    border: 2px solid rgb(186, 183, 206);
+    margin-bottom: 20px;
+    top: -30px;
+
+
+}
+
+.medio > h5{
+    font-size: 1.15rem;
+    margin-top: 10px;
+    color: wheat;
+}
+
+#testSpan{
+    font-size: 0.8rem;
+    line-height: 10px;
+    color: black;
+}
+
+blockquote::before{
+    content: '\94';
+    font-size: 35px;
+    position: relative;
+    color: wheat;
+    line-height: 20px;
+    bottom: -10px;
+    right: 3px;
+}
+
+.perfil:hover{
+    box-shadow: 0 0 15px 5px rgba(104,104,119,0.3);
+}
+
+/*===================================================================================
+================== FORMATO: NOVEDADES.HTML =================================
+=====================================================================================*/
+
+/* 6.1. formato de margenes y texto a la pagina  */
+
+
+/* 6.1.1. Se arma el grid para que contenga las imagenes de fondo */
+
+.mainGallery{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 200px;
+    padding:20px;
+    gap:10px;
+}
+
+.novGallery:nth-child(4){
+    grid-column-start: span 2;
+}
+
+.novGallery:nth-child(3){
+    grid-row-start:span 2 ;
+}
+
+.novGallery:nth-child(7){
+    grid-row-start:span 2 ;
+}
+
+
+/*===================================================================================
+================== QUERY MEDIA: NOVEDADES.HTML =================================
+=====================================================================================*/
+
+@media screen and (max-width: 768px){
+    .mainGallery{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 150px;
+    padding:10px;
+    gap:5px;
+    }
+    
+    .novGallery:nth-child(4){
+        grid-column-start: span 1;
+    }
+    
+    .novGallery:nth-child(3){
+        grid-row-start:span 1 ;
+    }
+    
+    .novGallery:nth-child(7){
+        grid-row-start:span 1 ;
+    }
+
+} 
+
+
+/*===================================================================================
+==================SECCION - CONTACTOS: CONTACTO.HTML=================================
+=====================================================================================*/
+
+/* 7.1 - Estilo de fuente en Contacto.html */
+
+
+/* Formato de contacto lo encontrará en Main.css*/
+
+.active-pink-textarea.md-form label.active {
+    color: rgb(84, 84, 84);
+  }
+  
+  .pink-textarea textarea.md-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #f48fb1;
+    box-shadow: 0 1px 0 0 #f48fb1;
+  }
+  .pink-textarea.md-form .prefix.active {
+    color: #f48fb1;
+  }
+  .active-pink-textarea.md-form textarea.md-textarea:focus:not([readonly])+label {
+    color: #f48fb1;
+  }
+  
+
+
+/*===================================================================================
+================== GRID CARRITO.HTML =================================================
+=====================================================================================*/
+
+
+.mainCarro{
+    display: grid;
+    width: 100%;
+    grid-template-areas: "shopBurger shopBurger shopBurger"
+                         "shopPhrase shopPhrase shopPhrase"
+                         "productCard1 productCard2 productCard3"
+                         "productCard4 productCard5 productCard6";
+    gap: 2%;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-bottom: 10%;
+}
+
+
+.artiCleShop{
+        padding: 0;
+        border: 3px solid black;
+        background-color: antiquewhite;
+        border-radius: 10px;
+        box-shadow: 20px 20px 20px -3px rgba(40,8,8,0.8);
+        transition: all .6s;
+}
+
+.card-footer{
+    padding: .5rem 5rem;
+    background-color: rgba(116, 160, 157, 0.6);
+    border-top: 3px solid;
+    
+}
+
+/*===================================================================================
+================== QUERY MEDIA: CARRITO.HTML =================================
+=====================================================================================*/
+
+@media screen and (max-width:768px) {
+    .mainCarro{
+        display: grid;
+        width: 100%;
+        grid-template-areas: "shopBurger shopBurger "
+                             "shopPhrase shopPhrase "
+                             "productCard1 productCard2" 
+                             "productCard3 productCard4" 
+                             "productCard5 productCard6";
+        gap: 1%;
+        justify-content: space-evenly;
+        align-content: center;
+        margin-bottom: 13%;
+    }
+    
+    .shopPhrase .pStyle{
+        font-size: 0.7rem;
+        margin-top: 2%;
+    }
+
+}
+
+@media screen and (max-width:1240px) {
+.shopPhrase .pStyle{
+    color: rgb(54, 45, 45);
+    text-decoration: underline;
+    text-shadow: 2px 4px 7px  rgb(36, 33, 33);
+    }
+
+    .shopBurger #h1{
+        font-size: 2rem;
+        margin: 4% 0% 0 5%;
+    }
+
+}
+
+/* Carrito: asignar flex + formato a las cards del carrito */
+
+.mainCarro > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-left: 15px;
+
+}
+
+.shopBurger{
+    grid-area: shopBurger;
+    grid-column-start: 1/ span 3;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.shopPhrase{
+    grid-area: shopP    hrase;
+    grid-column-start: span 3;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.shopPhrase .pStyle{
+    color: rgb(54, 45, 45);
+    text-decoration: underline;
+    text-shadow: 2px 4px 7px  rgb(36, 33, 33);
+}
+
+/*===================================================================================
+==================ERROR PAGE ===========================================
+=====================================================================================*/
+
+/* Fondo de pantalla de pag. error */
+
+.errorpage_background{
+    background: rgb(244,240,237);
+    background: linear-gradient(180deg, rgba(244,240,237,1) 0%, rgba(236,231,227,1) 50%, rgba(227,222,216,1) 100%);
+
+}
+
+/* formato imagen de fondo */
+.errorPage__formato {
+    background-image: url('../Images/Error404.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-size:contain !important;
+    background-position: center !important;
+    padding: 280px;
+    height: 100vh;
+    width: 100%;
+}
+
+/* posicionamiento texto + header + boton*/
+
+.encabezado_h1--position{
+    position: relative;
+    top:-210px;
+    left: 5%;
+}
+
+.encabezado_h2--position{
+    position: relative;
+    top:80px;
+    left: 5%;
+}
+
+.botonHome--position{
+    position: relative;
+    top:65px;
+    left: 5%;
+}

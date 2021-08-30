@@ -1,0 +1,37 @@
+$CardIndex_fondo: rgba(227, 155, 190, 1);
+$Card_H1_margin: 6% 0 0 3%;
+$ShopImg_borde: 1px solid black;   
+$letraBtn: white;
+
+/* Formato al grid que contiene imagenes de las cards del carrito */
+
+
+#gridFondo{
+    background-color: $CardIndex_fondo;
+}
+
+.shopBurger #h1{
+    margin: $Card_H1_margin;
+}
+
+.shopImg__formato{
+    border: $ShopImg_borde;
+    width: 60% !important; 
+    margin: 15px 5px 15px 10px;
+}
+
+.shopImg__formato--redondeo{
+    border-radius: 35%;
+}
+
+/* Botones de las cards*/
+
+$colores:(primary: rgb(54, 71, 119), success: rgb(120,33,22), danger:rgb(140,77,66));
+
+ @each $fondo, $color in $colores{
+     .btn-#{$fondo}{
+         color: $letraBtn;
+         background-color: $color;
+     }
+ }
+

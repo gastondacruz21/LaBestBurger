@@ -1,0 +1,450 @@
+@charset "UTF-8";
+/* Footer: ajustes al pie pagina */
+.footer__format {
+  background-image: linear-gradient(to top, #240316, #22081c, #200d22, #1c1228, #18162c, #161f37, #122942, #09334b, #00465d, #005a6b, #006f76, #1a837c);
+  padding: 5px;
+  /* Footer: Se quita hover al parrafo con dirección */ }
+  .footer__format a {
+    text-decoration: none;
+    color: white !important; }
+  .footer__format a:not(.notHover):hover {
+    text-decoration: underline; }
+
+/* Footer: ajustes al display del footer + flex */
+.footer__format--flex {
+  display: flex;
+  flex-direction: column; }
+
+.footer__container {
+  flex: 1; }
+
+/* Footer: formato a la etiqueta address */
+address {
+  color: white !important;
+  font-size: 1.1rem !important;
+  text-align: center; }
+
+/* Se edita fondo de los botones */
+/* Fondo de btn home del resto de las paginas */
+#btnHomePage {
+  background-image: url("../Images/burguer.png"); }
+
+/* Fondo de btn home del resto de las paginas */
+#btnMainIndex {
+  background-image: url("../Images/burguer.png"); }
+
+/* Fondo de btn home del resto de las paginas */
+#btnMainPage {
+  background-image: url("../Images/volver.png"); }
+
+/* Formato al grid que contiene imagenes de las cards del carrito */
+#gridFondo {
+  background-color: #e39bbe; }
+
+.shopBurger #h1 {
+  margin: 6% 0 0 3%; }
+
+.shopImg__formato {
+  border: 1px solid black;
+  width: 60% !important;
+  margin: 15px 5px 15px 10px; }
+
+.shopImg__formato--redondeo {
+  border-radius: 35%; }
+
+/* Botones de las cards*/
+.btn-primary {
+  color: white;
+  background-color: #364777; }
+
+.btn-success {
+  color: white;
+  background-color: #782116; }
+
+.btn-danger {
+  color: white;
+  background-color: #8c4d42; }
+
+.contacto__formato_texto {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 0.9rem; }
+
+.contacto__formato_texto--color {
+  color: #545454; }
+
+/* 7.1.1 - Estilo al Frame que contiene los controles */
+.contacto__frame {
+  margin: 5%;
+  padding: 2%; }
+
+.contacto__frame--color {
+  background-color: #e39bbe; }
+
+.contacto__frame__legenda {
+  color: #545454;
+  font-style: italic;
+  font-family: Handlee;
+  font-weight: bolder;
+  font-size: x-large;
+  text-shadow: 2px 2px 3px grey; }
+
+/* 7.1.2 - Formato a los bloques de los controles*/
+.formulario__formato {
+  margin-left: 3%; }
+
+/* 7.1.3 - Formato a los botones + hover */
+.formulario__control {
+  font-size: 1rem;
+  font-family: MeriendaBold;
+  padding: 5px;
+  border-radius: 5px; }
+
+.formulario__control--color {
+  background-color: teal;
+  color: white; }
+
+.formulario__control:hover {
+  background-color: ivory;
+  color: black;
+  box-shadow: 5px 5px 20px #3a3f3b; }
+
+.contacto__foot_fontContacto_ {
+  font-family: Courgette; }
+
+/* Formato del aside - Flex */
+.aside__formato {
+  width: 10%;
+  max-width: 15%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* Formato al div contenedor de los iconos de las redes */ }
+  .aside__formato .social__formato {
+    width: 60px;
+    right: 0;
+    height: 205px;
+    top: 30%;
+    margin-top: -100px; }
+    .aside__formato .social__formato--posicion {
+      position: fixed; }
+
+/*===================================================================================
+================== QUERY MEDIA - ASIDE ==============================================
+=====================================================================================*/
+@media screen and (max-width: 768px) {
+  .aside__formato .social__formato {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 60px;
+    position: fixed;
+    right: 0;
+    top: 130%;
+    margin-top: -360px; } }
+
+/*===================================================================================
+==================SECCION - HEADER ===========================================
+=====================================================================================*/
+/* header: ajustes al logo y posicionamiento */
+.header__formato {
+  background-color: #545454;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  line-height: 1.5rem; }
+
+/* header: formato a la imagen */
+.header__formato__imgHead {
+  height: 50px;
+  width: auto;
+  margin: 0px 5px; }
+  .header__formato__imgHead--transition {
+    transition: transform 0.3s linear; }
+  .header__formato__imgHead:hover {
+    transform: scale(1.1);
+    opacity: 0.5; }
+
+/*===================================================================================
+==================QUERY MEDIA - HEADER ===========================================
+=====================================================================================*/
+/* --- 2.2.  Se centrará el header y estará arriba del bloque, solo para formato celular*/
+@media (max-width: 768px) {
+  .header__formato {
+    display: block; }
+    .header__formato .header__formato__imgHead {
+      padding-left: 40%; }
+      .header__formato .header__formato__imgHead:hover {
+        transform: scale(1, 1.02);
+        opacity: 0.5; } }
+
+/* Edicion de TABLAS */
+.table__formato {
+  margin: 0 auto;
+  margin-bottom: 40px; }
+  .table__formato--borders {
+    border-color: black;
+    border: 2px solid black; }
+
+/* 5.1.2 - Define color a fila por medio */
+.table__tr:nth-child(even) {
+  background-color: #af9696; }
+
+/* 5.1.3 - Se hace hoover sobre las filas de la tabla*/
+.table__tr:hover td {
+  background-color: #f7d6f7;
+  color: black; }
+
+/* 5.1.4 - Formato de filas y columnas */
+.table__thead {
+  text-align: center; }
+  .table__thead .table__thead__headers {
+    border: 2px solid black;
+    padding: 10px; }
+    .table__thead .table__thead__headers--color {
+      background-color: #97aaaa;
+      color: white; }
+
+.table__tbody {
+  text-align: center; }
+  .table__tbody .table__tbody__row {
+    border: 2px solid black;
+    padding: 30px; }
+
+.table__tbody .tDetalle {
+  text-align: left; }
+  .table__tbody .tDetalle .ulType {
+    list-style-type: square;
+    padding-left: 5%; }
+
+.olType {
+  list-style-type: lower-alpha;
+  list-style-position: inside;
+  padding-left: 30px; }
+
+/* 5.1.5 - Se le da formato a la cabecera de la tabla */
+.table__tableDescripcion {
+  text-decoration: underline;
+  font-weight: bold;
+  color: brown;
+  font-size: 1rem;
+  text-align: center; }
+
+/* Formato al pie de la tabla */
+.tfoot {
+  text-align: center; }
+  .tfoot .tfoot__tr {
+    background-color: grey;
+    font-weight: bolder; }
+    .tfoot .tfoot__tr--color {
+      color: white; }
+    .tfoot .tfoot__tr .tfoot__tr__td {
+      padding: 5px;
+      font-size: 1.5rem; }
+
+/* Formato al Span */
+span {
+  font-weight: bolder;
+  font-style: italic; }
+
+/*===================================================================================
+================== FORMATO: NOVEDADES.HTML =================================
+=====================================================================================*/
+/* Formato a las imagenes de las img de la galeria */
+.mainGallery__novImagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+  .mainGallery__novImagen--borders {
+    border: 3px dotted black;
+    padding: 2px;
+    box-shadow: 5px 5px 20px #2a302c; }
+
+/*===================================================================================
+================== QUERY MEDIA: NOVEDADES.HTML =================================
+=====================================================================================*/
+@media screen and (max-width: 768px) {
+  #sectionNov h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.4rem; }
+  #sectionNov p {
+    margin-bottom: 200%; } }
+
+/* Fondo del Carrousel */
+.divBlack {
+  background-color: #332b2b;
+  margin: 0;
+  padding: 0; }
+
+/* Fondo del acceso menu - Index */
+.divMenu {
+  background-color: #332b2b;
+  height: 600px; }
+
+/* Fondo de pagos - menu */
+.divMenuPago {
+  background-color: #332b2b; }
+
+/* Variables */
+#h1 {
+  font-size: 3rem !important;
+  text-align: center; }
+
+#h2 {
+  font-size: 2rem !important;
+  text-align: center; }
+
+/* Formato a todos los encabezados H1 - H5*/
+/* Asignacion de formato a encabezados*/
+.encabezado_h1 {
+  color: #502f1b;
+  font-weight: bolder;
+  text-decoration: wavy;
+  text-shadow: 0px 5px 7px #dac8c8;
+  text-transform: capitalize; }
+
+.encabezado_h2 {
+  color: #382b2b;
+  text-decoration: none;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 2.5rem;
+  font-size: 2.2rem; }
+
+.encabezado_h3 {
+  color: #382b2b;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  text-shadow: 2px 15px 9px rgba(0, 0, 0, 0.69); }
+
+.encabezado_h4Index {
+  font-size: 1.4rem;
+  color: #efe2ce;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  padding-top: 50px;
+  padding-bottom: 10px; }
+
+.encabezado_h4Index::after {
+  content: '';
+  background: #efe2ce;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px; }
+
+.encabezado_h5 {
+  color: white;
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+  text-align: center; }
+
+/* Carrousel: Se agranda tamaño del parrafo + color*/
+.carrousel__parrafo, .carrousel__parrafo--color {
+  font-size: 30px;
+  font-weight: bold; }
+
+.carrousel__parrafo--color {
+  color: white; }
+
+/* Formato a la sección de recomendaciones - Promocion.html */
+#sectionTest {
+  padding: 3rem 0;
+  background-color: #332b2b; }
+
+.encabezado_h3 {
+  position: relative;
+  color: #437c64;
+  text-shadow: 2px 5px 9px rgba(214, 176, 176, 0.5); }
+
+/* Formato al encabezado de la seccion */
+.encabezado_h3::after {
+  content: "";
+  width: 10rem;
+  height: 8px;
+  background-color: #437c64;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2rem; }
+
+/* Formato a las cards - Flex */
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column; }
+  .card-wrapper .card__formato {
+    width: 20rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: 3px 3px 7px rgba(163, 144, 144, 0.7);
+    border: 2px solid black; }
+    .card-wrapper .card__formato--img {
+      width: 100%;
+      height: 26rem;
+      object-fit: cover;
+      clip-path: polygon(0 0, 100% 0, 100% 38%, 0 69%); }
+    .card-wrapper .card__formato--perfil {
+      width: 12rem;
+      height: 12rem;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid black;
+      margin-top: -20rem;
+      z-index: 100; }
+
+/* Formato al titulo de las cards */
+.perfil__titulo {
+  font-size: 2rem !important;
+  color: black;
+  text-shadow: 3px 3px 5px grey !important;
+  padding-top: 1rem !important; }
+
+/* Formato al texto de las cards */
+.about {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 1.5rem 1rem;
+  text-align: center;
+  color: brown; }
+
+/*===================================================================================
+==================QUERY MEDIA - FOOTER ==============================================
+=====================================================================================*/
+@media screen and (min-width: 768px) {
+  .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; }
+  .card__formato {
+    margin: 2rem; }
+  /* Efecto Fade In en las cards */
+  @keyframes fadeIn {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+  .card__formato:nth-child(3) {
+    animation: fadeIn .5s .9s backwards; }
+  .card__formato:nth-child(2) {
+    animation: fadeIn .5s .6s backwards; }
+  .card__formato:nth-child(1) {
+    animation: fadeIn .5s .3s backwards; } }

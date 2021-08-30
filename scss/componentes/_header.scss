@@ -1,0 +1,61 @@
+/*===================================================================================
+==================SECCION - HEADER ===========================================
+=====================================================================================*/
+
+$header_color: rgb(84, 84, 84);
+$header_width: 100%;
+$header_line-height: 1.5rem;
+$img_transition: transform .3s linear;
+
+/* header: ajustes al logo y posicionamiento */
+
+.header__formato{
+    background-color: $header_color;
+    width: $header_width;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    top: 0;
+    line-height: $header_line-height;
+}
+
+/* header: formato a la imagen */
+
+.header__formato__imgHead {
+
+            height:50px;
+            width:auto;
+            margin: 0px 5px;
+
+            &--transition{
+            transition: $img_transition;
+            }
+
+            &:hover{
+                transform: scale(1.1);
+                opacity: 0.5;
+            }
+}
+
+
+/*===================================================================================
+==================QUERY MEDIA - HEADER ===========================================
+=====================================================================================*/
+
+/* --- 2.2.  Se centrará el header y estará arriba del bloque, solo para formato celular*/
+
+@media (max-width: 768px) {
+    .header__formato{
+        display: block;
+
+        .header__formato__imgHead{ 
+            padding-left: 40%; 
+            
+            &:hover{
+                transform: scale(1,1.02);
+                opacity: 0.5;
+                }
+            }
+           
+       }
+}

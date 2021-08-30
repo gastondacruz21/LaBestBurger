@@ -1,0 +1,91 @@
+/* Variables */
+
+$hxx: 0.1rem;
+$decoracion: none;
+
+@for $hxx from 1 through 2{
+    #h#{$hxx}{
+        font-size: 4rem - $hxx !important;
+        text-align: center;  
+    }
+}
+
+/* Formato a todos los encabezados H1 - H5*/
+
+@mixin formatoEncabezado ($decoracion, $hx){
+    @if ($hx == "#h1"){
+        color:rgb(80, 47, 27);
+        font-weight: bolder;
+        text-decoration:wavy;
+        text-shadow: 0px 5px 7px  rgb(218, 200, 200);
+        text-transform: capitalize;
+    }
+    @else if ($hx == "#h2"){
+        color:rgb(56, 43, 43);
+        text-decoration: none;
+        font-weight: bolder;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 2.5rem;
+        font-size: 2.2rem;
+    }
+
+    @else if ($hx == "#h3"){
+        color:rgb(56, 43, 43);
+        font-weight: bolder;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 2rem;
+        text-shadow: 2px 15px 9px rgba(0,0,0,0.69);
+    }
+    @else if ($hx == "#h4Index"){
+         font-size: 1.4rem;
+         color:#efe2ce;
+         font-weight: bold;
+         text-align: center;
+         text-transform: capitalize;
+         margin-bottom: 1.5rem;
+         padding-top: 50px;
+         padding-bottom: 10px;
+    }
+    @else if ($hx == "#h5"){
+             color: white;
+             font-size: 1.3rem;
+             padding-bottom: 0.5rem;
+             text-align: center;
+    }
+    
+}
+
+/* Asignacion de formato a encabezados*/
+
+.encabezado_h1{
+     @include formatoEncabezado($decoracion, "#h1");
+}
+
+.encabezado_h2{
+     @include formatoEncabezado($decoracion, "#h2");
+}
+
+.encabezado_h3{
+     @include formatoEncabezado($decoracion, "#h3");
+ }
+
+.encabezado_h4Index{
+     @include formatoEncabezado($decoracion, "#h4Index");
+}
+
+.encabezado_h4Index::after {
+     content: '';
+     background: #efe2ce;
+     display: block;
+     height: 3px;
+     width: 170px;
+     margin: 20px auto 5px;
+}
+
+
+.encabezado_h5{
+     @include formatoEncabezado($decoracion, "#h5");
+ }
+

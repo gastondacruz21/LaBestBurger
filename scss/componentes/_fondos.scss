@@ -1,0 +1,33 @@
+$fondo: rgb(51, 43, 43);
+
+
+@mixin fondoColor ($fondo, $seccion){
+    @if ($seccion == "divBlack"){
+        background-color: $fondo;
+    }
+    @else if ($seccion == "divMenu") {
+        background-color: $fondo;
+        height: 600px
+    }
+    @else if ($seccion == "divMenuPago") {
+        background-color: $fondo;
+    }
+}
+
+
+/* Fondo del Carrousel */
+.divBlack{
+    @include fondoColor($fondo, "divBlack");
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo del acceso menu - Index */
+.divMenu{
+    @include fondoColor($fondo, "divMenu"); 
+}
+
+/* Fondo de pagos - menu */
+.divMenuPago{
+    @include fondoColor($fondo, "divMenuPago");
+}

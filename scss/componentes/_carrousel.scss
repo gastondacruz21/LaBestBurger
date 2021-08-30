@@ -1,0 +1,19 @@
+$tamaño: 20px;
+
+/* Carrousel: Se agranda tamaño del parrafo + color*/
+
+.carrousel__parrafo{
+    font:
+    {
+        size: $tamaño + 10px;
+        weight: bold ;
+        
+    }
+}
+
+.carrousel__parrafo--color{
+    @extend .carrousel__parrafo;
+    color: white;
+}
+
+

@@ -1,0 +1,42 @@
+/*===================================================================================
+================== FORMATO: NOVEDADES.HTML =================================
+=====================================================================================*/
+
+$grid_formato: 10px;
+$grid_imagen_formato: 100%;
+
+/* Formato a las imagenes de las img de la galeria */
+
+.mainGallery__novImagen{
+    width: $grid_imagen_formato;
+    height: $grid_imagen_formato;
+    object-fit:cover;
+        &--borders{
+            border: 3px dotted black;
+            padding: 2px;
+            box-shadow: 5px 5px 20px rgb(42, 48, 44);
+        }
+    
+}
+
+
+/*===================================================================================
+================== QUERY MEDIA: NOVEDADES.HTML =================================
+=====================================================================================*/
+
+@media screen and (max-width: 768px){
+    
+    #sectionNov{
+        
+        h1{
+            margin-top: 50px;   
+            text-align: center;
+            font-size: 1.4rem; 
+        }
+        
+        p{
+        margin-bottom: $grid_imagen_formato * 2;
+         }
+    }
+}
+

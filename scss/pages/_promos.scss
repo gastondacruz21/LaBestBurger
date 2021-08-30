@@ -1,0 +1,135 @@
+
+/* Formato a la sección de recomendaciones - Promocion.html */
+
+#sectionTest{
+    padding: 3rem 0;
+    background-color: #332b2b;
+}
+
+.encabezado_h3{
+    position: relative;
+    color: #437c64;
+    text-shadow: (2px 5px 9px rgba(214, 176, 176, 0.5));
+}
+
+/* Formato al encabezado de la seccion */
+
+.encabezado_h3::after{
+    content: "";
+    width: 10rem;
+    height: 8px;
+    background-color: #437c64;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+}
+
+/* Formato a las cards - Flex */
+
+.card-wrapper{
+    display: flex;
+    align:
+    {
+        items: center;
+        content: center;
+    }
+    flex-direction: column;
+
+    .card__formato{
+        width: 20rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0;
+        box-shadow: 3px 3px 7px rgba(163, 144, 144, 0.7);
+        border: 2px solid black;
+
+        &--img{
+            width: 100%;
+            height: 26rem;
+            object-fit: cover;
+            clip-path: polygon(0 0, 100% 0, 100% 38%, 0 69%);}
+
+        &--perfil{
+            width: 12rem;
+            height: 12rem;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid black;
+            margin-top: -20rem;
+            z-index: 100;
+        }
+    }
+
+}
+
+/* Formato al titulo de las cards */
+
+.perfil__titulo{
+    font-size: 2rem !important;
+    color: black;
+    text-shadow: 3px 3px 5px grey !important;
+    padding-top: 1rem !important;
+}
+
+
+/* Formato al texto de las cards */
+
+.about{
+    font:
+    {
+        size: 1.2rem;
+        style: italic;
+    }
+    margin: 1.5rem 1rem;
+    text-align: center;
+    color: brown;
+}
+
+
+/*===================================================================================
+==================QUERY MEDIA - FOOTER ==============================================
+=====================================================================================*/
+
+@media screen and (min-width: 768px) {
+    .card-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .card__formato{
+        margin: 2rem;
+    }
+
+    /* Efecto Fade In en las cards */
+
+    @keyframes fadeIn {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+     
+        .card__formato:nth-child(3){
+            animation: fadeIn .5s .9s backwards;
+        }
+
+        .card__formato:nth-child(2){
+            animation: fadeIn .5s .6s backwards;
+        }
+
+        .card__formato:nth-child(1){
+            animation: fadeIn .5s .3s backwards;
+        }
+  }
+

@@ -1,0 +1,128 @@
+
+/* Edicion de TABLAS */
+
+$tabla_margen: 0 auto;
+$tabla_borde: 2px solid black;
+$tabla_filaHijo_color: rgb(175, 150, 150);
+$tabla_padding: 5px;
+$table_color: white;
+$tabla_vinieta_padding: 0;
+
+.table__formato{
+    margin: $tabla_margen;
+    margin-bottom: 40px;
+    
+    &--borders
+    {
+        border-color: black;
+        border: $tabla_borde; 
+    
+    }
+}
+
+/* 5.1.2 - Define color a fila por medio */
+
+.table__tr:nth-child(even){
+    background-color: $tabla_filaHijo_color;
+} 
+
+/* 5.1.3 - Se hace hoover sobre las filas de la tabla*/
+
+.table__tr:hover td{
+    background-color: rgb(247, 214, 247);
+    color: black;
+} 
+
+/* 5.1.4 - Formato de filas y columnas */
+
+.table__thead{
+    text:
+    {
+        align:center;
+    }
+    .table__thead__headers{
+        border: $tabla_borde;
+        padding: $tabla_padding * 2;
+
+        &--color{
+            background-color:rgb(151, 170, 170);
+            color: $table_color;
+        }
+    }
+}
+
+.table__tbody{
+    text:
+    {
+        align:center;
+    }
+    .table__tbody__row{
+        border: $tabla_borde;
+        padding: $tabla_padding * 6;
+    }
+}
+
+.table__tbody .tDetalle{
+    text:
+    {
+        align: left;
+    }
+    
+        .ulType{
+            list-style-type:square;
+            padding-left: $tabla_vinieta_padding + 5%;
+        }
+} 
+
+
+.olType{
+    list-style-type: lower-alpha;
+    list-style-position: inside;
+    padding-left: $tabla_vinieta_padding + 30px;
+}
+
+
+/* 5.1.5 - Se le da formato a la cabecera de la tabla */
+
+.table__tableDescripcion{
+    text-decoration: underline;
+    font-weight: bold;
+    color: brown;
+    font-size: 1rem;
+        text:
+            {
+                align:center;
+            }
+}
+
+
+/* Formato al pie de la tabla */
+.tfoot{
+    text:
+    {
+        align: center;
+    }
+    .tfoot__tr{
+        background-color: grey;
+        font-weight: bolder;
+        
+            &--color{
+            color: $table_color;
+            }
+
+            .tfoot__tr__td{
+                padding: 5px;
+                font-size: 1.5rem;
+            } 
+    }
+}
+
+
+/* Formato al Span */
+
+span{
+    font-weight: bolder;
+    font-style: italic;
+}
+
+

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!--icono de la pagina + titulo del page-->
+    <link rel="shortcut icon" href="../images/log.jpg" >
+
+    <!-- Titulo -->
+    <title>Best Burguer - Menu</title>
+    
+    <!-- Metadatado -->
+    <meta name="description" content="Bienvenido al sitio donde podrás encontrar las mejores hamburguesas de Zona sur - Best Burger">
+    <meta name="keywords" content="BestBurger,Hamburguesas,ZonaSur,BuenosAires,WelcometoBestBurger,BienvenidotoBestBurger">
+
+    <!-- Se agrega referencia al css -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+
+        <!-- Encabezado Pagina -> Se puede redirigir al home desde el logo principal-->
+        <header class="header__formato">
+            <div>
+                <a href="../index.html" title="Ir al Home" alt="Ir al home">
+                <img src="../images/logo.png" class="header__formato__imgHead header__formato__imgHead--transition" title="logo de Best" alt="logo de Best Burger"></a>
+            </div>
+
+        <!-- Barra navegación -->
+
+            <nav id="navegador">
+                <ul class="menu">
+                    <li class="menuItemChildren"><a href="../pages/menu.html">Menu</a>
+                        <ul class="subMenu">
+                            <li><a href="../pages/menu.html#sectionMenu">Listado Menu</a></li>
+                            <li><a href="../pages/menu.html#seccionPago">Medio pago</a></li>
+                            <li><a href="../pages/menu.html#sectionCocina">Nuestra Cocina</a></li>
+                        </ul>
+                    </li>
+                    <li class="menuItemChildren"><a href="../pages/promos.html">Promos</a>
+                        <ul class="subMenu">
+                            <li><a href="../pages/promos.html#sectionTest">Recomendaciones</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../pages/novedades.html">Novedades</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="../pages/carrito.html">Carrito</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <!--Inico de contenido del menu.html -->
+
+    <div class="container d-flex">
+
+        <div class="row mt-5">
+        
+            <!-- seccion tabla con menú y formatos sobre la misma-->    
+            <section id="sectionMenu">
+
+                <!--Se da un formato de espaciado al bloque del H1 -->
+                <div class="col-12">
+                    <h1 id="h1" class="encabezado_h1"><span class="efectito">Menú Best Burguer</span></h1>
+                </div>
+
+                <!--Intro del bloque-->
+                <article class="articleProd fw-bolder my-4 text-center col-12">
+                <p>
+                    No te pierdas nuestro menú, donde están todas las opciones que puedes escoger y disfrutar con tus amigos y familia!
+                    </p>
+                </article>    
+                <!--Fin del bloque del parrafo -->
+                
+                    <!--Tabla con menues-->
+                <article>
+
+                    <div class="table-responsive col-12 d-flex justify-content-center align-items-center">
+                                    
+                            <table class="table table-striped table-bordered table-hover table__formato table__formato--borders"> 
+                                
+                                    <!-- encabezado de la tabla -->
+                                    <caption class="table__tableDescripcion">Listado actualizado de Productos</caption>
+
+                                        <!--Cabcera tabla-->
+                                        <thead class="table__thead table__thead__headers table__thead__headers--color">
+                                            <tr class="table-dark">
+                                                <th>Tipo Hamburguesa</th>
+                                                <th>Imagen</th>
+                                                <th>Descripcion</th>
+                                                <th>Precio</th>
+                                            </tr>
+                                         </thead>
+
+                                            <!--Cuerpo de tabla-->
+                                        <tbody class="table__tbody">
+                                            <tr class="table__tr">
+                                                <td class="table__tbody__row">Big Messi</td>
+                                                <td class="table__tbody__row"><img src="../images/menu/hamburguesa2.png" alt="Big Messi" height="90px" width="90px" title="Big Messi"></td>
+                                                <td class="table__tbody__row tDetalle">
+                                                    <ul class="ulType">
+                                                        <li>Caracteristicas:                                                                
+                                                            <ol class="olType">
+                                                                <li>400g de carne</li>
+                                                                <li>Cebolla Caramelizada</li>
+                                                                <li>Huevo Frito</li>
+                                                                <li>Fritas</li>
+                                                                <li>Salsa Mac</li>
+                                                                <li>Bacon doble</li>
+                                                            </ol>
+                                                        </li>
+                                                        <li>Para más consultas, fijarse en promociones</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="table__tbody__row"><span>$500.00</span></td>
+                                            </tr>
+                                            <tr class="table__tr">
+                                                <td class="table__tbody__row">Big Kun</td>
+                                                <td class="table__tbody__row"><img src="../images/menu/hamburguesa3.png" alt="Big Kun" height="80px" width="80px"  title="Big Kun"></td>
+                                                <td class="table__tbody__row tDetalle">                                                        
+                                                    <ul class="ulType">
+                                                        <li>Caracteristicas:
+                                                            <ol class="olType">
+                                                                <li>300g de carne</li>
+                                                                <li>Lechuga</li>
+                                                                <li>Tomate</li>
+                                                                <li>Huevo Frito</li>
+                                                                <li>Fritas</li>
+                                                                <li>Salsa Mac</li>
+                                                            </ol>
+                                                        </li>
+                                                        <li>Para más consultas, fijarse en promociones</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="table__tbody__row"><span>$450.00</span></td>
+                                            </tr>
+                                            <tr class="table__tr">
+                                                <td class="table__tbody__row">Big Cheese</td>
+                                                <td class="table__tbody__row"><img src="../images/menu/hamburguesa4.png" height="90px" width="90px" alt="Big Cheese" title="Big Cheese"></td>
+                                                <td class="table__tbody__row tDetalle">
+                                                    <ul class="ulType">
+                                                        <li>Caracteristicas:
+                                                            <ol class="olType">
+                                                                <li>200g de carne</li>
+                                                                <li>Lechuga</li>
+                                                                <li>Tomate</li>
+                                                                <li>Fritas</li>
+                                                                <li>Salsa Mac</li>
+                                                            </ol>
+                                                        </li>
+                                                        <li>Para más consultas, fijarse en promociones</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="table__tbody__row"><span>$400.00</span></td>
+                                            </tr>
+                                            <tr class="table__tr">
+                                                <td class="table__tbody__row">Big Vegan</td>
+                                                <td class="table__tbody__row"><img src="../images/menu/hamburguesa1.png" height="90px" width="90px" alt="Big Vegan" title="Big Vegan"></td>
+                                                <td class="table__tbody__row tDetalle">
+                                                    <ul class="ulType">
+                                                        <li>Caracteristicas:
+                                                            <ol class="olType">
+                                                                <li>Burger Vegan</li>
+                                                                <li>Lechuga</li>
+                                                                <li>Tomate</li>
+                                                                <li>Fritas</li>
+                                                                <li>Salsa Mac</li>
+                                                            </ol>
+                                                        </li>
+                                                        <li>Para más consultas, fijarse en promociones</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="table__tbody__row"><span>$400.00</span></td>
+                                            </tr>
+                                        </tbody>
+                                            <!--Pie de tabla-->
+                                        <tfoot class="tfoot">
+                                            <tr class="tfoot__tr tfoot__tr--color">
+                                                <td colspan="4" class="tfoot__tr__td"><span>Próximamente, nuevos productos</span></td>
+                                            </tr>
+                                        </tfoot>
+                            </table>
+                        </div>
+                    </article>               
+                <!--Fin del articulo de la tabla-->
+            </section>
+                <!--Fin de seccion de la tabla-->
+        </div>
+    </div>
+
+    <!--Inicio del bloque que tiene los medios de pago -->
+
+    <div class="divMenuPago">
+        
+        <!--Sección de Forma de pago -->
+        <section id="seccionPago" class="formaPago container">
+            <h3 id="h4Index" class="encabezado_h4Index">Formas de Pago</h3>
+            <p class="text-center pPasion">Aquí podrás encontrar todas las formas de pago</p>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 formatTest text-center">
+                    <div class="medio">
+                        <img src="../images/menu/meli.png" loading="lazy" class="img-fluid mx-auto d-block" alt="Opinion de cliente uno">
+                        <blockquote>Podes hacer el pago en 3,6 y 12 cuotas por M.Pago</blockquote>
+                        <h5>Mercado Pago</h5>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 formatTest text-center">
+                    <div class="medio">
+                        <img src="../images/menu/visa.png" loading="lazy" class="img-fluid mx-auto d-block" alt="Opinion de cliente dos">
+                        <blockquote>Aceptamos cuotas de 3,6 y 12 sin interes con Tarjeta Visa</blockquote>
+                        <h5>Tarjeta Visa</h5>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-sm-6 col-md-4 col-lg-3 formatTest text-center">
+                    <div class="medio">
+                        <img src="../images/menu/master.png" loading="lazy" class="img-fluid mx-auto d-block" alt="Opinion de cliente tres">
+                        <blockquote>Aceptamos cuotas de 3 y 12 sin interes con Tarjeta Master</blockquote>
+                        <h5>Master Card</h5>
+                    </div>
+                </div> 
+
+                <div class="col-sm-6 col-md-4 col-lg-3 formatTest text-center">
+                    <div class="medio">
+                        <img src="../images/menu/transfer.png" loading="lazy" class="img-fluid mx-auto d-block" alt="Opinion de cliente tres">
+                        <blockquote>Podes hacer un transferencia bancaria y enviarnos el ticket</blockquote>
+                        <h5>Transferencia</h5>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <!--Fin seccion testimonios-->
+        
+
+    <div>
+        <!--Sección a la cocina con video-->
+        <section id="sectionCocina">
+
+            <!--Seccion donde irá un video de la cocina-->
+            <article class="articleCocina">
+                <div align="center">
+
+                    <h4 id="h3" class="encabezado_h3">Conocé Nuestra Cocina</h4>
+                    
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Jz0xATKgtLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+
+        </section>
+    </div>
+        <!--Fin de la sección de acerca de nuestra cocina-->
+
+
+                <!--Links que me llevarán a las redes sociales-->
+                <aside class="aside__formato">
+                    <div class="social__formato social__formato--posicion">
+                        <a href="#"><img src="../images/fb.ico" alt="facebook" title="facebook"></a>
+                    
+                        <a href="#"><img src="../images/tw.ico" alt="Twitter" title="Twitter"></a>
+
+                        <a href="#"><img src="../images/instagram.ico" alt="instagram" title="instagram"></a>
+                    </div>
+                    
+                </aside>
+                <!--Fin de aside-->
+
+                <!--Pie de pagina-->
+                <footer class="footer__format footer__format--flex" >
+                
+                    <div class="container g-0">
+
+                        <div class="row">
+                        
+                            <div class="footer__container">
+                                <section class="ftMain">
+                                    
+                                    <div class="ftMainAcerca col-sm-12 col-md-6 col-lg-3 order-last order-sm-first ">
+                                        <h5 class="encabezado_h5">Acerca</h5>
+                                        <ul>
+                                            <li><a href="../index.html#section">Home</a></li>
+                                            <li><a href="./promos.html">Promociones</a></li>
+                                            <li><a href="./novedades.html">Novedades</a></li>
+                                            <li><a href="./contacto.html">Contacto</a></li>
+                                            <li><a href="./carrito.html">Carrito</a></li>           
+                                        </ul>
+                                    </div>
+
+                                    <div class="ftMainAcerca col-sm-12 col-md-6 col-lg-3 order-first order-sm-last my-3">
+                                        <h5 class="encabezado_h5">Ubicación</h5>
+                                        <ul>
+                                            <li id="iFrame"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.1360305105786!2d-58.3425069852691!3d-34.70174877019767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbdc5325591f%3A0xdaa4ed8b1d56f058!2sBlack%20%26%20Burger!5e0!3m2!1ses-419!2sar!4v1626064492854!5m2!1ses-419!2sar" width="140" height="100" style="border:0; align-self: center;" allowfullscreen="" loading="lazy"></iframe></li>
+
+                                            <li><address class="notHover">Av.Mitre 470 - Avellaneda - 4207.3333</address></li>
+                                        </ul>
+                                    </div>
+                                </section>
+
+                                <!--Seccion de botones de volver al home y al inicio de pagina -->
+                                <section class="ftHome col-sm-12 col-12">
+                                    <!--Botón para volver al index -->
+                                    <div>
+                                        <a href="../index.html" title="Home" alt="Home"> <button id="btnHomePage" class="btnFooter"></button></a>                        
+                                    </div>
+
+                                    <!--Botón para volver al inicio de pagina -->
+                                    <div>
+                                        <a href="#sectionMenu" title="Inicio Menú" alt="Inicio Menú"> <button id="btnMainPage" class="btnFooter"></button></a>
+                                    </div>
+                                </section>
+
+                                <section class="ftLegal col-sm-12 col-12"">
+                                    <ul class="ftLegalList">
+                                        <li><small>&copy; Copy Right 2021<span>&nbsp;Best burguer</span></small></li>
+                                    </ul>
+                                </section>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </footer> 
+                
+                <!--Fin del footer-->
+
+
+        <script src="../js/bootstrap.min.js"></script>
+
+</body>
+</html>

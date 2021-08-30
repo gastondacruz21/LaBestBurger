@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Se agrega logo y nombre de la pagina-->
+    <link rel="shotcut icon" href="../images/log.jpg">
+    
+    
+    <!-- Titulo -->
+    <title>Best Burguer - Contacto</title>
+
+    <!-- Metadatado -->
+    <meta name="description" content="Bienvenido al sitio donde podrás encontrar las mejores hamburguesas de Zona sur - Best Burger">
+    <meta name="keywords" content="BestBurger,Hamburguesas,ZonaSur,BuenosAires,WelcometoBestBurger,BienvenidotoBestBurger">
+
+    <!-- Se agrega referencia al css -->
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body> 
+    
+        <!-- Encabezado Pagina -> Se puede redirigir al home desde el logo principal-->
+        <header class="header__formato">
+            <div>
+                <a href="../index.html" title="Ir al Home" alt="Ir al home">
+                <img src="../images/logo.png" class="header__formato__imgHead header__formato__imgHead--transition" title="logo de Best" alt="logo de Best Burger"></a>
+            </div>
+
+        <!-- Barra navegación -->
+
+            <nav id="navegador">
+                <ul class="menu">
+                    <li class="menuItemChildren"><a href="../pages/menu.html">Menu</a>
+                        <ul class="subMenu">
+                            <li><a href="../pages/menu.html#sectionMenu">Listado Menu</a></li>
+                            <li><a href="../pages/menu.html#seccionPago">Medio pago</a></li>
+                            <li><a href="../pages/menu.html#sectionCocina">Nuestra Cocina</a></li>
+                        </ul>
+                    </li>
+                    <li class="menuItemChildren"><a href="../pages/promos.html">Promos</a>
+                        <ul class="subMenu">
+                            <li><a href="../pages/promos.html#sectionTest">Recomendaciones</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../pages/novedades.html">Novedades</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="../pages/carrito.html">Carrito</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+    <!--Seccion Formulario para contacto-->
+    <div class="container">
+
+            <section id="sectionContacto" class="row mt-5">
+            
+                <div class="h1Page">
+                    <h1 id="h1" class="encabezado_h1">
+                        <span class="efectito">Best Burguer - Contacto</span></h1>
+                </div>
+
+                <article>
+
+                    <div class="container">
+                        
+                            <fieldset class="contacto__frame contacto__frame--color">
+                                <legend class="contacto__frame__legenda text-center">Ingrese los datos de contacto</legend>
+                                
+                                <form id="frmContacto" class="was-validated" name="form1" method="POST">
+
+                                <!--Carga datos del usuario: Nombre-->
+                                    <div class="col-md-6 formulario__formato form-group mb-4 mt-5">
+                                        <label class="contacto__formato_texto contacto__formato_texto--color" for="txtNombre">Nombre</label>&nbsp;
+                                        <input class="form-control" type="text" name="txtNombre" id="txtNombre" placeholder="Ingrese su nombre" maxlength="20" autocomplete="off" autofocus spellcheck="true" required> 
+                                        
+                                        <div class="valid-feedback">Valido</div>
+                                        <div class="invalid-feedback">Ingrese un valor</div>
+                                    </div>
+
+
+                                    <!--Carga datos del usuario: Email-->
+                                    <div class="form-group formulario__formato col-md-6 mb-4" >
+                                        <div class=" input-group mb-3">
+                                            <div class="input-group-prepend">
+                                            <span class="input-group-text">@</span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Ingrese el mail" id="mail" name="mail" maxlength="20" autocomplete="off" required>
+                            
+                                            <div class="valid-feedback">Valido</div>
+                                            <div class="invalid-feedback">Ingrese un valor</div>
+                                        </div>
+                                    </div>
+
+                                    <!--Carga datos del usuario: Telefono-->
+                                    <div class="form-group formulario__formato col-md-6 mb-1">
+                                        <label class="contacto__formato_texto contacto__formato_texto--color" for="txtNumber">Telefono</label>&nbsp;
+                                        <input class="form-control" type="tel" name="txtNumber" id="txtNumber" placeholder="Ingrese su telefono" max="15" min="8" size="20" autocomplete="off" required> 
+                                        
+                                        <div class="valid-feedback">Valido</div>
+                                        <div class="invalid-feedback">Ingrese un valor</div>
+                                    </div>
+                                    <br>
+
+                                    <!--Carga datos del usuario: Sexo-->
+                                    <div class="formulario__formato form-check">
+                                        <label class="contacto__formato_texto contacto__formato_texto--color form-check-label" for="rSexo">Elija el Sexo</label><br>
+                                        <input  class="form-check-input" type="radio" name="rSexo" value="M"> "M" <br>
+                                        <input  class="form-check-input" type="radio" name="rSexo" value="F"> "F" <br>
+                                    </div>
+                                    <br>
+
+                                    <!--Carga datos del usuario: Gustos/Preferencias-->
+                                    <div class="formulario__formato form-check">
+                                        <label class="contacto__formato_texto contacto__formato_texto--color form-check-label" for="chkGusto">Elija Preferencias</label><br>
+                                        <input class="form-check-input" type="checkbox" name="hSimples" value="HS" checked> "H.Simples" <br>
+                                        <input class="form-check-input" type="checkbox" name="hdobles" value="HD"> "H.Dobles" <br>
+                                        <input class="form-check-input" type="checkbox" name="hTriples" value="HT"> "H.Triples" <br>
+                                        <input class="form-check-input" type="checkbox" name="hVeganas" value="HV"> "H.Veganas" <br>
+                                        <input class="form-check-input" type="checkbox" name="hOtras" value="HO"> "Otros" <br>
+                                    </div>
+                                    <br>
+
+                                    <!--Carga datos del usuario: Provincia-->
+                                    <div class="formulario__formato form-group">
+                                        <label class="contacto__formato_texto contacto__formato_texto--color" for="chkProvincia">Seleccione su Provincia</label><br>
+                                        <select class="custom-select custom-select-lg mb-3" name="provincia">
+                                            <optgroup label="Buenos Aires">
+                                                <option value="1">CABA</option>
+                                                <option value="2">GBA Sur</option>
+                                                <option value="3">GBA Oeste</option>
+                                                <option value="4">GBA Norte</option>
+                                            </optgroup>
+                                            <optgroup label="Interior">
+                                                <option value="5">Neuquen</option>
+                                                <option value="6">Mendoza</option>
+                                                <option value="7">San Juan</option>
+                                                <option value="8">Cordoba</option>
+                                                <option value="9">Santa Fe</option>
+                                            </optgroup>
+                                        </select>
+                                        
+                                    </div>
+                                    <br>
+
+                                    <!--Carga datos del usuario: Comentarios-->
+
+                                    <div id="textArea" class="formulario__formato md-form mb-4 pink-textarea active-pink-textarea col-md-6">
+                                        <i class="fas fa-angle-double-right prefix"></i>
+                                        <textarea id="formText" class="md-textarea form-control" rows="3" required></textarea>
+                                        <label for="contacto__formato_texto contacto__formato_texto--color">Ingrese sus comentarios</label>
+                                    </div>
+
+
+                                    <!--Carga datos del usuario: Controles-->
+                                    <div class="btn-group d-grid gap-3 d-md-flex justify-content-md-center">
+                                        <button class="formulario__control formulario__control--color btn btn-lg" type="submit">Enviar</button>
+                                        <button class="formulario__control formulario__control--color btn btn-lg" type="reset">Borrar</button>
+                                    </div>
+                                
+                                </form>
+                            </fieldset>
+
+                    </div>
+                </article>
+            </section>
+    </div>
+    <!--Fin de la sección del form -->
+
+    <!--Links que me llevarán a las redes sociales-->
+        
+    <aside class="aside__formato">
+        <div class="social__formato social__formato--posicion">
+            <a href="#"><img src="../images/fb.ico" alt="facebook" title="facebook"></a>
+        
+            <a href="#"><img src="../images/tw.ico" alt="Twitter" title="Twitter"></a>
+
+            <a href="#"><img src="../images/instagram.ico" alt="instagram" title="instagram"></a>
+        </div>
+        
+    </aside>
+    <!--Fin de aside-->
+
+    <!--Pie de pagina-->
+    <footer class="footer__format footer__format--flex" >
+    
+        <div class="container g-0">
+
+            <div class="row">
+            
+                <div class="footer__container">
+                    <section class="ftMain">
+                        
+                        <div class="ftMainAcerca col-sm-12 col-md-6 col-lg-3 order-last order-sm-first ">
+                            <h5 class="encabezado_h5">Acerca</h5>
+                            <ul>
+                                <li><a href="../index.html#section">Home</a></li>
+                                <li><a href="./menu.html">Menu</a></li>
+                                <li><a href="./promos.html">Promociones</a></li>
+                                <li><a href="./novedades.html">Novedades</a></li>
+                                <li><a href="./carrito.html">Carrito</a></li>           
+                            </ul>
+                        </div>
+
+                        <div class="ftMainAcerca col-sm-12 col-md-6 col-lg-3 order-first order-sm-last my-3">
+                            <h5 class="encabezado_h5">Ubicación</h5>
+                            <ul>
+                                <li id="iFrame"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.1360305105786!2d-58.3425069852691!3d-34.70174877019767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbdc5325591f%3A0xdaa4ed8b1d56f058!2sBlack%20%26%20Burger!5e0!3m2!1ses-419!2sar!4v1626064492854!5m2!1ses-419!2sar" width="140" height="100" style="border:0; align-self: center;" allowfullscreen="" loading="lazy"></iframe></li>
+
+                                <li><address class="notHover">Av.Mitre 470 - Avellaneda - 4207.3333</address></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!--Seccion de botones de volver al home y al inicio de pagina -->
+                    <section class="ftHome col-sm-12 col-12">
+                        <!--Botón para volver al index -->
+                        <div>
+                            <a href="../index.html" title="Home" alt="Home"> <button id="btnHomePage" class="btnFooter"></button></a>                        
+                        </div>
+
+                        <!--Botón para volver al inicio de pagina -->
+                        <div>
+                            <a href="#sectionContacto" title="Inicio Contacto" alt="Inicio Contacto"> <button id="btnMainPage" class="btnFooter"></button></a>
+                        </div>                        
+                    </section>
+
+                    <section class="ftLegal col-sm-12 col-12"">
+                        <ul class="ftLegalList">
+                            <li><small>&copy; Copy Right 2021<span>&nbsp;Best burguer</span></small></li>
+                        </ul>
+                    </section>
+
+
+                </div>
+            </div>
+        </div>
+    </footer> 
+    
+    <!--Fin del footer-->
+
+
+    <script src="../js/bootstrap.min.js"></script>
+    
+</body>
+</html>

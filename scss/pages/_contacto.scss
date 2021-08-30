@@ -1,0 +1,70 @@
+$contacto_color: rgb(84, 84, 84);
+$contacto_fondo_color: rgba(227, 155, 190, 1);
+$contacto_italica: italic;
+$contacto_grosor: bolder;
+$contacto_font_foot: courgette;
+$contacto_margin_frame: 5%;
+
+.contacto__formato_texto{    
+    font-style: $contacto_italica;
+    font-weight: $contacto_grosor;
+    font-size: 0.9rem;
+}
+
+.contacto__formato_texto--color{
+    color: $contacto_color;
+}
+
+/* 7.1.1 - Estilo al Frame que contiene los controles */
+
+
+.contacto__frame{
+    margin: $contacto_margin_frame;
+    padding: $contacto_margin_frame - 3%;
+} 
+
+.contacto__frame--color{
+    background-color: $contacto_fondo_color; 
+}
+
+.contacto__frame__legenda{
+    color: $contacto_color;
+    font-style: $contacto_italica;
+    font-family: handlee;
+    font-weight: $contacto_grosor;
+    font-size: x-large;
+    text-shadow: 2px 2px 3px grey;
+}
+
+
+/* 7.1.2 - Formato a los bloques de los controles*/
+
+.formulario__formato
+{
+    margin-left: 3%;
+}
+
+/* 7.1.3 - Formato a los botones + hover */
+
+.formulario__control{
+    font-size: 1rem;
+    font-family: meriendaBold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.formulario__control--color{
+    background-color:teal;
+    color: white;
+
+}
+
+.formulario__control:hover{
+    background-color:ivory;
+    color:black;
+    box-shadow: 5px 5px 20px rgb(58, 63, 59);
+}
+
+.contacto__foot_fontContacto_{
+    font-family: $contacto_font_foot;
+}
