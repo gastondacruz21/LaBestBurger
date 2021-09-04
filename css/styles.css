@@ -862,6 +862,7 @@ li a{
         gap: 10px;
         justify-content: center;
         align-items: center;
+        margin: 0 20px;
     }
 
     .rowTitulo { 
@@ -921,6 +922,7 @@ li a{
         gap: 10px;
         justify-content: center;
         align-items: center;
+        margin: 0 50px;
     }
 
     .rowTitulo { 

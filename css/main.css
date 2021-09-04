@@ -20,7 +20,8 @@
   flex-direction: column; }
 
 .footer__container {
-  flex: 1; }
+  flex: 1;
+  padding: 0 !important; }
 
 /* Footer: margin y padding listado*/
 .footer__listado {
