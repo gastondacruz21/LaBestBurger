@@ -46,3 +46,16 @@ $social_position_right: 8%;
           margin-top: -360px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .aside__formato .social__formato{
+          display: flex;
+          flex-direction: row;
+          justify-content:flex-end;
+          width: $social_width;
+          position:fixed;
+          right: $social_position_right + 5%;
+          top:130%;
+          margin-top: -360px;
+    }
+}
