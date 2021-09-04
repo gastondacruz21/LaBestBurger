@@ -859,7 +859,7 @@ li a{
                               "rowPasion1"
                               "rowPasion2"
                               "rowFoot";
-        gap: 20px;
+        gap: 10px;
         justify-content: center;
         align-items: center;
     }
@@ -878,7 +878,6 @@ li a{
 
     .rowPasion2 { 
         grid-area: rowPasion2;
-        margin: 0 30px;    
         display: flex;
     }
 
@@ -887,14 +886,31 @@ li a{
         margin-bottom: 40px;
     }
 
+    .rowPasion1 { 
+        border: 3px solid #a38888;
+        border-radius: 15%;
+        background-color: #782116;
+        box-shadow: 6px 6px 5px #af9c61;
+        
+    }
+    
+    .rowPasion2 { 
+        padding-left: 40px;
+    }
+    
+    .pPasion{
+        font-size: 0.7rem;
+        font-weight: bold;
+        color: #e3e3e3;
+    }
+
 }
 
 
 @media screen and (max-width: 600px) {
 
     .fondoPasion{
-        margin: 0;
-        padding: 0;
+
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
@@ -902,7 +918,7 @@ li a{
                               "rowPasion1"
                               "rowPasion2"
                               "rowFoot";
-        gap: 20px;
+        gap: 10px;
         justify-content: center;
         align-items: center;
     }
@@ -913,13 +929,14 @@ li a{
 
     .rowPasion1 { 
         grid-area: rowPasion1; 
+        margin: 3px;
         display: flex;
         justify-content: center;
         align-items: center;        
     }
 
     .rowPasion2 { 
-        grid-area: rowPasion2;   
+        grid-area: rowPasion2;    
         display: flex;
     }
 
@@ -928,6 +945,23 @@ li a{
         margin-bottom: 40px;
     }
 
+    .rowPasion1 { 
+        border: 3px solid #a38888;
+        border-radius: 15%;
+        background-color: #782116;
+        box-shadow: 6px 6px 5px #af9c61;
+        
+    }
+    
+    .rowPasion2 { 
+        padding-left: 40px;
+    }
+
+    .pPasion{
+        font-size: 0.7rem;
+        font-weight: bold;
+        color: #e3e3e3;
+    }
 }
 
 
