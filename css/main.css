@@ -141,7 +141,7 @@ address {
   /* Formato al div contenedor de los iconos de las redes */ }
   .aside__formato .social__formato {
     width: 60px;
-    right: 0;
+    right: 8%;
     height: 205px;
     top: 30%;
     margin-top: -100px; }
@@ -158,7 +158,7 @@ address {
     justify-content: flex-end;
     width: 60px;
     position: fixed;
-    right: 0;
+    right: 8%;
     top: 130%;
     margin-top: -360px; } }
 
