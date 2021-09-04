@@ -13,6 +13,7 @@ $contacto_margin_frame: 5%;
 
 .contacto__formato_texto--color{
     color: $contacto_color;
+    
 }
 
 /* 7.1.1 - Estilo al Frame que contiene los controles */
@@ -25,6 +26,7 @@ $contacto_margin_frame: 5%;
 
 .contacto__frame--color{
     background-color: $contacto_fondo_color; 
+    border-radius: 50px ;
 }
 
 .contacto__frame__legenda{

@@ -131,6 +131,7 @@ address {
 
 .contacto__frame--color {
   background-color: lightgray;
+  border-radius: 50px;
 }
 
 .contacto__frame__legenda {

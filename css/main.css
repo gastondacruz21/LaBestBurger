@@ -95,7 +95,8 @@ address {
   padding: 2%; }
 
 .contacto__frame--color {
-  background-color: lightgray; }
+  background-color: lightgray;
+  border-radius: 50px; }
 
 .contacto__frame__legenda {
   color: #545454;
