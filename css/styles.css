@@ -870,12 +870,16 @@ li a{
 
     .rowPasion1 { 
         grid-area: rowPasion1; 
-        margin: 3px;        
+        margin: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
     }
 
     .rowPasion2 { 
         grid-area: rowPasion2;
         margin: 0 30px;    
+        display: flex;
     }
 
     .rowFoot { 
