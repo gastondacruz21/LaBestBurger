@@ -1,0 +1,43 @@
+/*===================================================================================
+================== QUERY MEDIA: MENU - Nuestra cocina ==============================
+=====================================================================================*/
+
+@media screen and (max-width: 768px) {
+    .iFrameFormat
+    {
+        width:560px; 
+        height:315px;
+    }
+
+    .articleProd
+    {
+        font-size: 1.1rem !important;
+    }
+  
+}
+
+@media screen and (min-width: 768px) {
+    .iFrameFormat
+    {
+        width:560px; 
+        height:315px;
+    }
+    .pFormat
+    {
+        font-size: 1.1rem !important;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .iFrameFormat
+    {
+        width:200px; 
+        height:200px;
+    }
+    .pFormat
+    {
+        font-size: 0.8rem !important;
+    }
+    
+}
+

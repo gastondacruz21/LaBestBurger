@@ -49,7 +49,7 @@ $decoracion: none;
          padding-bottom: 10px;
     }
     @else if ($hx == "#h5"){
-             color: white;
+             color: #1a837c;
              font-size: 1.3rem;
              padding-bottom: 0.5rem;
              text-align: center;
@@ -89,3 +89,32 @@ $decoracion: none;
      @include formatoEncabezado($decoracion, "#h5");
  }
 
+
+ /*===================================================================================
+================== QUERY MEDIA: SECCION REGALOS =================================
+=====================================================================================*/
+
+
+@media screen and (max-width: 576px) {
+
+    .encabezado_h2
+    {
+        font-size: 1.2rem !important;
+    }
+
+    .encabezado_h3
+    {
+        font-size: 1.12rem !important;
+    }
+
+    .encabezado_h4Index
+    {
+        font-size: 1.1rem !important;
+    }
+
+    .encabezado_h5  
+    {
+        font-size: 1rem !important;
+    }
+
+}

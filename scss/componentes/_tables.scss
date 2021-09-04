@@ -2,20 +2,19 @@
 /* Edicion de TABLAS */
 
 $tabla_margen: 0 auto;
-$tabla_borde: 2px solid black;
 $tabla_filaHijo_color: rgb(175, 150, 150);
-$tabla_padding: 5px;
+$tabla_padding: 4px;
 $table_color: white;
 $tabla_vinieta_padding: 0;
+$tabla_borde: 1px solid black; 
 
 .table__formato{
     margin: $tabla_margen;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     
     &--borders
     {
         border-color: black;
-        border: $tabla_borde; 
     
     }
 }
@@ -41,13 +40,12 @@ $tabla_vinieta_padding: 0;
         align:center;
     }
     .table__thead__headers{
-        border: $tabla_borde;
         padding: $tabla_padding * 2;
 
         &--color{
             background-color:rgb(151, 170, 170);
             color: $table_color;
-        }
+        }   
     }
 }
 
@@ -58,7 +56,7 @@ $tabla_vinieta_padding: 0;
     }
     .table__tbody__row{
         border: $tabla_borde;
-        padding: $tabla_padding * 6;
+        padding: $tabla_padding * 1.5;
     }
 }
 
@@ -70,7 +68,7 @@ $tabla_vinieta_padding: 0;
     
         .ulType{
             list-style-type:square;
-            padding-left: $tabla_vinieta_padding + 5%;
+            padding-left: $tabla_vinieta_padding + 7%;
         }
 } 
 
@@ -78,7 +76,7 @@ $tabla_vinieta_padding: 0;
 .olType{
     list-style-type: lower-alpha;
     list-style-position: inside;
-    padding-left: $tabla_vinieta_padding + 30px;
+    padding-left: $tabla_vinieta_padding + 40px;
 }
 
 
@@ -112,7 +110,7 @@ $tabla_vinieta_padding: 0;
 
             .tfoot__tr__td{
                 padding: 5px;
-                font-size: 1.5rem;
+                font-size: 1.1rem;
             } 
     }
 }
@@ -126,3 +124,44 @@ span{
 }
 
 
+/*===================================================================================
+==================QUERY MEDIA - FOOTER ==============================================
+=====================================================================================*/
+
+@media (max-width:500px){
+
+    .table thead
+     {
+         display: none;
+     }
+
+     .table .tfoot
+     {
+         display: none;
+     }
+
+     .table caption
+     {
+        display: block;
+     }
+
+    .table, .table tbody, .table tr, .table td 
+     {
+         display: block;
+         width: 100%;
+     }
+
+     .table tr {
+         margin-bottom: 15px;
+     }
+
+     
+     .ulType
+     {
+        display: block;
+        margin-left: 60px;
+     }
+    
+ 
+
+}

@@ -56,7 +56,7 @@
 
     <!--Inico de contenido del menu.html -->
 
-    <div class="container d-flex">
+    <div class="container d-flex justify-content-center align-items-center">
 
         <div class="row mt-5">
         
@@ -70,7 +70,7 @@
 
                 <!--Intro del bloque-->
                 <article class="articleProd fw-bolder my-4 text-center col-12">
-                <p>
+                <p class="pFormat">
                     No te pierdas nuestro menú, donde están todas las opciones que puedes escoger y disfrutar con tus amigos y familia!
                     </p>
                 </article>    
@@ -81,7 +81,7 @@
 
                     <div class="table-responsive col-12 d-flex justify-content-center align-items-center">
                                     
-                            <table class="table table-striped table-bordered table-hover table__formato table__formato--borders"> 
+                            <table class="table table-responsive table-striped table-bordered table-hover table__formato table__formato--borders"> 
                                 
                                     <!-- encabezado de la tabla -->
                                     <caption class="table__tableDescripcion">Listado actualizado de Productos</caption>
@@ -194,7 +194,7 @@
 
     <!--Inicio del bloque que tiene los medios de pago -->
 
-    <div class="divMenuPago">
+    <div class="divMenuPago d-flex justify-content-center align-items-center">
         
         <!--Sección de Forma de pago -->
         <section id="seccionPago" class="formaPago container">
@@ -204,7 +204,7 @@
                 <div class="col-sm-6 col-md-4 col-lg-3 formatTest text-center">
                     <div class="medio">
                         <img src="../images/menu/meli.png" loading="lazy" class="img-fluid mx-auto d-block" alt="Opinion de cliente uno">
-                        <blockquote>Podes hacer el pago en 3,6 y 12 cuotas por M.Pago</blockquote>
+                        <blockquote>Podes hacer el pago en 3,6 y 12 cuotas por Mercado Pago</blockquote>
                         <h5>Mercado Pago</h5>
                     </div>
                 </div>
@@ -252,7 +252,7 @@
                     <h4 id="h3" class="encabezado_h3">Conocé Nuestra Cocina</h4>
                     
 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Jz0xATKgtLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="iFrameFormat" src="https://www.youtube.com/embed/Jz0xATKgtLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </article>
 
@@ -282,23 +282,27 @@
                         <div class="row">
                         
                             <div class="footer__container">
+
                                 <section class="ftMain">
                                     
                                     <div class="ftMainAcerca col-sm-12 col-md-6 col-lg-3 order-last order-sm-first ">
-                                        <h5 class="encabezado_h5">Acerca</h5>
+                                        <h5 class="encabezado_h5">Navegación</h5>
                                         <ul>
-                                            <li><a href="../index.html#section">Home</a></li>
-                                            <li><a href="./promos.html">Promociones</a></li>
-                                            <li><a href="./novedades.html">Novedades</a></li>
-                                            <li><a href="./contacto.html">Contacto</a></li>
-                                            <li><a href="./carrito.html">Carrito</a></li>           
+                                            <li><a class="footer__listado" href="../index.html#section">Home</a></li>
+                                            <li><a class="footer__listado" href="./promos.html">Promociones</a></li>
+                                            <li><a class="footer__listado" href="./novedades.html">Novedades</a></li>
+                                            <li><a class="footer__listado" href="./contacto.html">Contacto</a></li>
+                                            <li><a class="footer__listado" href="./carrito.html">Carrito</a></li>           
+                                            <li class="footer__listado--centrado">
+                                                <img src="../images/logo.png" class="header__formato__imgHead header__formato__imgHead--transition header__formato__imgHead--formato" title="logo de Best" alt="logo de Best Burger"></a>
+                                            </li>
                                         </ul>
                                     </div>
 
-                                    <div class="ftMainAcerca col-sm-12 col-md-6 col-lg-3 order-first order-sm-last my-3">
+                                    <div class="ftMainAcerca col-sm-12 col-md-6 col-lg-3 order-first order-sm-last">
                                         <h5 class="encabezado_h5">Ubicación</h5>
                                         <ul>
-                                            <li id="iFrame"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.1360305105786!2d-58.3425069852691!3d-34.70174877019767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbdc5325591f%3A0xdaa4ed8b1d56f058!2sBlack%20%26%20Burger!5e0!3m2!1ses-419!2sar!4v1626064492854!5m2!1ses-419!2sar" width="140" height="100" style="border:0; align-self: center;" allowfullscreen="" loading="lazy"></iframe></li>
+                                            <li id="iFrame"><iframe class="iFrameTamano" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.1360305105786!2d-58.3425069852691!3d-34.70174877019767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbdc5325591f%3A0xdaa4ed8b1d56f058!2sBlack%20%26%20Burger!5e0!3m2!1ses-419!2sar!4v1626064492854!5m2!1ses-419!2sar" width="300" height="300" style="border:0; align-self: center;" allowfullscreen="" loading="lazy"></iframe></li>
 
                                             <li><address class="notHover">Av.Mitre 470 - Avellaneda - 4207.3333</address></li>
                                         </ul>

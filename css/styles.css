@@ -800,7 +800,7 @@ li a{
     border: 3px solid #a38888;
     border-radius: 23%;
     margin-left: 30px;
-    background-color: rgba(47, 99, 96, 0.6);
+    background-color: #782116;
     padding: 30px;
     box-shadow: 6px 6px 5px #af9c61;
     
@@ -952,6 +952,7 @@ aside{
    }
 
 
+/* Formato de margin y padding del footer  */
 
   .ftMain {
     padding: 1.25rem 1.875rem;
@@ -969,13 +970,12 @@ aside{
 
   .ftMainAcerca ul #iFrame{
     display: inline-block;
-    padding-left: 30%;
+    margin-bottom: 20px;
   }
    
 
 /* 4.6.3 Footer: formato al bloque copyright */
 
-  
   .ftLegal {
     padding: 0.25rem 1.9rem;
   }
@@ -1030,15 +1030,47 @@ aside{
 ==================QUERY MEDIA - FOOTER ==============================================
 =====================================================================================*/
 
-@media only screen and (min-width: 600px) {
+@media screen and (max-width: 768px) {
+    .iFrameTamano
+    {
+        width:300px;
+        height:300px;
+        padding-left: 30%;
+        margin-left: 10%;
+    }
+
+    .header__formato__imgHead--formato
+    {
+        margin-bottom: 15px;
+    }
+  
+}
+
+@media screen and (min-width: 768px) {
     .ftMain {
       display: flex;
       justify-content: space-evenly;
       flex-flow: row wrap;
+      
     }
   }
 
-  @media only screen and (max-width: 1000px) {
+  @media screen and (max-width: 576px) {
+    .iFrameTamano
+    {
+        width:200px;
+        height:200px;
+        padding-left: 30%;
+        margin-left: 10%;
+    }
+
+    .header__formato__imgHead--formato
+    {
+        margin-bottom: 15px;
+    }
+  }
+
+  @media screen and (max-width: 1240px) {
     .ftMain {
       display: flex;
       justify-content: space-evenly;
@@ -1081,7 +1113,7 @@ aside{
     font-weight: bold;
     text-indent: 30px;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 /* 5.1.7 - Se le da efecto de blink al encabezado */
@@ -1110,7 +1142,6 @@ span.efectito{
 .formaPago{
     margin: 0;
     padding: 0;
-    max-width: 1250px;
 }
 
 
@@ -1166,55 +1197,7 @@ blockquote::before{
 /* 6.1. formato de margenes y texto a la pagina  */
 
 
-/* 6.1.1. Se arma el grid para que contenga las imagenes de fondo */
 
-.mainGallery{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-auto-rows: 200px;
-    padding:20px;
-    gap:10px;
-}
-
-.novGallery:nth-child(4){
-    grid-column-start: span 2;
-}
-
-.novGallery:nth-child(3){
-    grid-row-start:span 2 ;
-}
-
-.novGallery:nth-child(7){
-    grid-row-start:span 2 ;
-}
-
-
-/*===================================================================================
-================== QUERY MEDIA: NOVEDADES.HTML =================================
-=====================================================================================*/
-
-@media screen and (max-width: 768px){
-    .mainGallery{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-auto-rows: 150px;
-    padding:10px;
-    gap:5px;
-    }
-    
-    .novGallery:nth-child(4){
-        grid-column-start: span 1;
-    }
-    
-    .novGallery:nth-child(3){
-        grid-row-start:span 1 ;
-    }
-    
-    .novGallery:nth-child(7){
-        grid-row-start:span 1 ;
-    }
-
-} 
 
 
 /*===================================================================================
@@ -1258,7 +1241,7 @@ blockquote::before{
     gap: 2%;
     justify-content: space-evenly;
     align-content: center;
-    margin-bottom: 10%;
+    margin-bottom: 4%;
 }
 
 

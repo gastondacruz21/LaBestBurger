@@ -1,26 +1,58 @@
 @charset "UTF-8";
 /* Footer: ajustes al pie pagina */
 .footer__format {
-  background-image: linear-gradient(to top, #240316, #22081c, #200d22, #1c1228, #18162c, #161f37, #122942, #09334b, #00465d, #005a6b, #006f76, #1a837c);
+  background-color: black;
   padding: 5px;
   /* Footer: Se quita hover al parrafo con dirección */
 }
+
 .footer__format a {
   text-decoration: none;
   color: white !important;
 }
+
 .footer__format a:not(.notHover):hover {
-  text-decoration: underline;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.15rem;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  letter-spacing: 2px;
 }
 
 /* Footer: ajustes al display del footer + flex */
 .footer__format--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer__container {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+/* Footer: margin y padding listado*/
+.footer__listado {
+  margin: 5px;
+  padding: 4px;
+}
+
+.footer__listado:hover {
+  text-decoration: none;
+  background: #7d9496;
+  color: #050801;
+  -webkit-box-shadow: 0 0 5px #7d9496, 0 0 20px #7d9496, 0 0 50px #7d9496, 0 0 100px #7d9496;
+          box-shadow: 0 0 5px #7d9496, 0 0 20px #7d9496, 0 0 50px #7d9496, 0 0 100px #7d9496;
+}
+
+.footer__listado--centrado {
+  text-align: center;
 }
 
 /* Footer: formato a la etiqueta address */
@@ -52,7 +84,7 @@ address {
 }
 
 .shopBurger #h1 {
-  margin: 6% 0 0 3%;
+  margin: 2.5% 0 0 3%;
 }
 
 .shopImg__formato {
@@ -98,7 +130,7 @@ address {
 }
 
 .contacto__frame--color {
-  background-color: #e39bbe;
+  background-color: lightgray;
 }
 
 .contacto__frame__legenda {
@@ -131,7 +163,8 @@ address {
 .formulario__control:hover {
   background-color: ivory;
   color: black;
-  box-shadow: 5px 5px 20px #3a3f3b;
+  -webkit-box-shadow: 5px 5px 20px #3a3f3b;
+          box-shadow: 5px 5px 20px #3a3f3b;
 }
 
 .contacto__foot_fontContacto_ {
@@ -143,11 +176,18 @@ address {
   width: 10%;
   max-width: 15%;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   /* Formato al div contenedor de los iconos de las redes */
 }
+
 .aside__formato .social__formato {
   width: 60px;
   right: 0;
@@ -155,6 +195,7 @@ address {
   top: 30%;
   margin-top: -100px;
 }
+
 .aside__formato .social__formato--posicion {
   position: fixed;
 }
@@ -164,9 +205,16 @@ address {
 =====================================================================================*/
 @media screen and (max-width: 768px) {
   .aside__formato .social__formato {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     width: 60px;
     position: fixed;
     right: 0;
@@ -174,6 +222,7 @@ address {
     margin-top: -360px;
   }
 }
+
 /*===================================================================================
 ==================SECCION - HEADER ===========================================
 =====================================================================================*/
@@ -181,9 +230,14 @@ address {
 .header__formato {
   background-color: #545454;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   top: 0;
   line-height: 1.5rem;
 }
@@ -194,12 +248,23 @@ address {
   width: auto;
   margin: 0px 5px;
 }
+
 .header__formato__imgHead--transition {
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
   transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
+
 .header__formato__imgHead:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   opacity: 0.5;
+}
+
+.header__formato__imgHead--formato {
+  margin: auto;
+  margin-top: 10px;
 }
 
 /*===================================================================================
@@ -214,18 +279,20 @@ address {
     padding-left: 40%;
   }
   .header__formato .header__formato__imgHead:hover {
-    transform: scale(1, 1.02);
+    -webkit-transform: scale(1, 1.02);
+            transform: scale(1, 1.02);
     opacity: 0.5;
   }
 }
+
 /* Edicion de TABLAS */
 .table__formato {
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
+
 .table__formato--borders {
   border-color: black;
-  border: 2px solid black;
 }
 
 /* 5.1.2 - Define color a fila por medio */
@@ -243,10 +310,11 @@ address {
 .table__thead {
   text-align: center;
 }
+
 .table__thead .table__thead__headers {
-  border: 2px solid black;
-  padding: 10px;
+  padding: 8px;
 }
+
 .table__thead .table__thead__headers--color {
   background-color: #97aaaa;
   color: white;
@@ -255,23 +323,25 @@ address {
 .table__tbody {
   text-align: center;
 }
+
 .table__tbody .table__tbody__row {
-  border: 2px solid black;
-  padding: 30px;
+  border: 1px solid black;
+  padding: 6px;
 }
 
 .table__tbody .tDetalle {
   text-align: left;
 }
+
 .table__tbody .tDetalle .ulType {
   list-style-type: square;
-  padding-left: 5%;
+  padding-left: 7%;
 }
 
 .olType {
   list-style-type: lower-alpha;
   list-style-position: inside;
-  padding-left: 30px;
+  padding-left: 40px;
 }
 
 /* 5.1.5 - Se le da formato a la cabecera de la tabla */
@@ -287,16 +357,19 @@ address {
 .tfoot {
   text-align: center;
 }
+
 .tfoot .tfoot__tr {
   background-color: grey;
   font-weight: bolder;
 }
+
 .tfoot .tfoot__tr--color {
   color: white;
 }
+
 .tfoot .tfoot__tr .tfoot__tr__td {
   padding: 5px;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 /* Formato al Span */
@@ -306,19 +379,129 @@ span {
 }
 
 /*===================================================================================
+==================QUERY MEDIA - FOOTER ==============================================
+=====================================================================================*/
+@media (max-width: 500px) {
+  .table thead {
+    display: none;
+  }
+  .table .tfoot {
+    display: none;
+  }
+  .table caption {
+    display: block;
+  }
+  .table, .table tbody, .table tr, .table td {
+    display: block;
+    width: 100%;
+  }
+  .table tr {
+    margin-bottom: 15px;
+  }
+  .ulType {
+    display: block;
+    margin-left: 60px;
+  }
+}
+
+/*===================================================================================
 ================== FORMATO: NOVEDADES.HTML =================================
 =====================================================================================*/
-/* Formato a las imagenes de las img de la galeria */
-.mainGallery__novImagen {
+.mainNovedades {
+  width: 100% !important;
+  margin: 5   0px auto !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainCard {
+  margin: 10px !important;
+  -webkit-perspective: 800 !important;
+          perspective: 800 !important;
+}
+
+.mainCard .card {
+  width: 200px !important;
+  height: 200px !important;
+  position: relative !important;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+  -webkit-box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.65);
+          box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.65);
+  border-radius: 20px !important;
+}
+
+.mainCard .card .frontCard {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-size: cover;
+  border-radius: 20px !important;
 }
-.mainGallery__novImagen--borders {
-  border: 3px dotted black;
-  padding: 2px;
-  box-shadow: 5px 5px 20px #2a302c;
+
+.mainCard .card .backCard {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: lightgrey;
+  top: 0;
+  left: 0%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  text-align: center;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px !important;
+}
+
+.mainCard .card .backCard p {
+  color: black;
+  font-size: 1.1rem;
+  text-shadow: 6px 2px 4px rgba(75, 46, 46, 0.69);
+}
+
+.mainCard:hover .card {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card__imgFormat {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px !important;
+}
+
+.cardEnd {
+  font-size: 1.2rem;
 }
 
 /*===================================================================================
@@ -333,7 +516,45 @@ span {
   #sectionNov p {
     margin-bottom: 200%;
   }
+  .mainNovedades {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
+
+@media screen and (max-width: 576px) {
+  .mainNovedades {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 /* Fondo del Carrousel */
 .divBlack {
   background-color: #332b2b;
@@ -405,7 +626,7 @@ span {
 }
 
 .encabezado_h4Index::after {
-  content: "";
+  content: '';
   background: #efe2ce;
   display: block;
   height: 3px;
@@ -414,10 +635,28 @@ span {
 }
 
 .encabezado_h5 {
-  color: white;
+  color: #1a837c;
   font-size: 1.3rem;
   padding-bottom: 0.5rem;
   text-align: center;
+}
+
+/*===================================================================================
+================== QUERY MEDIA: SECCION REGALOS =================================
+=====================================================================================*/
+@media screen and (max-width: 576px) {
+  .encabezado_h2 {
+    font-size: 1.2rem !important;
+  }
+  .encabezado_h3 {
+    font-size: 1.12rem !important;
+  }
+  .encabezado_h4Index {
+    font-size: 1.1rem !important;
+  }
+  .encabezado_h5 {
+    font-size: 1rem !important;
+  }
 }
 
 /* Carrousel: Se agranda tamaño del parrafo + color*/
@@ -451,28 +690,49 @@ span {
   position: absolute;
   bottom: -1rem;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   border-radius: 2rem;
 }
 
 /* Formato a las cards - Flex */
 .card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  align-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .card-wrapper .card__formato {
   width: 20rem;
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 2rem 0;
-  box-shadow: 3px 3px 7px rgba(163, 144, 144, 0.7);
+  -webkit-box-shadow: 3px 3px 7px rgba(163, 144, 144, 0.7);
+          box-shadow: 3px 3px 7px rgba(163, 144, 144, 0.7);
   border: 2px solid black;
 }
+
 .card-wrapper .card__formato--img {
   width: 100%;
   height: 26rem;
@@ -481,6 +741,7 @@ span {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 38%, 0 69%);
           clip-path: polygon(0 0, 100% 0, 100% 38%, 0 69%);
 }
+
 .card-wrapper .card__formato--perfil {
   width: 12rem;
   height: 12rem;
@@ -514,18 +775,26 @@ span {
 =====================================================================================*/
 @media screen and (min-width: 768px) {
   .card-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 1rem;
   }
-
   .card__formato {
     margin: 2rem;
   }
-
   /* Efecto Fade In en las cards */
   @-webkit-keyframes fadeIn {
     from {
@@ -544,17 +813,237 @@ span {
     }
   }
   .card__formato:nth-child(3) {
-    -webkit-animation: fadeIn 0.5s 0.9s backwards;
-            animation: fadeIn 0.5s 0.9s backwards;
+    -webkit-animation: fadeIn .5s .9s backwards;
+            animation: fadeIn .5s .9s backwards;
   }
-
   .card__formato:nth-child(2) {
-    -webkit-animation: fadeIn 0.5s 0.6s backwards;
-            animation: fadeIn 0.5s 0.6s backwards;
+    -webkit-animation: fadeIn .5s .6s backwards;
+            animation: fadeIn .5s .6s backwards;
   }
-
   .card__formato:nth-child(1) {
-    -webkit-animation: fadeIn 0.5s 0.3s backwards;
-            animation: fadeIn 0.5s 0.3s backwards;
+    -webkit-animation: fadeIn .5s .3s backwards;
+            animation: fadeIn .5s .3s backwards;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*===================================================================================
+================== QUERY MEDIA: MENU - Nuestra cocina ==============================
+=====================================================================================*/
+@media screen and (max-width: 768px) {
+  .iFrameFormat {
+    width: 560px;
+    height: 315px;
+  }
+  .articleProd {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .iFrameFormat {
+    width: 560px;
+    height: 315px;
+  }
+  .pFormat {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .iFrameFormat {
+    width: 200px;
+    height: 200px;
+  }
+  .pFormat {
+    font-size: 0.8rem !important;
+  }
+}
+
+/* Seccion de regalos y promos */
+.main-container {
+  background-color: #ffffff;
+  padding: 30px;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.main-container-row {
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+.main-container__image {
+  background-image: url(../images/regalo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 350px;
+}
+
+.main-container__info {
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-container__info-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px 20px 50px 50px;
+}
+
+.main-container__info-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 60px;
+}
+
+.main-container__button {
+  background: #f29204;
+  color: #ffffff;
+  width: 300px;
+  height: 60px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.main-container__button > a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main-container__button:hover {
+  background-color: white;
+  color: #928b8b;
+}
+
+.open-container {
+  color: #000;
+  font-weight: bold;
+  padding: 0px 33px;
+  margin-bottom: 25px;
+}
+
+.open-container__image {
+  background-image: url(../images/regalo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 310px;
+}
+
+.open-container__text {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: justify;
+  padding-left: 65px;
+}
+
+/*===================================================================================
+================== QUERY MEDIA: SECCION REGALOS =================================
+=====================================================================================*/
+@media screen and (max-width: 768px) {
+  .open-container__text {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 20px;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-container__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main-container__info-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 20px 50px 50px;
+  }
+  .main-container__info-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 60px;
+  }
+  .open-container__text {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 20px;
+    margin-top: 15px;
+  }
+  .rowNov a {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .main-container__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-container__info-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-container__info-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 60px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

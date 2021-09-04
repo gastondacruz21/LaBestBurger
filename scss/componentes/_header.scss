@@ -35,6 +35,12 @@ $img_transition: transform .3s linear;
                 transform: scale(1.1);
                 opacity: 0.5;
             }
+
+            &--formato
+            {
+                margin: auto;
+                margin-top: 10px;
+            }
 }
 
 

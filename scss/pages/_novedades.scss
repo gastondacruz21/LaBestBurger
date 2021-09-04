@@ -5,19 +5,94 @@
 $grid_formato: 10px;
 $grid_imagen_formato: 100%;
 
-/* Formato a las imagenes de las img de la galeria */
 
-.mainGallery__novImagen{
-    width: $grid_imagen_formato;
-    height: $grid_imagen_formato;
-    object-fit:cover;
-        &--borders{
-            border: 3px dotted black;
-            padding: 2px;
-            box-shadow: 5px 5px 20px rgb(42, 48, 44);
+.mainNovedades
+    {
+        width: 100% !important;
+        margin: 5   0px auto !important;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+	    .mainCard
+        {
+            margin: 10px !important;
+            perspective: 800 !important;
+
+
+            .card
+            {
+                width: 200px !important;
+                height: 200px !important;
+                position: relative !important;
+                transform-style: preserve-3d;
+                transition: .7s ease;
+                box-shadow: 0 10px 15px -5px rgba(0,0,0,0.65);
+                border-radius: 20px !important;
+
+                .frontCard
+                {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0%;
+                    backface-visibility: hidden;
+                    background-size: cover;
+                    border-radius: 20px !important;
+                }
+
+                .backCard
+                {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background-color: lightgrey;
+                    top: 0;
+                    left: 0%;
+                    backface-visibility: hidden;
+                    transform: rotateY(180deg);
+                    text-align: center;
+                    padding: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 20px !important;
+
+                        p
+                        {
+                            color: black;
+                            font-size: 1.1rem;
+                            text-shadow: 6px 2px 4px rgba(75,46,46,0.69);
+                        };
+
+                }
+
+            }
+
         }
-    
-}
+			
+        .mainCard:hover .card
+        {
+            transform: rotateY(180deg);
+        }
+
+        .card__imgFormat
+        {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px !important;
+        }
+
+        .cardEnd
+        {
+            font-size: 1.2rem;
+        }
+
+
 
 
 /*===================================================================================
@@ -32,11 +107,36 @@ $grid_imagen_formato: 100%;
             margin-top: 50px;   
             text-align: center;
             font-size: 1.4rem; 
-        }
+          }
         
         p{
-        margin-bottom: $grid_imagen_formato * 2;
+            margin-bottom: $grid_imagen_formato * 2;
          }
     }
+
+    .mainNovedades
+            {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;   
+            }
+
 }
+
+
+  @media screen and (max-width: 576px) {
+    .mainNovedades
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;   
+    }
+    
+}
+
+
 

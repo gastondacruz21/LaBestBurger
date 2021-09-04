@@ -4,15 +4,20 @@ Aquí, tendrás la posibilidad de poder visualizar y efectuar compras, sobre los
 
 ## Acceso al sitio
 
-Puedes acceder a la página mediante al [siguiente link](https://gastondacruz21.github.io/LaBestBurger/).
+Puedes acceder a la página mediante al [siguiente link](https://gastondacruz21.github.io/TheBestBurger/).
 
-### Medios de acceso
 
-A traves del sitio, podrá encontrar información tal como: 
-1. Pagina principal, 
-2. Información sobre la cocina 
-3. Detalle sobre nosotros.
+## Paginas
 
-Y mucha información mas.
+A través del sitio, podrá encontrar información tal como: 
 
-Por cualquier duda, no dude contactarse con nosotros
+```bash
+1. Main Page: Descripción de la empresa - información y datos de contacto y una selección de las mejores hamburguesas 
+2. Menu: Aquí encontraras los menues disponibles para consultas como así también, los medios de pago disponibles. 
+3. Promociones: Aquí encontraras las promociones vigentes para que pueda consultar el cliente. 
+4. Novedades: Se listaran las imágenes con todas las novedades a ser lanzadas.
+5. Contacto: Se dispondrá de un formulario de contacto.
+6. Carrito de compras: El cliente podrá efectuar las reservas de platos que considere y concretar la operación.
+```
+
+Para mas información, no dude contactarse con nosotros a la casilla 'bburger@gmail.com'

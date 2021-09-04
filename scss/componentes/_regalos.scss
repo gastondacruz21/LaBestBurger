@@ -1,0 +1,145 @@
+
+/* Seccion de regalos y promos */
+
+.main-container {
+    background-color: #ffffff;
+    padding: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0px;
+  }
+  .main-container-row {
+    margin-bottom: 20px;
+    padding: 30px;
+
+  }
+  .main-container__image {
+    background-image: url(../images/regalo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 350px;
+  }
+  .main-container__info {
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main-container__info-text {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px 50px 50px;
+  }
+  .main-container__info-button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+  }
+  .main-container__button {
+    background: #f29204;
+    color: #ffffff;
+    width: 300px;
+    height: 60px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: none;
+  }
+  .main-container__button > a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .main-container__button:hover
+  {
+      background-color: white;
+      color: rgb(146, 139, 139);
+  }
+
+  .open-container {
+    color: #000;
+    font-weight: bold;
+    padding: 0px 33px;
+    margin-bottom: 25px;
+  }
+  .open-container__image {
+    background-image: url(../images/regalo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 310px;
+  }
+  .open-container__text {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: justify;
+    padding-left: 65px;
+  }
+
+
+/*===================================================================================
+================== QUERY MEDIA: SECCION REGALOS =================================
+=====================================================================================*/
+
+
+@media screen and (max-width: 768px) {
+  
+  .open-container__text {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 20px;
+    margin-top: 15px;
+    
+  }
+}
+
+  @media screen and (max-width: 576px) {
+    .main-container__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .main-container__info-text {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 20px 50px 50px;
+      }
+      .main-container__info-button {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 60px;
+      }
+
+      .open-container__text {
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-align: center;
+        padding-left: 20px;
+        margin-top: 15px;
+        
+      }
+
+      .rowNov a
+      {
+        font-size: 1.1rem;
+          
+      }
+  }
+
+
+  @media screen and (min-width: 576px) {
+    .main-container__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .main-container__info-text {
+        display: flex;
+        flex-direction: column;
+      }
+      .main-container__info-button {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 60px;
+      }
+  }

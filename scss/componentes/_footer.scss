@@ -1,5 +1,5 @@
 
-$footer_background: linear-gradient(to top, #240316, #22081c, #200d22, #1c1228, #18162c, #161f37, #122942, #09334b, #00465d, #005a6b, #006f76, #1a837c);
+$footer_background: black;
 $display_flex: flex;
 $footer_espacio: 5px;
 $footer_color: white !important;
@@ -13,18 +13,23 @@ $foot_btn_back: url('../images/volver.png');
 /* Footer: ajustes al pie pagina */
 
 .footer__format{
-    background-image: $footer_background;
+    background-color: $footer_background;
     padding: $footer_espacio;
     
     a{
         text-decoration: none;
         color: $footer_color; 
+
     }
 
     /* Footer: Se quita hover al parrafo con dirección */
 
     a:not(.notHover):hover {
-        text-decoration: underline;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 1.15rem;
+        transition: 0.9s;
+        letter-spacing: 2px;
       }
 }
 
@@ -38,6 +43,31 @@ $foot_btn_back: url('../images/volver.png');
 .footer__container{
     flex: 1;
 }
+
+/* Footer: margin y padding listado*/
+.footer__listado
+{
+    margin: 5px;
+    padding: 4px;
+
+    &:hover
+    {
+        text-decoration: none;
+        background: #7d9496 ;
+        color: #050801 ;
+        box-shadow: 0 0 5px #7d9496,
+                    0 0 20px #7d9496,
+                    0 0 50px #7d9496,
+                    0 0 100px #7d9496,
+
+    }
+
+    &--centrado
+    {
+        text-align: center;
+    }
+}
+
 
 /* Footer: formato a la etiqueta address */
 
