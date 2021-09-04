@@ -104,7 +104,8 @@ address {
   font-family: handlee;
   font-weight: bolder;
   font-size: x-large;
-  text-shadow: 2px 2px 3px grey; }
+  text-shadow: 2px 2px 3px grey;
+  margin-top: 20px; }
 
 /* 7.1.2 - Formato a los bloques de los controles*/
 .formulario__formato {
