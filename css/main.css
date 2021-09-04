@@ -714,3 +714,7 @@ span {
     display: flex;
     justify-content: center;
     padding-bottom: 60px; } }
+
+.root_format {
+  margin: 0 !important;
+  padding: 0 !important; }
