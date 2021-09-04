@@ -889,6 +889,48 @@ li a{
 
 }
 
+
+@media screen and (max-width: 600px) {
+
+    .fondoPasion{
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
+        grid-template-areas: "rowTitulo"
+                              "rowPasion1"
+                              "rowPasion2"
+                              "rowFoot";
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rowTitulo { 
+        grid-area: rowTitulo; 
+    }
+
+    .rowPasion1 { 
+        grid-area: rowPasion1; 
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .rowPasion2 { 
+        grid-area: rowPasion2;   
+        display: flex;
+    }
+
+    .rowFoot { 
+        grid-area: rowFoot;
+        margin-bottom: 40px;
+    }
+
+}
+
+
 /*===================================================================================
 ================== ASIDE: FORMATO + ICONOS SOCIALES =================================
 =====================================================================================*/
