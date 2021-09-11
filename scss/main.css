@@ -35,6 +35,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding: 0 !important;
 }
 
 /* Footer: margin y padding listado*/
@@ -192,7 +193,7 @@ address {
 
 .aside__formato .social__formato {
   width: 60px;
-  right: 0;
+  right: 8%;
   height: 205px;
   top: 30%;
   margin-top: -100px;
@@ -219,7 +220,27 @@ address {
             justify-content: flex-end;
     width: 60px;
     position: fixed;
-    right: 0;
+    right: 8%;
+    top: 130%;
+    margin-top: -360px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aside__formato .social__formato {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 60px;
+    position: fixed;
+    right: 13%;
     top: 130%;
     margin-top: -360px;
   }
@@ -867,7 +888,7 @@ span {
   padding: 30px;
   color: #ffffff;
   font-weight: bold;
-  margin: 0px;
+  margin: auto;
 }
 
 .main-container-row {
@@ -926,6 +947,7 @@ span {
   font-weight: bold;
   border-radius: 5px;
   border-style: none;
+  margin: 0 30px;
 }
 
 .main-container__button > a {
@@ -1047,5 +1069,10 @@ span {
             justify-content: center;
     padding-bottom: 60px;
   }
+}
+
+.root_format {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 /*# sourceMappingURL=main.css.map */
