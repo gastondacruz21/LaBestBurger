@@ -560,7 +560,7 @@ span {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1rem; }
+    gap: 2rem; }
   .card__formato {
     margin: 2rem; }
   /* Efecto Fade In en las cards */
@@ -716,7 +716,3 @@ span {
     display: flex;
     justify-content: center;
     padding-bottom: 60px; } }
-
-.root_format {
-  margin: 0 !important;
-  padding: 0 !important; }
