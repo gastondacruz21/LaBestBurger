@@ -49,15 +49,15 @@
         </nav>
     </header>
 
-    <!--Inicio del mail en boostrap -->
-    <main>
+         <!--Inicio del mail en boostrap -->
+    <main id="mainFormato">
 
         <!--Div donde se agrega color de fondo-->
         <div class="divBlack">
 
-            <div class="container g-0">
+            <div class="container">
                 <!--inicio de seccion Carrousel -->
-                <section id="section" class="row g-0">
+                <section id="section" class="row">
 
                     <div id="carrousel" class="carousel slide slider col-12 mb-4" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -70,7 +70,7 @@
                         <!--inicio de bloques con imagenes y texto -->
 
                         <div class="carousel-item active">
-                            <img src="./images/slide-1.jpg" class="d-block w-100" alt="Welcome to Best Burger">
+                            <img src="./images/slide-1.jpg" class="d-block w-100 img-fluid" alt="Welcome to Best Burger">
                             <div class="carousel-caption d-md-block">
                                 <h1 id="h1" class="encabezado_h1">
                                     <span class="efectito">Welcome to Best Burger</span></h1>
@@ -79,7 +79,7 @@
                         </div>
                         
                         <div class="carousel-item">
-                            <img src="./images/slide-2.jpg" class="d-block w-100" alt="Welcome to Best Burger">
+                            <img src="./images/slide-2.jpg" class="d-block w-100 img-fluid" alt="Welcome to Best Burger">
                             <div class="carousel-caption d-md-block">
                                 <h1 id="h1" class="encabezado_h1">
                                     <span class="efectito">Welcome to Best Burger</span></h1>
@@ -89,7 +89,7 @@
                         </div>
                         
                         <div class="carousel-item">
-                            <img src="./images/slide-3.jpg" class="d-block w-100" alt="Welcome to Best Burger">
+                            <img src="./images/slide-3.jpg" class="d-block w-100 img-fluid" alt="Welcome to Best Burger">
                             <div class="carousel-caption d-md-block">
                                 <h1 id="h1" class="encabezado_h1">
                                     <span class="efectito">Welcome to Best Burger</span></h1>
@@ -116,11 +116,14 @@
                 <!--Fin de seccion carrousel -->
             </div>              
         </div>
-            
+        
+        
         <!--Sección de introducción de la pagina - Nosotros-->
-        <div class="container g-0">    
+        <section id="sectionNosotros">
 
-            <section id="sectionNosotros" class="row g-0">  
+            <div class="container">    
+
+                <div class="row">  
 
                     <!--inicio de bloques con imagenes y texto -->        
                     <article class="articleH4">
@@ -133,7 +136,7 @@
                             <!--inicio de bloques con imagen + estilo de homero-->
                         
                             <div class="rowArea1 col-10 col-sm-10 col-md-9 col-lg-9 d-flex">  
-                                    <img src="./images/homero.png" loading="lazy" class="imgHomer img" alt="Seccion nosotros"> 
+                                    <img src="./images/homero.png" loading="lazy" class="imgHomer img-fluid" alt="Seccion nosotros"> 
                             </div>
 
                             <!--Fin del bloque -->
@@ -155,17 +158,19 @@
                         </div>
                     </article>
                     
-                </section>
-                <!--Fin de la seccion nosotros -->
             </div>
-
-            <!-- Sección donde se podrá acceder al menú y a las novedades. A traves de los mismos, se accederá a los html -->
+        </section>
+        
+        <!--Fin de la seccion nosotros -->
+    
+        <!-- Sección donde se podrá acceder al menú y a las novedades. A traves de los mismos, se accederá a los html -->
             
             <!--Div donde se agrega color de fondo-->
-            <div class="divMenu">
+        <section id="sectionIndexMenu" class="divMenu">   
+            
+                <div class="container">
 
-                <div class="container g-0">
-                    <section id="sectionIndexMenu" class="row g-0">    
+                    <div class="row">    
                         
                         <!-- Sección Menú -->
                         <article>
@@ -188,15 +193,18 @@
                             </div>
 
                         </article>
-                
-                    </section>
                 </div>
             </div>
-            <!--Fin seccion de menu -->
-            
-            <!-- Sección donde irán las cards con el detalle de las hamburguesas -->
-            <div class="container g-0">
-                <section id="cards" class="row g-0">        
+              
+        </section>
+        <!--Fin seccion de menu -->
+        
+        <!-- Sección donde irán las cards con el detalle de las hamburguesas -->
+        
+        <section id="cards">
+        
+            <div class="container">
+                <div class="row">        
 
                     <div class="notHover col-12 my-5">
                         <h3 id="h3" class="encabezado_h3">Conocé nuestras hamburguesas</h3>
@@ -204,10 +212,10 @@
 
                     <!--Card 1 - Index -->
                 
-                    <div class="col-12 my-3 mx-3 d-flex flex-column flex-lg-row justify-content-evenly align-items-center mb-5">
+                    <div class="col-12 my-3 d-flex flex-column flex-lg-row justify-content-evenly align-items-center mb-5">
 
                         <div class="card artiCleIndex my-2" style="width: 10rem;">
-                            <img class="tartIndexPlatos card-img-top" loading="lazy" src="./images/imgburgers/burger1.png" alt="Big Messi Burger"> 
+                            <img class="tartIndexPlatos card-img-top img-fluid" loading="lazy" src="./images/imgburgers/burger1.png" alt="Big Messi Burger"> 
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-center">Big Messi <span class="badge bg-secondary">Nuevo</span></h5>
                                     <p class="card-text text-center">300g de Carne Vacuna, Queso y doble bacon y panceta</p>
@@ -249,7 +257,7 @@
 
                         <!--Card 2 - Index -->
                         <div class="card artiCleIndex my-2" style="width: 10rem;">
-                            <img class="tartIndexPlatos card-img-top" loading="lazy" src="./images/imgburgers/burger2.png" alt="Big Messi Burger">
+                            <img class="tartIndexPlatos card-img-top img-fluid" loading="lazy" src="./images/imgburgers/burger2.png" alt="Big Messi Burger">
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-center">Big Lele</h5>
                                     <p class="card-text text-center">300g de Carne Vacuna, Queso, Cebolla y doble bacon</p>
@@ -291,7 +299,7 @@
 
                         <!--Card 3 - Index -->
                         <div class="card artiCleIndex my-2" style="width: 10rem;">
-                            <img class="tartIndexPlatos card-img-top" loading="lazy" src="./images/imgburgers/burger4.png" alt="Big Messi Burger">
+                            <img class="tartIndexPlatos card-img-top img-fluid" loading="lazy" src="./images/imgburgers/burger4.png" alt="Big Messi Burger">
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-center">Big Tasty <span class="badge bg-secondary">Nuevo</span></h5>
                                     <p class="card-text text-center">300g de Carne Vacuna, Queso y doble bacon y salsa especial</p>
@@ -326,91 +334,93 @@
                         <!--Fin Card 3 - Index -->
                     </div>
 
-                </section>
+                </div>
             </div>
-        
+        </section>
+    
+        <!--Fin de la seccion de las cards de comida -->
+
+
+        <!-- Sección nuestra pasión + video iframe para acompañar -->
+
+
+        <section id="sectionPasion">
+            
+            <!--Arranca el bloque de nuestra pasion -->
+
+            <div class="container">         
+
+                <div class="row">
+
+                        <div class="fondoPasion">            
+
+                            <div class="rowTitulo col-12">
+                                <h4 id="h4Index" class="encabezado_h4Index">Nuestra Pasión</h4>
+                            </div>
+                            
+                            <div class="rowPasion1 col-12 col-sm-12 col-md-11 col-lg-10">
+                                <p class="pPasion sinSeleccion w-100 mx-1">
+                                El periodismo especializado los posiciono en reiteradas ocasiones como la mejor hamburguesa de Argentina. Tienen 12 sucursales en Buenos Aires, conquistaron Miami, Estados Unidos y Madrid, España.</p>
+                                <p class="pPasion sinSeleccion w-100 mx-1">
+                                Además, hemos sido nominados a los galardones de las mejores hamburguesas del país y proyectados que en un rango de 10 años, disponer de 50 sucursales en Argentina.</p>
+                            </div>
+
+                            <div class="rowPasion2 col-12 col-sm-12 col-md-11 col-lg-10">                   
+                                <iframe width="300" height="215" src="https://www.youtube.com/embed/uMktbiDm8x8?autoplay=1&mute=1" title="YouTube video player"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                            </div>
+
+
+                            <div class="rowFoot col-12 fw-bold d-flex justify-content-center">   
+                                <a href="./pages/menu.html#section" class="pLink"><p class="w-100 mx-5 my-1">Queres ver más videos? Ve al menu</p></a>
+                            </div> 
+
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+
+       
     </main>
     
     <!--Fin del main -->
    
-    <!--Fin de la seccion de las cards de comida -->
         
-    <!-- Sección nuestra pasión + video iframe para acompañar -->
+  
+    <!--Seccion de regalos y mas promos-->
+    <section id="sectionRegalos">
 
-    <!--Coloca imagen de fondo-->
-
-    <div id="sectionPasion">
-        
-        <!--Arranca el bloque de nuestra pasion -->
-        <div class="container g-0">         
-
-            <div class="row g-0">
-                <section>
-                    <div class="fondoPasion">
-                            
-
-                        <div class="rowTitulo col-12">
-                            <h4 id="h4Index" class="encabezado_h4Index">Nuestra Pasión</h4>
-                        </div>
-                        
-    
-
-                        <div class="rowPasion1 col-12 col-sm-12 col-md-11 col-lg-10">
-                            <p class="pPasion sinSeleccion w-100 mx-1">
-                            El periodismo especializado los posiciono en reiteradas ocasiones como la mejor hamburguesa de Argentina. Tienen 12 sucursales en Buenos Aires, conquistaron Miami, Estados Unidos y Madrid, España.</p>
-                            <p class="pPasion sinSeleccion w-100 mx-1">
-                            Además, hemos sido nominados a los galardones de las mejores hamburguesas del país y proyectados que en un rango de 10 años, disponer de 50 sucursales en Argentina.</p>
-                        </div>
-
-
-                        <div class="rowPasion2 col-12 col-sm-12 col-md-11 col-lg-10">                   
-                            <iframe width="300" height="215" src="https://www.youtube.com/embed/uMktbiDm8x8?autoplay=1&mute=1" title="YouTube video player"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-                        </div>
-
-
-                        <div class="rowFoot col-12 fw-bold d-flex justify-content-center">   
-                            <a href="./pages/menu.html#section" class="pLink"><p class="w-100 mx-5 my-1">Queres ver más videos? Ve al menu</p></a>
-                        </div> 
+        <div class="container main-container">
+            <div class="row main-container-row">
+                <!--bloque con la imagen y el button-->
+                <div class="col-md-8 col-sm-12 main-container__image">
+                </div>
+                <div class="col-md-4 col-sm-12 main-container__info">
+                    <div class="main-container__info-text">
+                        <h5>¡Hacé tu pedido, te lo llevamos a casa! </h5>
+                        <p class="pFormat">No pierdas mas el tiempo y aprovecha ...</p>
 
                     </div>
-                </section>
-            
-            </div>
-        </div>
-    </div>
-
-        <!--Seccion de regalos y mas promos-->
-
-    <!--Seccion de regalos y mas promos-->
-
-    <div class="container main-container g-0">
-        <div class="row main-container-row g-0">
-            <!--bloque con la imagen y el button-->
-            <div class="col-md-8 col-sm-12 main-container__image">
-            </div>
-            <div class="col-md-4 col-sm-12 main-container__info">
-                <div class="main-container__info-text">
-                    <h5>¡Hacé tu pedido, te lo llevamos a casa! </h5>
-                    <p class="pFormat">No pierdas mas el tiempo y aprovecha ...</p>
-
+                    <div class="main-container__info-button">
+                        <button type="button" class="main-container__button"><a href="../pages/carrito.html">Encargá tus productos</a></button>
+                    </div>
                 </div>
-                <div class="main-container__info-button">
-                    <button type="button" class="main-container__button"><a href="../pages/carrito.html">Encargá tus productos</a></button>
+            </div>
+            <div class="row open-container">
+                <div class="col-md-6 col-sm-12 open-container__image">
+                </div>
+                <div class="col-md-6 col-sm-12 open-container__text">
+                    <p class="pFormat"> Nos encontramos muy orgullosos de anunciarles que proximamente estaremos abriendo 3 nuevas suculares, dando la posibilidad de dar nuevas fuentes de trabajo.</p>
+                    <p class="pFormat">
+                    Como regalo para nuestros clientes que se acerquen a las nuevas sedes, sorteamos un voucher de $3000 en cualquiera de nuestros productos.
+                    </p>
+                    <h6 class="pFormat">*Bases y condiciones en nuestras redes sociales*</h6>
                 </div>
             </div>
         </div>
-        <div class="row open-container g-0">
-              <div class="col-md-6 col-sm-12 open-container__image">
-              </div>
-              <div class="col-md-6 col-sm-12 open-container__text">
-                <p class="pFormat"> Nos encontramos muy orgullosos de anunciarles que proximamente estaremos abriendo 3 nuevas suculares, dando la posibilidad de dar nuevas fuentes de trabajo.</p>
-                <p class="pFormat">
-                Como regalo para nuestros clientes que se acerquen a las nuevas sedes, sorteamos un voucher de $3000 en cualquiera de nuestros productos.
-                </p>
-                <h6 class="pFormat">*Bases y condiciones en nuestras redes sociales*</h6>
-            </div>
-        </div>
-    </div>
+
+    </section>
+
     <!--Fin de la seccion regalos -->        
     
     <!--Links que me llevarán a las redes sociales-->
@@ -430,11 +440,11 @@
     <!--Pie de pagina-->
     <footer class="footer__format footer__format--flex rootFormat" >
     
-        <div class="container g-0">
+        <div class="container ">
 
-            <div class="row g-0">
+            <div class="row">
             
-                <div class="footer__container g-0">
+                <div class="footer__container">
                     <section class="ftMain">
                         
                         <div class="ftMainAcerca col-sm-12 col-md-6 col-lg-3 order-last order-sm-first ">
@@ -446,7 +456,7 @@
                                 <li><a class="footer__listado" href="./pages/contacto.html">Contacto</a></li>
                                 <li><a class="footer__listado" href="./pages/carrito.html">Carrito</a></li>
                                 <li class="footer__listado--centrado">
-                                    <img src="images/logo.png" class="header__formato__imgHead header__formato__imgHead--transition header__formato__imgHead--formato" title="logo de Best" alt="logo de Best Burger"></a>
+                                    <img src="images/logo.png" class="header__formato__imgHead header__formato__imgHead--transition header__formato__imgHead--formato img-fluid" title="logo de Best" alt="logo de Best Burger"></a>
                                 </li>
                             </ul>
                         </div>

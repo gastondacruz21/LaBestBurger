@@ -3,8 +3,35 @@ $Card_H1_margin: 2.5% 0 0 3%;
 $ShopImg_borde: 1px solid black;   
 $letraBtn: white;
 
-/* Formato al grid que contiene imagenes de las cards del carrito */
 
+/* Formato se las secciones */
+#mainFormato
+{
+    padding: 0 !important;   
+}
+
+#sectionNosotros
+{
+    padding: 0 !important;   
+}
+
+#sectionIndexMenu
+{
+    padding: 0 !important;   
+}
+
+#cards
+{
+    padding: 0 !important;   
+}
+
+#sectionRegalos
+{
+    padding: 10px 0 !important;   
+}
+
+
+/* Formato al grid que contiene imagenes de las cards del carrito */
 
 #gridFondo{
     background-color: $CardIndex_fondo;

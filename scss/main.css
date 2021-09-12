@@ -82,6 +82,27 @@ address {
   background-image: url("../images/volver.png");
 }
 
+/* Formato se las secciones */
+#mainFormato {
+  padding: 0 !important;
+}
+
+#sectionNosotros {
+  padding: 0 !important;
+}
+
+#sectionIndexMenu {
+  padding: 0 !important;
+}
+
+#cards {
+  padding: 0 !important;
+}
+
+#sectionRegalos {
+  padding: 10px 0 !important;
+}
+
 /* Formato al grid que contiene imagenes de las cards del carrito */
 #gridFondo {
   background-color: #e39bbe;
@@ -720,9 +741,16 @@ span {
   color: white;
 }
 
+/*===================================================================================
+================== PROMOCIONES ESTILOS  ==============================
+=====================================================================================*/
 /* Formato a la sección de recomendaciones - Promocion.html */
+#sectionTablaPromo {
+  padding: 10px 0 !important;
+}
+
 #sectionTest {
-  padding: 3rem 0;
+  padding: 3rem 0 !important;
   background-color: #332b2b;
 }
 
@@ -864,17 +892,36 @@ span {
     }
   }
   .card__formato:nth-child(3) {
-    -webkit-animation: fadeIn .5s .9s backwards;
-            animation: fadeIn .5s .9s backwards;
+    -webkit-animation: fadeIn 3.5s 4.5s backwards;
+            animation: fadeIn 3.5s 4.5s backwards;
   }
   .card__formato:nth-child(2) {
-    -webkit-animation: fadeIn .5s .6s backwards;
-            animation: fadeIn .5s .6s backwards;
+    -webkit-animation: fadeIn 2.1s 3.3s backwards;
+            animation: fadeIn 2.1s 3.3s backwards;
   }
   .card__formato:nth-child(1) {
-    -webkit-animation: fadeIn .5s .3s backwards;
-            animation: fadeIn .5s .3s backwards;
+    -webkit-animation: fadeIn 0.7s 1.9s backwards;
+            animation: fadeIn 0.7s 1.9s backwards;
   }
+}
+
+/*===================================================================================
+================== MENU FORMATO ESTILO ==============================
+=====================================================================================*/
+/*---- Paginas Menu y Promos: Formato -----*/
+/* se le da espaciado a la seccióny articulos de la pagina */
+#sectionMenu {
+  padding: 10px 0 !important;
+  margin-bottom: 1rem;
+}
+
+#seccionPago {
+  padding: 10px 0 !important;
+}
+
+#sectionCocina {
+  padding: 10px 0 !important;
+  margin-bottom: 1rem;
 }
 
 /*===================================================================================
@@ -1361,5 +1408,12 @@ span {
   .blog-card.alt .details {
     padding-left: 7px;
   }
+}
+
+/*===================================================================================
+================== PAGINA CARRITO ESTILOS ==============================
+=====================================================================================*/
+#sectionCarrito {
+  padding: 10px 0 !important;
 }
 /*# sourceMappingURL=main.css.map */

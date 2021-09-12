@@ -1165,17 +1165,6 @@ aside{
 ================== FORMATO TABLES: MENU/PROMOS.HTML =================================
 =====================================================================================*/
 
-/*---- Paginas Menu y Promos: Formato -----*/
-
-/* se le da espaciado a la seccióny articulos de la pagina */
-
-#sectionMenu{
-    margin-bottom: 40px;
-}
-
-#sectionCocina{
-    margin-bottom: 40px;
-}
 
 .articleCocina{
     margin: 40px 0;
