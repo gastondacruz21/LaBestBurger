@@ -535,7 +535,6 @@ li a{
 }
 
 
-
 /* Se asigna formato al link de la sesion */
 
 .rowNov a{
@@ -1215,7 +1214,6 @@ span.efectito{
     padding: 0;
 }
 
-
 .formatTest{
     margin: 40px auto !important;
     padding-left: 60px;
@@ -1232,6 +1230,13 @@ span.efectito{
     margin-bottom: 20px;
     top: -30px;
 
+}
+
+.medio img:hover
+{
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+    transition:all .5s ease-in-out;
 
 }
 
@@ -1240,6 +1245,14 @@ span.efectito{
     margin-top: 10px;
     color: wheat;
 }
+
+.medio h5:hover{
+    font-size: 1.22rem;
+    transform: scale(1.1);
+    transition:all .5s ease-in-out;
+}
+
+
 
 #testSpan{
     font-size: 0.8rem;
@@ -1260,6 +1273,8 @@ blockquote::before{
 .perfil:hover{
     box-shadow: 0 0 15px 5px rgba(104,104,119,0.3);
 }
+
+
 
 /*===================================================================================
 ================== FORMATO: NOVEDADES.HTML =================================
