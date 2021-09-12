@@ -963,3 +963,232 @@ span {
 =====================================================================================*/
 #sectionCarrito {
   padding: 10px 0 !important; }
+
+#sectionSugerencias {
+  padding: 0 !important; }
+
+.cardOpinion {
+  height: 60vh;
+  width: 100%;
+  min-height: 380px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto; }
+  .cardOpinion .card__form {
+    height: 280px;
+    width: 220px;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    box-shadow: 0 70px 63px -60px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+  .cardOpinion .card0 {
+    background-image: url("../images/menu/User11.jpg") !important;
+    background-size: 420px !important;
+    background-repeat: no-repeat; }
+    .cardOpinion .card0:hover {
+      background-image: url("../images/menu/User11.jpg") left center no-repeat !important;
+      background-size: 600px !important; }
+      .cardOpinion .card0:hover .pCard {
+        opacity: 1;
+        color: black; }
+  .cardOpinion .card1 {
+    background-image: url("../images/menu/User12.jpg") !important;
+    background-size: 420px !important;
+    background-repeat: no-repeat; }
+    .cardOpinion .card1:hover {
+      background-image: url("../images/menu/User12.jpg") left center no-repeat !important;
+      background-size: 600px !important; }
+      .cardOpinion .card1:hover .pCard1 {
+        opacity: 1;
+        color: black; }
+  .cardOpinion .card2 {
+    background-image: url("../images/menu/User13.jpg") !important;
+    background-size: 420px !important;
+    background-repeat: no-repeat; }
+    .cardOpinion .card2:hover {
+      background-image: url("../images/menu/User13.jpg") left center no-repeat !important;
+      background-size: 600px !important; }
+      .cardOpinion .card2:hover .pCard2 {
+        opacity: 1;
+        color: black; }
+
+.borderCard {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative; }
+  .borderCard:hover {
+    border: 1px solid white; }
+
+.pCard {
+  opacity: 0;
+  transition: opacity 1s;
+  text-shadow: 2px 4px 7px #242121; }
+
+.pCard1 {
+  opacity: 0;
+  transition: opacity 1s;
+  text-shadow: 2px 4px 7px #242121; }
+
+.pCard2 {
+  opacity: 0;
+  transition: opacity 1s;
+  text-shadow: 2px 4px 7px #242121; }
+
+.icons1 {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 9px;
+  left: 50px;
+  width: 118px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+
+.icons2 {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 9px;
+  left: 50px;
+  width: 118px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+
+.icons3 {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 9px;
+  left: 50px;
+  width: 118px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+
+@media (max-width: 768px) {
+  .cardOpinion {
+    height: 100vh !important;
+    width: 100% !important;
+    display: flex !important;
+    min-height: 650px !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 30px auto !important; }
+    .cardOpinion .card__form {
+      height: 280px !important;
+      width: 200px !important;
+      border-radius: 5px !important;
+      transition: background 0.8s !important;
+      overflow: hidden !important;
+      background: black !important;
+      margin-bottom: 10px;
+      box-shadow: 0 70px 63px -60px #000000 !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      position: relative !important;
+      margin: 5px !important; }
+    .cardOpinion .card0 {
+      background-image: url("../images/menu/User11.jpg") !important;
+      background-size: 420px !important;
+      background-repeat: no-repeat; }
+      .cardOpinion .card0:hover {
+        background-image: url("../images/menu/User11.jpg") left center no-repeat !important;
+        background-size: 600px !important; }
+        .cardOpinion .card0:hover .pCard {
+          opacity: 1;
+          color: black; }
+    .cardOpinion .card1 {
+      background-image: url("../images/menu/User12.jpg") !important;
+      background-size: 420px !important;
+      background-repeat: no-repeat; }
+      .cardOpinion .card1:hover {
+        background-image: url("../images/menu/User12.jpg") left center no-repeat !important;
+        background-size: 600px !important; }
+        .cardOpinion .card1:hover .pCard1 {
+          opacity: 1;
+          color: black; }
+    .cardOpinion .card2 {
+      background-image: url("../images/menu/User13.jpg") !important;
+      background-size: 420px !important;
+      background-repeat: no-repeat; }
+      .cardOpinion .card2:hover {
+        background-image: url("../images/menu/User13.jpg") left center no-repeat !important;
+        background-size: 600px !important; }
+        .cardOpinion .card2:hover .pCard2 {
+          opacity: 1;
+          color: black; } }
+
+@media (max-width: 576px) {
+  .cardOpinion {
+    height: 100vh !important;
+    width: 100% !important;
+    display: flex !important;
+    min-height: 900px !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    margin: 30px auto !important; }
+    .cardOpinion .card__form {
+      height: 280px !important;
+      width: 200px !important;
+      border-radius: 5px !important;
+      transition: background 0.8s !important;
+      overflow: hidden !important;
+      background: black !important;
+      margin-bottom: 10px;
+      box-shadow: 0 70px 63px -60px #000000 !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      position: relative !important; }
+    .cardOpinion .card0 {
+      background-image: url("../images/menu/User11.jpg") !important;
+      background-size: 420px !important;
+      background-repeat: no-repeat; }
+      .cardOpinion .card0:hover {
+        background-image: url("../images/menu/User11.jpg") left center no-repeat !important;
+        background-size: 600px !important; }
+        .cardOpinion .card0:hover .pCard {
+          opacity: 1;
+          color: black; }
+    .cardOpinion .card1 {
+      background-image: url("../images/menu/User12.jpg") !important;
+      background-size: 420px !important;
+      background-repeat: no-repeat; }
+      .cardOpinion .card1:hover {
+        background-image: url("../images/menu/User12.jpg") left center no-repeat !important;
+        background-size: 600px !important; }
+        .cardOpinion .card1:hover .pCard1 {
+          opacity: 1;
+          color: black; }
+    .cardOpinion .card2 {
+      background-image: url("../images/menu/User13.jpg") !important;
+      background-size: 420px !important;
+      background-repeat: no-repeat; }
+      .cardOpinion .card2:hover {
+        background-image: url("../images/menu/User13.jpg") left center no-repeat !important;
+        background-size: 600px !important; }
+        .cardOpinion .card2:hover .pCard2 {
+          opacity: 1;
+          color: black; } }
