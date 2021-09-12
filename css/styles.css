@@ -1278,9 +1278,56 @@ blockquote::before{
 
 /* 6.1. formato de margenes y texto a la pagina  */
 
+.beneficio-container
+{
+margin: 10px 0;
+}
 
+.beneficio-container .icono1__espacio{
+    background-size: cover !important;
+    padding: 0 0 30px 0 !important;
+}      
 
+.beneficio-container .icono1__espacio .icono1 {
+        float: left;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+}
 
+.beneficio-container .icono1__espacio .icono1 i {
+      
+        color:white;
+        font-size: 31px;
+}
+
+.beneficio-container .icono1__espacio .icono1 .iconos__lista {
+    
+            font-size: 20px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+                
+            }
+      
+.beneficio-container .icono1__espacio .tituloNov
+    {
+        margin-left: 80px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+      
 
 /*===================================================================================
 ==================SECCION - CONTACTOS: CONTACTO.HTML=================================

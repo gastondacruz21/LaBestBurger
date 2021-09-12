@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*===================================================================================
+================== FOOTER ESTILO =================================
+=====================================================================================*/
 /* Footer: ajustes al pie pagina */
 .footer__format {
   background-color: black;
@@ -174,6 +177,9 @@ address {
   font-family: courgette;
 }
 
+/*===================================================================================
+================== ESTILO ASIDE =================================
+=====================================================================================*/
 /* Formato del aside - Flex */
 .aside__formato {
   width: 10%;
@@ -430,6 +436,19 @@ span {
 /*===================================================================================
 ================== FORMATO: NOVEDADES.HTML =================================
 =====================================================================================*/
+#sectionNovCard {
+  padding: 0 !important;
+}
+
+#sectionBeneficios {
+  padding: 23px 0 !important;
+  background-color: grey;
+}
+
+#sectionNovCard {
+  padding: 0 !important;
+}
+
 .mainNovedades {
   width: 100% !important;
   margin: 5   0px auto !important;
@@ -578,6 +597,9 @@ span {
   }
 }
 
+/*===================================================================================
+================== FONDOS ESTILOS =================================
+=====================================================================================*/
 /* Fondo del Carrousel */
 .divBlack {
   background-color: #332b2b;
@@ -596,6 +618,9 @@ span {
   background-color: #332b2b;
 }
 
+/*===================================================================================
+================== ENCABEZADOS ESTILOS =================================
+=====================================================================================*/
 /* Variables */
 #h1 {
   font-size: 3rem !important;
@@ -682,6 +707,9 @@ span {
   }
 }
 
+/*===================================================================================
+================== CARROUSEL =================================
+=====================================================================================*/
 /* Carrousel: Se agranda tamaño del parrafo + color*/
 .carrousel__parrafo, .carrousel__parrafo--color {
   font-size: 30px;
@@ -794,7 +822,7 @@ span {
 }
 
 /*===================================================================================
-==================QUERY MEDIA - FOOTER ==============================================
+==================QUERY MEDIA - PROMO CARDS ==========================================
 =====================================================================================*/
 @media screen and (min-width: 768px) {
   .card-wrapper {
@@ -813,7 +841,7 @@ span {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 1rem;
+    gap: 2rem;
   }
   .card__formato {
     margin: 2rem;
@@ -1071,8 +1099,267 @@ span {
   }
 }
 
-.root_format {
-  margin: 0 !important;
-  padding: 0 !important;
+/*===================================================================================
+================== NOVEDADES CARDS ESTILO =================================
+=====================================================================================*/
+/*--- Formato al cuerpo de las cartas */
+.blog-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem auto;
+  -webkit-box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 1.4;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+  /*-- fondos de las cards */
+  /*===================================================================================
+================== QUERY MEDIA NOVEDADES CARDS =================================
+=====================================================================================*/
+}
+
+.blog-card a {
+  color: inherit;
+}
+
+.blog-card a:hover {
+  color: #5ad67d;
+}
+
+.blog-card:hover .photo {
+  -webkit-transform: scale(1.3) rotate(3deg);
+          transform: scale(1.3) rotate(3deg);
+}
+
+.blog-card .meta {
+  position: relative;
+  z-index: 0;
+  height: 200px;
+}
+
+.blog-card .photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.blog-card .details,
+.blog-card .details ul {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-card .details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  margin: auto;
+  -webkit-transition: left .2s;
+  transition: left .2s;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  font-size: .9rem;
+}
+
+.blog-card .details a {
+  -webkit-text-decoration: dotted underline;
+          text-decoration: dotted underline;
+}
+
+.blog-card .details ul li {
+  display: inline-block;
+}
+
+.blog-card .details .author:before {
+  margin-right: 10px;
+  content: "";
+}
+
+.blog-card .details .date:before {
+  font-family: handlee;
+  margin-right: 10px;
+  content: "\f133";
+}
+
+.blog-card .details .tags ul:before {
+  font-family: handlee;
+  content: "";
+  margin-right: 10px;
+}
+
+.blog-card .details .tags li {
+  margin-right: 2px;
+}
+
+.blog-card .details .tags li:first-child {
+  margin-left: -4px;
+}
+
+.blog-card .description {
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.blog-card .description h3 {
+  line-height: 1;
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.blog-card .description h4 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #a2a2a2;
+  margin-top: 5px;
+}
+
+.blog-card p {
+  position: relative;
+  margin: 1rem 0 0;
+}
+
+.blog-card p:first-of-type {
+  margin-top: 1.25rem;
+}
+
+.blog-card p:first-of-type:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: #5ad67d;
+  width: 35px;
+  top: -0.75rem;
+  border-radius: 3px;
+}
+
+.blog-card:hover .details {
+  left: 0%;
+}
+
+.blog-card .imgNovedades1 {
+  background-image: url("../images/fondohambur1.jpg");
+}
+
+.blog-card .imgNovedades2 {
+  background-image: url("../images/fondohambur2.jpg");
+}
+
+@media (min-width: 640px) {
+  .blog-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 638px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .blog-card .meta {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    height: auto;
+  }
+  .blog-card .description {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+  .blog-card .description:before {
+    -webkit-transform: skewX(-3deg);
+            transform: skewX(-3deg);
+    content: "";
+    background: #fff;
+    width: 30px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .blog-card.alt {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .blog-card.alt .description:before {
+    left: inherit;
+    right: -10px;
+    -webkit-transform: skew(3deg);
+            transform: skew(3deg);
+  }
+  .blog-card.alt .details {
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .blog-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 498px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .blog-card .meta {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    height: auto;
+  }
+  .blog-card .description {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+  .blog-card .description:before {
+    -webkit-transform: skewX(-3deg);
+            transform: skewX(-3deg);
+    content: "";
+    background: #fff;
+    width: 13px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .blog-card.alt {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .blog-card.alt .description:before {
+    left: inherit;
+    right: -10px;
+    -webkit-transform: skew(3deg);
+            transform: skew(3deg);
+  }
+  .blog-card.alt .details {
+    padding-left: 7px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

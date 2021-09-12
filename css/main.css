@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*===================================================================================
+================== FOOTER ESTILO =================================
+=====================================================================================*/
 /* Footer: ajustes al pie pagina */
 .footer__format {
   background-color: black;
@@ -131,6 +134,9 @@ address {
 .contacto__foot_fontContacto_ {
   font-family: courgette; }
 
+/*===================================================================================
+================== ESTILO ASIDE =================================
+=====================================================================================*/
 /* Formato del aside - Flex */
 .aside__formato {
   width: 10%;
@@ -303,6 +309,16 @@ span {
 /*===================================================================================
 ================== FORMATO: NOVEDADES.HTML =================================
 =====================================================================================*/
+#sectionNovCard {
+  padding: 0 !important; }
+
+#sectionBeneficios {
+  padding: 23px 0 !important;
+  background-color: grey; }
+
+#sectionNovCard {
+  padding: 0 !important; }
+
 .mainNovedades {
   width: 100% !important;
   margin: 5   0px auto !important;
@@ -388,6 +404,9 @@ span {
     justify-content: center;
     align-items: center; } }
 
+/*===================================================================================
+================== FONDOS ESTILOS =================================
+=====================================================================================*/
 /* Fondo del Carrousel */
 .divBlack {
   background-color: #332b2b;
@@ -403,6 +422,9 @@ span {
 .divMenuPago {
   background-color: #332b2b; }
 
+/*===================================================================================
+================== ENCABEZADOS ESTILOS =================================
+=====================================================================================*/
 /* Variables */
 #h1 {
   font-size: 3rem !important;
@@ -475,6 +497,9 @@ span {
   .encabezado_h5 {
     font-size: 1rem !important; } }
 
+/*===================================================================================
+================== CARROUSEL =================================
+=====================================================================================*/
 /* Carrousel: Se agranda tamaño del parrafo + color*/
 .carrousel__parrafo, .carrousel__parrafo--color {
   font-size: 30px;
@@ -484,8 +509,11 @@ span {
   color: white; }
 
 /* Formato a la sección de recomendaciones - Promocion.html */
+#sectionTablaPromo {
+  padding: 10px 0 !important; }
+
 #sectionTest {
-  padding: 3rem 0;
+  padding: 3rem 0 !important;
   background-color: #332b2b; }
 
 .encabezado_h3 {
@@ -551,7 +579,7 @@ span {
   color: brown; }
 
 /*===================================================================================
-==================QUERY MEDIA - FOOTER ==============================================
+==================QUERY MEDIA - PROMO CARDS ==========================================
 =====================================================================================*/
 @media screen and (min-width: 768px) {
   .card-wrapper {
@@ -570,11 +598,11 @@ span {
     to {
       opacity: 1; } }
   .card__formato:nth-child(3) {
-    animation: fadeIn .5s .9s backwards; }
+    animation: fadeIn 3.5s 4.5s backwards; }
   .card__formato:nth-child(2) {
-    animation: fadeIn .5s .6s backwards; }
+    animation: fadeIn 2.1s 3.3s backwards; }
   .card__formato:nth-child(1) {
-    animation: fadeIn .5s .3s backwards; } }
+    animation: fadeIn 0.7s 1.9s backwards; } }
 
 /*===================================================================================
 ================== QUERY MEDIA: MENU - Nuestra cocina ==============================
@@ -716,3 +744,170 @@ span {
     display: flex;
     justify-content: center;
     padding-bottom: 60px; } }
+
+/*===================================================================================
+================== NOVEDADES CARDS ESTILO =================================
+=====================================================================================*/
+/*--- Formato al cuerpo de las cartas */
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 1.4;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+  /*-- fondos de las cards */
+  /*===================================================================================
+================== QUERY MEDIA NOVEDADES CARDS =================================
+=====================================================================================*/ }
+  .blog-card a {
+    color: inherit; }
+    .blog-card a:hover {
+      color: #5ad67d; }
+  .blog-card:hover .photo {
+    transform: scale(1.3) rotate(3deg); }
+  .blog-card .meta {
+    position: relative;
+    z-index: 0;
+    height: 200px; }
+  .blog-card .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform .2s; }
+  .blog-card .details,
+  .blog-card .details ul {
+    margin: auto;
+    padding: 0;
+    list-style: none; }
+  .blog-card .details {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    margin: auto;
+    transition: left .2s;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-size: .9rem; }
+    .blog-card .details a {
+      text-decoration: dotted underline; }
+    .blog-card .details ul li {
+      display: inline-block; }
+    .blog-card .details .author:before {
+      margin-right: 10px;
+      content: ""; }
+    .blog-card .details .date:before {
+      font-family: handlee;
+      margin-right: 10px;
+      content: "\f133"; }
+    .blog-card .details .tags ul:before {
+      font-family: handlee;
+      content: "";
+      margin-right: 10px; }
+    .blog-card .details .tags li {
+      margin-right: 2px; }
+      .blog-card .details .tags li:first-child {
+        margin-left: -4px; }
+  .blog-card .description {
+    padding: 1rem;
+    background: #fff;
+    position: relative;
+    z-index: 1; }
+    .blog-card .description h3 {
+      line-height: 1;
+      margin: 0;
+      font-size: 1.7rem; }
+    .blog-card .description h4 {
+      font-size: 1rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: #a2a2a2;
+      margin-top: 5px; }
+  .blog-card p {
+    position: relative;
+    margin: 1rem 0 0; }
+    .blog-card p:first-of-type {
+      margin-top: 1.25rem; }
+      .blog-card p:first-of-type:before {
+        content: "";
+        position: absolute;
+        height: 5px;
+        background: #5ad67d;
+        width: 35px;
+        top: -0.75rem;
+        border-radius: 3px; }
+  .blog-card:hover .details {
+    left: 0%; }
+  .blog-card .imgNovedades1 {
+    background-image: url("../images/fondohambur1.jpg"); }
+  .blog-card .imgNovedades2 {
+    background-image: url("../images/fondohambur2.jpg"); }
+  @media (min-width: 640px) {
+    .blog-card {
+      flex-direction: row;
+      max-width: 638px;
+      margin-top: 35px;
+      margin-bottom: 35px; }
+      .blog-card .meta {
+        flex-basis: 40%;
+        height: auto; }
+      .blog-card .description {
+        flex-basis: 60%; }
+        .blog-card .description:before {
+          transform: skewX(-3deg);
+          content: "";
+          background: #fff;
+          width: 30px;
+          position: absolute;
+          left: -10px;
+          top: 0;
+          bottom: 0;
+          z-index: -1; }
+      .blog-card.alt {
+        flex-direction: row-reverse; }
+        .blog-card.alt .description:before {
+          left: inherit;
+          right: -10px;
+          transform: skew(3deg); }
+        .blog-card.alt .details {
+          padding-left: 25px; } }
+  @media (max-width: 500px) {
+    .blog-card {
+      flex-direction: row;
+      max-width: 498px;
+      margin-top: 35px;
+      margin-bottom: 35px; }
+      .blog-card .meta {
+        flex-basis: 40%;
+        height: auto; }
+      .blog-card .description {
+        flex-basis: 60%; }
+        .blog-card .description:before {
+          transform: skewX(-3deg);
+          content: "";
+          background: #fff;
+          width: 13px;
+          position: absolute;
+          left: -10px;
+          top: 0;
+          bottom: 0;
+          z-index: -1; }
+      .blog-card.alt {
+        flex-direction: row-reverse; }
+        .blog-card.alt .description:before {
+          left: inherit;
+          right: -10px;
+          transform: skew(3deg); }
+        .blog-card.alt .details {
+          padding-left: 7px; } }
