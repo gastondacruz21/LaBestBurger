@@ -1,9 +1,32 @@
+
+/*===================================================================================
+================== PAGINA CONTACTO ESTILOS ==============================
+=====================================================================================*/
+
 $contacto_color: rgb(84, 84, 84);
 $contacto_fondo_color: lightgray;
 $contacto_italica: italic;
 $contacto_grosor: bolder;
 $contacto_font_foot: courgette;
 $contacto_margin_frame: 5%;
+
+
+#frmContacto
+{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#frmContacto input {
+    width: 110%;
+    height: 35px;
+  }
+  
 
 .contacto__formato_texto{    
     font-style: $contacto_italica;

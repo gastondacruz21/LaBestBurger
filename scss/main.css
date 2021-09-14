@@ -138,6 +138,60 @@ address {
   background-color: #8c4d42;
 }
 
+/*===================================================================================
+==================QUERY MEDIA - NAVEGADOR ===========================================
+=====================================================================================*/
+@media (max-width: 768px) {
+  .divisor {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    background: #177179;
+    background: -webkit-gradient(linear, left top, right top, from(#177179), color-stop(66%, #eaecd8), to(#a2dee9));
+    background: linear-gradient(90deg, #177179 0%, #eaecd8 66%, #a2dee9 100%);
+    margin: 20px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .divisor {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    background: #177179;
+    background: -webkit-gradient(linear, left top, right top, from(#177179), color-stop(66%, #eaecd8), to(#a2dee9));
+    background: linear-gradient(90deg, #177179 0%, #eaecd8 66%, #a2dee9 100%);
+    margin: 5px !important;
+  }
+}
+
+/*===================================================================================
+================== PAGINA CONTACTO ESTILOS ==============================
+=====================================================================================*/
+#frmContacto {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#frmContacto input {
+  width: 110%;
+  height: 35px;
+}
+
 .contacto__formato_texto {
   font-style: italic;
   font-weight: bolder;
@@ -1186,6 +1240,7 @@ span {
   background: #fff;
   line-height: 1.4;
   border-radius: 5px;
+  border: 1px solid #bfafaf;
   overflow: hidden;
   z-index: 0;
   /*-- fondos de las cards */
@@ -1344,6 +1399,7 @@ span {
     max-width: 638px;
     margin-top: 35px;
     margin-bottom: 35px;
+    border: 1px solid #bfafaf;
   }
   .blog-card .meta {
     -ms-flex-preferred-size: 40%;
@@ -1392,6 +1448,7 @@ span {
     max-width: 498px;
     margin-top: 35px;
     margin-bottom: 35px;
+    border: 1px solid #bfafaf;
   }
   .blog-card .meta {
     -ms-flex-preferred-size: 40%;
@@ -1800,5 +1857,10 @@ span {
     opacity: 1;
     color: black;
   }
+}
+
+#sectionConsulta {
+  padding: 0 !important;
+  background-color: lightgrey;
 }
 /*# sourceMappingURL=main.css.map */

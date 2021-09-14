@@ -63,5 +63,36 @@ $colores:(primary: rgb(54, 71, 119), success: rgb(120,33,22), danger:rgb(140,77,
  }
 
 
+/*===================================================================================
+==================QUERY MEDIA - NAVEGADOR ===========================================
+=====================================================================================*/
+
+@media (max-width: 768px) {
+    .divisor
+    {
+        display: grid;
+        place-items: center;
+        background: rgb(23,113,121);
+        background: linear-gradient(90deg, rgba(23,113,121,1) 0%, rgba(234,236,216,1) 66%, rgba(162,222,233,1) 100%);
+        margin: 20px !important;
+    }
+}
+  
+  @media screen and (max-width: 576px) {
+    .divisor
+    {
+        display: grid;
+        place-items: center;
+        background: rgb(23,113,121);
+        background: linear-gradient(90deg, rgba(23,113,121,1) 0%, rgba(234,236,216,1) 66%, rgba(162,222,233,1) 100%);
+        margin: 5px !important;
+    }
+}
+
+
+
+
+
+
 
 

@@ -888,14 +888,14 @@ li a{
 
     .rowPasion1 { 
         border: 3px solid #a38888;
-        border-radius: 15%;
+        border-radius: 33%;
         background-color: #782116;
         box-shadow: 6px 6px 5px #af9c61;
         
     }
     
     .rowPasion2 { 
-        padding-left: 40px;
+        padding-left: 23%;
     }
     
     .pPasion{
@@ -918,10 +918,10 @@ li a{
                               "rowPasion1"
                               "rowPasion2"
                               "rowFoot";
-        gap: 10px;
         justify-content: center;
         align-items: center;
-        margin: 0 50px;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     .rowTitulo { 
@@ -1507,3 +1507,219 @@ margin: 10px 0;
     top:65px;
     left: 5%;
 }
+
+
+
+.espacioTarjeta{
+    min-height: 320px !important;
+}
+
+.consultasFormato
+{
+    padding:30px;
+}
+
+.tarjetaComiendo {
+    position: absolute;
+    top: 220%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 360px;
+    height: 300px;
+    background: #000;
+    box-shadow: 5px 3px 2px rgba(21,24,24,0.62);
+}
+.tarjetaComiendo .image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 20px;
+}
+.tarjetaComiendo .image img {
+    width: 100%;
+    transition: .5s;
+    height: 250px;
+}
+.tarjetaComiendo:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);
+}
+
+.tarjetaComiendo .detaile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;/*100%*/
+    height: 100%;
+    background: rgb(201, 13, 13);
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.tarjetaComiendo:hover .detaile {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.tarjetaComiendo .detaile .center {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.tarjetaComiendo .detaile .center h5 {
+    margin: 0;
+    padding: 0;
+    color: #ff3636;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.tarjetaComiendo .detaile .center h5 span {
+    font-size: 14px;
+    color: #00465d;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.tarjetaComiendo .detaile .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+    font-weight: bold;
+}
+.tarjetaComiendo .detaile .center ul {
+    margin: 10px auto 0;
+    padding: 0;
+    display: table;
+}
+
+.tarjetaComiendo .detaile .center ul li {
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+.tarjetaComiendo .detaile .center ul li img {
+    display: block;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    transition: all .6s;
+    border-radius: 3%;
+}
+
+.tarjetaComiendo .detaile .center ul li img:hover {
+    background:wheat;
+    border-radius: 3%;
+    transform: scale(1.1);
+
+}
+
+
+
+/*===================================================================================
+==================WRAPPER - BEST BURGER ===========================================
+=====================================================================================*/
+
+#sectionFormato
+{
+    height: 270px;  
+    margin-top: 25px;
+}
+
+.divisor
+{
+    display: grid;
+    place-items: center;
+    background: rgb(23,113,121);
+background: linear-gradient(90deg, rgba(23,113,121,1) 0%, rgba(234,236,216,1) 66%, rgba(162,222,233,1) 100%);
+    margin: 50px;
+    }
+
+.wrapper {
+    position: relative;
+    perspective: 40em;
+    display: grid;
+    transform-style: preserve-3d;
+  }
+  
+  .cardWrapper {
+    grid-area: 1 / 1;
+    height: 200px;
+    width: 400px;
+    transform: translateX(10px) rotateY(25deg) rotateX(10deg);
+    background:rgba(90,48,192,0.8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 900;
+    backface-visibility: hidden;
+    box-shadow: 0 10px 30px -3px rgba(0,0,0,.1);
+  }
+  
+  h5 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  
+  .cardWrapper .encerrado {
+    background: #000;
+    line-height: 1;
+    color: white;
+    font-size: 4rem;
+    padding: 14px 0;
+    display: inline-block;
+    transform: translate(-1px, 1px) scale(0.75);
+    transform-origin: right center;
+  }
+  
+  .cardWrapper .encerrado__redux {
+    color: black;
+    font-size: 3rem;
+    text-decoration: underline black;
+    display: inline-block;
+    transform: translate(-1px, 1px) scale(0.75);
+    transform-origin: right center;
+  }
+
+  .wrapper:before {
+    --bw: 9px;
+    grid-area: 1 / 1;
+    content: '';
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+    margin-top: calc(-1 * var(--bw));
+    margin-left: calc(-1 * var(--bw));
+    background: transparent;
+    transform: translateX(-60px) rotateY(-30deg) rotateX(15deg) scale(1.03);
+    pointer-events: none;
+    border: var(--bw) solid #000;
+    box-sizing: content-box;
+  }
+  
+  
+  .wrapper:hover > div,
+  .wrapper:hover:before {
+    transform: none;
+  }
+  
+  
+  .wrapper > div,
+  .wrapper:before {
+    will-change: transform;
+    transition: .3s transform cubic-bezier(.25,.46,.45,1);
+  }
+
+
+
+
+
+
+
+

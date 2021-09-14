@@ -72,98 +72,99 @@
                             <fieldset class="contacto__frame contacto__frame--color">
                                 <legend class="contacto__frame__legenda text-center">Datos de contacto</legend>
                                 
-                                <form id="frmContacto" class="was-validated" name="form1" method="POST">
-
-                                <!--Carga datos del usuario: Nombre-->
-                                    <div class="col-md-6 formulario__formato form-group mb-4 mt-5">
-                                        <label class="contacto__formato_texto contacto__formato_texto--color" for="txtNombre">Nombre</label>&nbsp;
-                                        <input class="form-control" type="text" name="txtNombre" id="txtNombre" placeholder="Ingrese su nombre" maxlength="20" autocomplete="off" autofocus spellcheck="true" required> 
-                                        
-                                        <div class="valid-feedback">Valido</div>
-                                        <div class="invalid-feedback">Ingrese un valor</div>
-                                    </div>
-
-
-                                    <!--Carga datos del usuario: Email-->
-                                    <div class="form-group formulario__formato col-md-6 mb-4" >
-                                        <div class=" input-group mb-3">
-                                            <div class="input-group-prepend">
-                                            <span class="input-group-text">@</span>
-                                            </div>
-                                            <input type="text" class="form-control" placeholder="Ingrese el mail" id="mail" name="mail" maxlength="20" autocomplete="off" required>
-                            
+                                    <form id="frmContacto" class="was-validated" name="form1" method="POST">
+                                    
+                                    <!--Carga datos del usuario: Nombre-->
+                                        <div class="col-md-6 formulario__formato form-group center mb-4 mt-5">
+                                            <label class="contacto__formato_texto contacto__formato_texto--color" for="txtNombre">Nombre</label>&nbsp;
+                                            <input class="form-control" type="text" name="txtNombre" id="txtNombre" placeholder="Ingrese su nombre" maxlength="20" autocomplete="off" autofocus spellcheck="true" required> 
+                                            
                                             <div class="valid-feedback">Valido</div>
                                             <div class="invalid-feedback">Ingrese un valor</div>
                                         </div>
-                                    </div>
-
-                                    <!--Carga datos del usuario: Telefono-->
-                                    <div class="form-group formulario__formato col-md-6 mb-1">
-                                        <label class="contacto__formato_texto contacto__formato_texto--color" for="txtNumber">Telefono</label>&nbsp;
-                                        <input class="form-control" type="tel" name="txtNumber" id="txtNumber" placeholder="Ingrese su telefono" max="15" min="8" size="20" autocomplete="off" required> 
-                                        
-                                        <div class="valid-feedback">Valido</div>
-                                        <div class="invalid-feedback">Ingrese un valor</div>
-                                    </div>
-                                    <br>
-
-                                    <!--Carga datos del usuario: Sexo-->
-                                    <div class="formulario__formato form-check">
-                                        <label class="contacto__formato_texto contacto__formato_texto--color form-check-label" for="rSexo">Elija el Sexo</label><br>
-                                        <input  class="form-check-input" type="radio" name="rSexo" value="M"> "M" <br>
-                                        <input  class="form-check-input" type="radio" name="rSexo" value="F"> "F" <br>
-                                    </div>
-                                    <br>
-
-                                    <!--Carga datos del usuario: Gustos/Preferencias-->
-                                    <div class="formulario__formato form-check">
-                                        <label class="contacto__formato_texto contacto__formato_texto--color form-check-label" for="chkGusto">Elija Preferencias</label><br>
-                                        <input class="form-check-input" type="checkbox" name="hSimples" value="HS" checked> "H.Simples" <br>
-                                        <input class="form-check-input" type="checkbox" name="hdobles" value="HD"> "H.Dobles" <br>
-                                        <input class="form-check-input" type="checkbox" name="hTriples" value="HT"> "H.Triples" <br>
-                                        <input class="form-check-input" type="checkbox" name="hVeganas" value="HV"> "H.Veganas" <br>
-                                        <input class="form-check-input" type="checkbox" name="hOtras" value="HO"> "Otros" <br>
-                                    </div>
-                                    <br>
-
-                                    <!--Carga datos del usuario: Provincia-->
-                                    <div class="formulario__formato form-group">
-                                        <label class="contacto__formato_texto contacto__formato_texto--color" for="chkProvincia">Seleccione su Provincia</label><br>
-                                        <select class="custom-select custom-select-lg mb-3" name="provincia">
-                                            <optgroup label="Buenos Aires">
-                                                <option value="1">CABA</option>
-                                                <option value="2">GBA Sur</option>
-                                                <option value="3">GBA Oeste</option>
-                                                <option value="4">GBA Norte</option>
-                                            </optgroup>
-                                            <optgroup label="Interior">
-                                                <option value="5">Neuquen</option>
-                                                <option value="6">Mendoza</option>
-                                                <option value="7">San Juan</option>
-                                                <option value="8">Cordoba</option>
-                                                <option value="9">Santa Fe</option>
-                                            </optgroup>
-                                        </select>
-                                        
-                                    </div>
-                                    <br>
-
-                                    <!--Carga datos del usuario: Comentarios-->
-
-                                    <div id="textArea" class="formulario__formato md-form mb-4 pink-textarea active-pink-textarea col-md-6">
-                                        <i class="fas fa-angle-double-right prefix"></i>
-                                        <textarea id="formText" class="md-textarea form-control" rows="3" required></textarea>
-                                        <label for="contacto__formato_texto contacto__formato_texto--color">Ingrese sus comentarios</label>
-                                    </div>
 
 
-                                    <!--Carga datos del usuario: Controles-->
-                                    <div class="btn-group d-grid gap-3 d-md-flex justify-content-md-center">
-                                        <button class="formulario__control formulario__control--color btn-sm btn-lg" type="submit">Enviar</button>
-                                        <button class="formulario__control formulario__control--color btn-sm btn-lg" type="reset">Borrar</button>
-                                    </div>
+                                        <!--Carga datos del usuario: Email-->
+                                        <div class="form-group formulario__formato col-md-6 mb-4" >
+                                            <div class=" input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                <span class="input-group-text">@</span>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="Ingrese el mail" id="mail" name="mail" maxlength="20" autocomplete="off" required>
                                 
-                                </form>
+                                                <div class="valid-feedback">Valido</div>
+                                                <div class="invalid-feedback">Ingrese un valor</div>
+                                            </div>
+                                        </div>
+
+                                        <!--Carga datos del usuario: Telefono-->
+                                        <div class="form-group formulario__formato col-md-6 mb-1">
+                                            <label class="contacto__formato_texto contacto__formato_texto--color" for="txtNumber">Telefono</label>&nbsp;
+                                            <input class="form-control" type="tel" name="txtNumber" id="txtNumber" placeholder="Ingrese su telefono" max="15" min="8" size="20" autocomplete="off" required> 
+                                            
+                                            <div class="valid-feedback">Valido</div>
+                                            <div class="invalid-feedback">Ingrese un valor</div>
+                                        </div>
+                                        <br>
+
+                                        <!--Carga datos del usuario: Sexo-->
+                                        <div class="formulario__formato form-check">
+                                            <label class="contacto__formato_texto contacto__formato_texto--color form-check-label" for="rSexo">Elija el Sexo</label><br>
+                                            <input  class="form-check-input" type="radio" name="rSexo" value="M"> "M" <br>
+                                            <input  class="form-check-input" type="radio" name="rSexo" value="F"> "F" <br>
+                                        </div>
+                                        <br>
+
+                                        <!--Carga datos del usuario: Gustos/Preferencias-->
+                                        <div class="formulario__formato form-check">
+                                            <label class="contacto__formato_texto contacto__formato_texto--color form-check-label" for="chkGusto">Elija Preferencias</label><br>
+                                            <input class="form-check-input" type="checkbox" name="hSimples" value="HS" checked> "H.Simples" <br>
+                                            <input class="form-check-input" type="checkbox" name="hdobles" value="HD"> "H.Dobles" <br>
+                                            <input class="form-check-input" type="checkbox" name="hTriples" value="HT"> "H.Triples" <br>
+                                            <input class="form-check-input" type="checkbox" name="hVeganas" value="HV"> "H.Veganas" <br>
+                                            <input class="form-check-input" type="checkbox" name="hOtras" value="HO"> "Otros" <br>
+                                        </div>
+                                        <br>
+
+                                        <!--Carga datos del usuario: Provincia-->
+                                        <div class="formulario__formato form-group">
+                                            <label class="contacto__formato_texto contacto__formato_texto--color" for="chkProvincia">Seleccione su Provincia</label><br>
+                                            <select class="custom-select custom-select-lg mb-3" name="provincia">
+                                                <optgroup label="Buenos Aires">
+                                                    <option value="1">CABA</option>
+                                                    <option value="2">GBA Sur</option>
+                                                    <option value="3">GBA Oeste</option>
+                                                    <option value="4">GBA Norte</option>
+                                                </optgroup>
+                                                <optgroup label="Interior">
+                                                    <option value="5">Neuquen</option>
+                                                    <option value="6">Mendoza</option>
+                                                    <option value="7">San Juan</option>
+                                                    <option value="8">Cordoba</option>
+                                                    <option value="9">Santa Fe</option>
+                                                </optgroup>
+                                            </select>
+                                            
+                                        </div>
+                                        <br>
+
+                                        <!--Carga datos del usuario: Comentarios-->
+
+                                        <div id="textArea" class="formulario__formato md-form mb-4 pink-textarea active-pink-textarea col-md-6">
+                                            <i class="fas fa-angle-double-right prefix"></i>
+                                            <textarea id="formText" class="md-textarea form-control" rows="3" required></textarea>
+                                            <label for="contacto__formato_texto contacto__formato_texto--color">Ingrese sus comentarios</label>
+                                        </div>
+
+
+                                        <!--Carga datos del usuario: Controles-->
+                                        <div class="btn-group d-grid gap-3 d-md-flex justify-content-md-center">
+                                            <button class="formulario__control formulario__control--color btn-sm btn-lg" type="submit">Enviar</button>
+                                            <button class="formulario__control formulario__control--color btn-sm btn-lg" type="reset">Borrar</button>
+                                        </div>
+                                    
+                                    </form>
+                                
                             </fieldset>
                 </article>
             </div>
