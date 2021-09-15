@@ -1495,6 +1495,9 @@ span {
   padding: 10px 0 !important;
 }
 
+/*===================================================================================
+==================SECCION OPINION - PROMOS ===========================================
+=====================================================================================*/
 #sectionSugerencias {
   padding: 0 !important;
 }
@@ -1688,6 +1691,9 @@ span {
       justify-content: space-around;
 }
 
+/*===================================================================================
+==================QUERY MEDIA - OPIIONES ===========================================
+=====================================================================================*/
 @media (max-width: 768px) {
   .cardOpinion {
     height: 100vh !important;
@@ -1862,5 +1868,77 @@ span {
 #sectionConsulta {
   padding: 0 !important;
   background-color: lightgrey;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+
+#sectionClientes {
+  padding: 0 0 40px 0 !important;
+}
+
+.slider__clientes {
+  -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+          box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  background-color: grey;
+}
+
+.slider__clientes::before, .slider__clientes::after {
+  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider__clientes::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+.slider__clientes::before {
+  left: 0;
+  top: 0;
+}
+
+.slider__clientes .slideCliente-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider__clientes .slideCard {
+  height: 100px;
+  width: 250px;
 }
 /*# sourceMappingURL=main.css.map */
