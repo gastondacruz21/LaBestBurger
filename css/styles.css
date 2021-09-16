@@ -1761,6 +1761,13 @@ background: linear-gradient(90deg, rgba(23,113,121,1) 0%, rgba(234,236,216,1) 66
     height: 50px;
     margin-bottom: 40px;
   }
+
+  .center .textoArea{
+    position: relative;
+    width: 300px;
+    margin-bottom: 40px;
+  }
+
   .center .inputbox input {
     position: absolute;
     top: 0;
