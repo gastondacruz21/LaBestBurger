@@ -1781,7 +1781,7 @@ background: linear-gradient(90deg, rgba(23,113,121,1) 0%, rgba(234,236,216,1) 66
     font-size: 1.2em;
   }
 
-  .center .inputbox textarea {
+  .center .textoArea .textArea_formato {
     position: absolute;
     top: 0;
     left: 0;
