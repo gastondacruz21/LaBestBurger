@@ -1290,7 +1290,12 @@ margin: 10px 0;
 .beneficio-container .icono1__espacio{
     background-size: cover !important;
     padding: 0 0 30px 0 !important;
+    
 }      
+
+.icono1__espacio:first-child{
+    margin: 20px 0 0 0;
+}
 
 .beneficio-container .icono1__espacio .icono1 {
         float: left;
@@ -1305,13 +1310,13 @@ margin: 10px 0;
         transition: all 0.3s ease-in-out;
 }
 
-.beneficio-container .icono1__espacio .icono1 i {
+.beneficio-container .icono1__espacio .icono1 {
       
         color:white;
         font-size: 31px;
 }
 
-.beneficio-container .icono1__espacio .icono1 .iconos__lista {
+.beneficio-container .icono1__espacio .icono1 {
     
             font-size: 20px;
             line-height: 1;
@@ -1723,8 +1728,97 @@ background: linear-gradient(90deg, rgba(23,113,121,1) 0%, rgba(234,236,216,1) 66
 
 
 
+  .formulario {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, greenyellow, dodgerblue);
+  }
+
+  .center {
+    position: relative;
+    padding: 50px 50px;
+    background: #fff;
+    border-radius: 10px;
+  }
+  .center .h2Contacto {
+    font-size: 2em;
+    border-left: 5px solid dodgerblue;
+    padding: 10px;
+    color: #000;
+    letter-spacing: 5px;
+    margin-bottom: 60px;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  .center .inputbox {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 40px;
+  }
+  .center .inputbox input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid #000;
+    outline: none;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+  }
+
+  .center .inputbox textarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid #000;
+    outline: none;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .center .inputbox:last-child {
+    margin-bottom: 0;
+  }
+  .center .inputbox .formLabel {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    font-size: 1em;
+    transition: 0.6s;
+
+    
+  }
+
+  .center .inputbox input:focus ~ .formLabel,
+  .center .inputbox input:valid ~ .formLabel{
+    transform: translateX(-13px) translateY(-35px);
+    font-size: 1em;
+  }
+
+  .center .inputbox [type="button"] {
+    width: 50%;
+    background: dodgerblue;
+    color: #fff;
+    border: #fff;
+  }
+  .center .inputbox:hover [type="button"] {
+    background: linear-gradient(45deg, greenyellow, dodgerblue);
+  }
 
 
 
 
 
+  

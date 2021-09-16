@@ -207,7 +207,7 @@
             overflow: hidden !important;
             background: black !important;
             margin-bottom: 10px;
-            box-shadow: 0 70px 63px -60px #000000 !important;
+            box-shadow: 10px 70px 63px -60px #000000 !important;
             display: flex !important;
             justify-content: center !important;
             align-items: center !important;
@@ -218,9 +218,9 @@
         .card0
         {
             
-            background-image: url('../images/menu/User11.jpg') !important;
-            background-size: 420px !important;
-            background-repeat: no-repeat;
+            background-image: url('../images/menu/User11.jpg');
+            background-size: 420px;
+            background-repeat: no-repeat;  
 
             &:hover{
                 background-image: url('../images/menu/User11.jpg') left center no-repeat !important; 
