@@ -207,7 +207,7 @@
             overflow: hidden !important;
             background: black !important;
             margin-bottom: 10px;
-            box-shadow: 10px 70px 63px -60px #000000 !important;
+            box-shadow: 0 70px 63px -60px #000000 !important;
             display: flex !important;
             justify-content: center !important;
             align-items: center !important;
@@ -218,13 +218,13 @@
         .card0
         {
             
-            background-image: url('../images/menu/User11.jpg');
-            background-size: 420px;
+            background-image: url('../images/menu/User11.jpg') !important;
+            background-size: 420px !important;
             background-repeat: no-repeat;
 
             &:hover{
                 background-image: url('../images/menu/User11.jpg') left center no-repeat !important; 
-                background-size: 600px;
+                background-size: 600px !important;
         
                 .pCard
                 
@@ -237,13 +237,13 @@
 
         .card1
         {
-            background-image: url('../images/menu/User12.jpg');
-            background-size: 420px ;
+            background-image: url('../images/menu/User12.jpg') !important;
+            background-size: 420px !important;
             background-repeat: no-repeat;
 
             &:hover{
-                background-image: url('../images/menu/User12.jpg') left center no-repeat ; 
-                background-size: 600px ;
+                background-image: url('../images/menu/User12.jpg') left center no-repeat !important; 
+                background-size: 600px !important;
                 
                 
                 .pCard1
@@ -257,13 +257,13 @@
 
         .card2
         {
-                background-image: url('../images/menu/User13.jpg');
-                background-size: 420px;
+                background-image: url('../images/menu/User13.jpg') !important;
+                background-size: 420px !important;
                 background-repeat: no-repeat;
 
                     &:hover{
-                        background-image: url('../images/menu/User13.jpg') left center no-repeat; 
-                        background-size: 600px;
+                        background-image: url('../images/menu/User13.jpg') left center no-repeat !important; 
+                        background-size: 600px !important;
                     
                 
                     .pCard2
@@ -312,13 +312,13 @@
         .card0
         {
             
-            background-image: url('../images/menu/User11.jpg');
-            background-size: 420px ;
+            background-image: url('../images/menu/User11.jpg') !important;
+            background-size: 420px !important;
             background-repeat: no-repeat;
 
             &:hover{
-                background-image: url('../images/menu/User11.jpg') left center no-repeat; 
-                background-size: 600px;
+                background-image: url('../images/menu/User11.jpg') left center no-repeat !important; 
+                background-size: 600px !important;
         
                 .pCard
                 
@@ -331,13 +331,13 @@
 
         .card1
         {
-            background-image: url('../images/menu/User12.jpg') ;
-            background-size: 420px ;
+            background-image: url('../images/menu/User12.jpg') !important;
+            background-size: 420px !important;
             background-repeat: no-repeat;
 
             &:hover{
-                background-image: url('../images/menu/User12.jpg') left center no-repeat ; 
-                background-size: 600px ;
+                background-image: url('../images/menu/User12.jpg') left center no-repeat !important; 
+                background-size: 600px !important;
                 
                 
                 .pCard1
@@ -351,13 +351,13 @@
 
         .card2
         {
-                background-image: url('../images/menu/User13.jpg') ;
-                background-size: 420px ;
+                background-image: url('../images/menu/User13.jpg') !important;
+                background-size: 420px !important;
                 background-repeat: no-repeat;
 
                     &:hover{
-                        background-image: url('../images/menu/User13.jpg') left center no-repeat; 
-                        background-size: 600px ;
+                        background-image: url('../images/menu/User13.jpg') left center no-repeat !important; 
+                        background-size: 600px !important;
                     
                 
                     .pCard2

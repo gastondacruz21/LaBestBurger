@@ -1725,8 +1725,8 @@ span {
     overflow: hidden !important;
     background: black !important;
     margin-bottom: 10px;
-    -webkit-box-shadow: 10px 70px 63px -60px #000000 !important;
-            box-shadow: 10px 70px 63px -60px #000000 !important;
+    -webkit-box-shadow: 0 70px 63px -60px #000000 !important;
+            box-shadow: 0 70px 63px -60px #000000 !important;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -1740,39 +1740,39 @@ span {
     margin: 5px !important;
   }
   .cardOpinion .card0 {
-    background-image: url("../images/menu/User11.jpg");
-    background-size: 420px;
+    background-image: url("../images/menu/User11.jpg") !important;
+    background-size: 420px !important;
     background-repeat: no-repeat;
   }
   .cardOpinion .card0:hover {
     background-image: url("../images/menu/User11.jpg") left center no-repeat !important;
-    background-size: 600px;
+    background-size: 600px !important;
   }
   .cardOpinion .card0:hover .pCard {
     opacity: 1;
     color: black;
   }
   .cardOpinion .card1 {
-    background-image: url("../images/menu/User12.jpg");
-    background-size: 420px;
+    background-image: url("../images/menu/User12.jpg") !important;
+    background-size: 420px !important;
     background-repeat: no-repeat;
   }
   .cardOpinion .card1:hover {
-    background-image: url("../images/menu/User12.jpg") left center no-repeat;
-    background-size: 600px;
+    background-image: url("../images/menu/User12.jpg") left center no-repeat !important;
+    background-size: 600px !important;
   }
   .cardOpinion .card1:hover .pCard1 {
     opacity: 1;
     color: black;
   }
   .cardOpinion .card2 {
-    background-image: url("../images/menu/User13.jpg");
-    background-size: 420px;
+    background-image: url("../images/menu/User13.jpg") !important;
+    background-size: 420px !important;
     background-repeat: no-repeat;
   }
   .cardOpinion .card2:hover {
-    background-image: url("../images/menu/User13.jpg") left center no-repeat;
-    background-size: 600px;
+    background-image: url("../images/menu/User13.jpg") left center no-repeat !important;
+    background-size: 600px !important;
   }
   .cardOpinion .card2:hover .pCard2 {
     opacity: 1;
@@ -1825,39 +1825,39 @@ span {
     position: relative !important;
   }
   .cardOpinion .card0 {
-    background-image: url("../images/menu/User11.jpg");
-    background-size: 420px;
+    background-image: url("../images/menu/User11.jpg") !important;
+    background-size: 420px !important;
     background-repeat: no-repeat;
   }
   .cardOpinion .card0:hover {
-    background-image: url("../images/menu/User11.jpg") left center no-repeat;
-    background-size: 600px;
+    background-image: url("../images/menu/User11.jpg") left center no-repeat !important;
+    background-size: 600px !important;
   }
   .cardOpinion .card0:hover .pCard {
     opacity: 1;
     color: black;
   }
   .cardOpinion .card1 {
-    background-image: url("../images/menu/User12.jpg");
-    background-size: 420px;
+    background-image: url("../images/menu/User12.jpg") !important;
+    background-size: 420px !important;
     background-repeat: no-repeat;
   }
   .cardOpinion .card1:hover {
-    background-image: url("../images/menu/User12.jpg") left center no-repeat;
-    background-size: 600px;
+    background-image: url("../images/menu/User12.jpg") left center no-repeat !important;
+    background-size: 600px !important;
   }
   .cardOpinion .card1:hover .pCard1 {
     opacity: 1;
     color: black;
   }
   .cardOpinion .card2 {
-    background-image: url("../images/menu/User13.jpg");
-    background-size: 420px;
+    background-image: url("../images/menu/User13.jpg") !important;
+    background-size: 420px !important;
     background-repeat: no-repeat;
   }
   .cardOpinion .card2:hover {
-    background-image: url("../images/menu/User13.jpg") left center no-repeat;
-    background-size: 600px;
+    background-image: url("../images/menu/User13.jpg") left center no-repeat !important;
+    background-size: 600px !important;
   }
   .cardOpinion .card2:hover .pCard2 {
     opacity: 1;
