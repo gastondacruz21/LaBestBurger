@@ -1002,6 +1002,9 @@ span {
 #sectionCarrito {
   padding: 10px 0 !important; }
 
+/*===================================================================================
+==================SECCION OPINION - PROMOS ===========================================
+=====================================================================================*/
 #sectionSugerencias {
   padding: 0 !important; }
 
@@ -1120,6 +1123,9 @@ span {
   align-items: center;
   justify-content: space-around; }
 
+/*===================================================================================
+==================QUERY MEDIA - OPIIONES ===========================================
+=====================================================================================*/
 @media (max-width: 768px) {
   .cardOpinion {
     height: 100vh !important;
@@ -1139,39 +1145,39 @@ span {
       overflow: hidden !important;
       background: black !important;
       margin-bottom: 10px;
-      box-shadow: 0 70px 63px -60px #000000 !important;
+      box-shadow: 10px 70px 63px -60px #000000 !important;
       display: flex !important;
       justify-content: center !important;
       align-items: center !important;
       position: relative !important;
       margin: 5px !important; }
     .cardOpinion .card0 {
-      background-image: url("../images/menu/User11.jpg") !important;
-      background-size: 420px !important;
+      background-image: url("../images/menu/User11.jpg");
+      background-size: 420px;
       background-repeat: no-repeat; }
       .cardOpinion .card0:hover {
         background-image: url("../images/menu/User11.jpg") left center no-repeat !important;
-        background-size: 600px !important; }
+        background-size: 600px; }
         .cardOpinion .card0:hover .pCard {
           opacity: 1;
           color: black; }
     .cardOpinion .card1 {
-      background-image: url("../images/menu/User12.jpg") !important;
-      background-size: 420px !important;
+      background-image: url("../images/menu/User12.jpg");
+      background-size: 420px;
       background-repeat: no-repeat; }
       .cardOpinion .card1:hover {
-        background-image: url("../images/menu/User12.jpg") left center no-repeat !important;
-        background-size: 600px !important; }
+        background-image: url("../images/menu/User12.jpg") left center no-repeat;
+        background-size: 600px; }
         .cardOpinion .card1:hover .pCard1 {
           opacity: 1;
           color: black; }
     .cardOpinion .card2 {
-      background-image: url("../images/menu/User13.jpg") !important;
-      background-size: 420px !important;
+      background-image: url("../images/menu/User13.jpg");
+      background-size: 420px;
       background-repeat: no-repeat; }
       .cardOpinion .card2:hover {
-        background-image: url("../images/menu/User13.jpg") left center no-repeat !important;
-        background-size: 600px !important; }
+        background-image: url("../images/menu/User13.jpg") left center no-repeat;
+        background-size: 600px; }
         .cardOpinion .card2:hover .pCard2 {
           opacity: 1;
           color: black; } }
@@ -1201,32 +1207,32 @@ span {
       align-items: center !important;
       position: relative !important; }
     .cardOpinion .card0 {
-      background-image: url("../images/menu/User11.jpg") !important;
-      background-size: 420px !important;
+      background-image: url("../images/menu/User11.jpg");
+      background-size: 420px;
       background-repeat: no-repeat; }
       .cardOpinion .card0:hover {
-        background-image: url("../images/menu/User11.jpg") left center no-repeat !important;
-        background-size: 600px !important; }
+        background-image: url("../images/menu/User11.jpg") left center no-repeat;
+        background-size: 600px; }
         .cardOpinion .card0:hover .pCard {
           opacity: 1;
           color: black; }
     .cardOpinion .card1 {
-      background-image: url("../images/menu/User12.jpg") !important;
-      background-size: 420px !important;
+      background-image: url("../images/menu/User12.jpg");
+      background-size: 420px;
       background-repeat: no-repeat; }
       .cardOpinion .card1:hover {
-        background-image: url("../images/menu/User12.jpg") left center no-repeat !important;
-        background-size: 600px !important; }
+        background-image: url("../images/menu/User12.jpg") left center no-repeat;
+        background-size: 600px; }
         .cardOpinion .card1:hover .pCard1 {
           opacity: 1;
           color: black; }
     .cardOpinion .card2 {
-      background-image: url("../images/menu/User13.jpg") !important;
-      background-size: 420px !important;
+      background-image: url("../images/menu/User13.jpg");
+      background-size: 420px;
       background-repeat: no-repeat; }
       .cardOpinion .card2:hover {
-        background-image: url("../images/menu/User13.jpg") left center no-repeat !important;
-        background-size: 600px !important; }
+        background-image: url("../images/menu/User13.jpg") left center no-repeat;
+        background-size: 600px; }
         .cardOpinion .card2:hover .pCard2 {
           opacity: 1;
           color: black; } }
