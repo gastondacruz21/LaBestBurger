@@ -590,7 +590,11 @@ span {
 =====================================================================================*/
 @media (max-width: 768px) {
   #h2 {
-    font-size: 1.2rem !important; } }
+    font-size: 1.2rem !important; }
+  .encabezado_h3 {
+    font-size: 1.15rem !important; }
+  .encabezado_h4Index {
+    font-size: 1.21rem !important; } }
 
 @media screen and (max-width: 576px) {
   #h2 {
@@ -854,7 +858,7 @@ span {
     padding-left: 20px;
     margin-top: 15px; }
   .regalostitulo {
-    font-size: 1.4rem; } }
+    font-size: 1.16rem; } }
 
 @media screen and (max-width: 576px) {
   .main-container__info {
