@@ -102,9 +102,15 @@ $decoracion: none;
 
 @media screen and (max-width: 576px) {
 
+
+    #h2
+    {
+        font-size: 1.16rem !important;
+    }
+    
     .encabezado_h2
     {
-        font-size: 1.2rem !important;
+        font-size: 1rem !important;
     }
 
     .encabezado_h3

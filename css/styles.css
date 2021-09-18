@@ -274,25 +274,23 @@ li a{
 
     /*--- Se ajusta el texto en la QM para el carrousel -- */
         #h1 {
-            color:rgb(80, 47, 27);
+            color:wheat;
             font-weight: bolder;
             text-decoration:wavy ;
-            text-shadow: 0px 5px 7px  rgb(218, 200, 200);
             text-transform: capitalize;
-            font-size: 2rem !important;
+            font-size: 1.4rem !important;
             top: 95% !important;
         }
     
         .span.efectito{
             font: size 2rem !important;
-            animation:animate 4.2s linear infinite;
             color:rgb(207, 192, 192);
         }
            
     /* --- Se ajusta el posicionamiento del parrafo que acompaña el slider  --- */
         
         .carrousel__parrafo{
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
     }
@@ -624,6 +622,10 @@ li a{
         margin-bottom: 30px;
         margin-bottom: 45px;
     }
+
+    .card-title{
+        font-size: 1.4rem;
+    }
     
 
 }
@@ -775,6 +777,7 @@ li a{
     background-size: cover ;
     background-attachment: fixed ;
     background-position: center ;
+    padding: 0 !important;
 }
 
 /* 4.5.2 - se fija formato grid --*/
@@ -796,12 +799,9 @@ li a{
 
 .rowPasion1 { 
     grid-area: 2 / 1 / 3 / 2; 
-    border: 3px solid #a38888;
-    border-radius: 23%;
-    margin-left: 30px;
-    background-color: #782116;
-    padding: 30px;
-    box-shadow: 6px 6px 5px #af9c61;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -813,6 +813,7 @@ li a{
 .rowFoot { 
     grid-area: 3 / 1 / 4 / 3;
     margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 /* 4.5.2 - Formato a los textos de pasion*/
@@ -870,10 +871,9 @@ li a{
 
     .rowPasion1 { 
         grid-area: rowPasion1; 
-        margin: 3px;
+        margin: 0;
+        padding: 0;
         display: flex;
-        justify-content: center;
-        align-items: center;        
     }
 
     .rowPasion2 { 
@@ -886,20 +886,13 @@ li a{
         margin-bottom: 40px;
     }
 
-    .rowPasion1 { 
-        border: 3px solid #a38888;
-        border-radius: 33%;
-        background-color: #782116;
-        box-shadow: 6px 6px 5px #af9c61;
-        
-    }
     
     .rowPasion2 { 
         padding-left: 23%;
     }
     
     .pPasion{
-        font-size: 0.7rem;
+        font-size: 1rem;
         font-weight: bold;
         color: #e3e3e3;
     }
@@ -930,7 +923,8 @@ li a{
 
     .rowPasion1 { 
         grid-area: rowPasion1; 
-        margin: 3px;
+        margin: 0;
+        padding: 0;
         display: flex;
         justify-content: center;
         align-items: center;        
@@ -946,13 +940,6 @@ li a{
         margin-bottom: 40px;
     }
 
-    .rowPasion1 { 
-        border: 3px solid #a38888;
-        border-radius: 15%;
-        background-color: #782116;
-        box-shadow: 6px 6px 5px #af9c61;
-        
-    }
     
     .rowPasion2 { 
         padding-left: 40px;
@@ -1186,6 +1173,7 @@ aside{
     margin-bottom: 40px;
 }
 
+
 /* 5.1.7 - Se le da efecto de blink al encabezado */
 
 span.efectito{
@@ -1197,12 +1185,12 @@ span.efectito{
 @keyframes animate{
        0%,18%,38%,68%,80%
        {
-           color: rgb(43, 25, 122);
+           color: rgb(204, 195, 241);
            text-shadow: none;
        }
        18.1%,39%,69%,81%,100%
        {
-           color:rgb(58, 71, 71);
+           color:rgb(183, 219, 219);
        }
 }
 
@@ -1274,6 +1262,17 @@ blockquote::before{
     box-shadow: 0 0 15px 5px rgba(104,104,119,0.3);
 }
 
+
+/*===================================================================================
+================== QUERY MEDIA: PARRAFOS PAGINAS C/H1 =================================
+=====================================================================================*/
+
+@media (max-width:768px) {
+    .articleProd p
+    {
+        font-size: 1rem;
+    }
+}
 
 
 /*===================================================================================
@@ -1392,7 +1391,7 @@ margin: 10px 0;
         padding: 0;
         border: 3px solid black;
         background-color: antiquewhite;
-        border-radius: 10px;
+        border-radius: 50px;
         box-shadow: 20px 20px 20px -3px rgba(40,8,8,0.8);
         transition: all .6s;
 }
@@ -1424,7 +1423,7 @@ margin: 10px 0;
     }
     
     .shopPhrase .pStyle{
-        font-size: 0.7rem;
+        font-size: 1.5rem;
         margin-top: 2%;
     }
 
@@ -1520,111 +1519,6 @@ margin: 10px 0;
 
 
 
-.espacioTarjeta{
-    min-height: 320px !important;
-}
-
-.consultasFormato
-{
-    padding:30px;
-}
-
-.tarjetaComiendo {
-    position: absolute;
-    top: 220%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 360px;
-    height: 300px;
-    background: #000;
-    box-shadow: 5px 3px 2px rgba(21,24,24,0.62);
-}
-.tarjetaComiendo .image {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    object-fit: cover;
-    padding: 20px;
-}
-.tarjetaComiendo .image img {
-    width: 100%;
-    transition: .5s;
-    height: 250px;
-}
-.tarjetaComiendo:hover .image img {
-    opacity: .5;
-    transform: translateX(30%);
-}
-
-.tarjetaComiendo .detaile {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70%;/*100%*/
-    height: 100%;
-    background: rgb(201, 13, 13);
-    transition: .5s;
-    transform-origin: left;
-    transform: perspective(2000px) rotateY(-90deg);
-}
-.tarjetaComiendo:hover .detaile {
-    transform: perspective(2000px) rotateY(0deg);
-}
-.tarjetaComiendo .detaile .center {
-    padding: 20px;
-    text-align: center;
-    background: #fff;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.tarjetaComiendo .detaile .center h5 {
-    margin: 0;
-    padding: 0;
-    color: #ff3636;
-    line-height: 20px;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-.tarjetaComiendo .detaile .center h5 span {
-    font-size: 14px;
-    color: #00465d;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.tarjetaComiendo .detaile .center p {
-    margin: 10px 0;
-    padding: 0;
-    color: #262626;
-    font-weight: bold;
-}
-.tarjetaComiendo .detaile .center ul {
-    margin: 10px auto 0;
-    padding: 0;
-    display: table;
-}
-
-.tarjetaComiendo .detaile .center ul li {
-    list-style: none;
-    margin: 0 5px;
-    float: left;
-}
-.tarjetaComiendo .detaile .center ul li img {
-    display: block;
-    color: #fff;
-    width: 32px;
-    height: 32px;
-    transition: all .6s;
-    border-radius: 3%;
-}
-
-.tarjetaComiendo .detaile .center ul li img:hover {
-    background:wheat;
-    border-radius: 3%;
-    transform: scale(1.1);
-
-}
 
 
 
@@ -1724,104 +1618,6 @@ background: linear-gradient(90deg, rgba(23,113,121,1) 0%, rgba(234,236,216,1) 66
   .wrapper:before {
     will-change: transform;
     transition: .3s transform cubic-bezier(.25,.46,.45,1);
-  }
-
-
-
-  .formulario {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(45deg, greenyellow, dodgerblue);
-  }
-
-  .center {
-    position: relative;
-    padding: 50px 50px;
-    background: #fff;
-    border-radius: 10px;
-  }
-  .center .h2Contacto {
-    font-size: 2em;
-    border-left: 5px solid dodgerblue;
-    padding: 10px;
-    color: #000;
-    letter-spacing: 5px;
-    margin-bottom: 60px;
-    font-weight: bold;
-    padding-left: 10px;
-  }
-  .center .inputbox {
-    position: relative;
-    width: 300px;
-    height: 50px;
-    margin-bottom: 40px;
-  }
-
-  .center .textoArea{
-    position: relative;
-    width: 300px;
-    margin-bottom: 40px;
-  }
-
-  .center .inputbox input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border: 2px solid #000;
-    outline: none;
-    background: none;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 1.2em;
-  }
-
-  .center .textoArea .textArea_formato {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border: 2px solid #000;
-    outline: none;
-    background: none;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 1.2em;
-    margin-bottom: 20px;
-  }
-  
-  .center .inputbox:last-child {
-    margin-bottom: 0;
-  }
-  .center .inputbox .formLabel {
-    position: absolute;
-    top: 14px;
-    left: 20px;
-    font-size: 1em;
-    transition: 0.6s;
-
-    
-  }
-
-  .center .inputbox input:focus ~ .formLabel,
-  .center .inputbox input:valid ~ .formLabel{
-    transform: translateX(-13px) translateY(-35px);
-    font-size: 1em;
-  }
-
-  .center .inputbox [type="button"] {
-    width: 50%;
-    background: dodgerblue;
-    color: #fff;
-    border: #fff;
-  }
-  .center .inputbox:hover [type="button"] {
-    background: linear-gradient(45deg, greenyellow, dodgerblue);
   }
 
 

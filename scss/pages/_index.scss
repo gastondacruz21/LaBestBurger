@@ -2,6 +2,7 @@ $CardIndex_fondo: rgba(227, 155, 190, 1);
 $Card_H1_margin: 2.5% 0 0 3%;
 $ShopImg_borde: 1px solid black;   
 $letraBtn: white;
+$ShopBorder: 2px solid black;
 
 
 /* Formato se las secciones */
@@ -45,10 +46,16 @@ $letraBtn: white;
     border: $ShopImg_borde;
     width: 60% !important; 
     margin: 15px 5px 15px 10px;
+
+     &:hover
+     {
+        filter: sepia(80%);
+        transition: all .5s ease-in-out;
+     }
 }
 
 .shopImg__formato--redondeo{
-    border-radius: 35%;
+    border: $ShopBorder;
 }
 
 /* Botones de las cards*/
@@ -76,6 +83,7 @@ $colores:(primary: rgb(54, 71, 119), success: rgb(120,33,22), danger:rgb(140,77,
         background: linear-gradient(90deg, rgba(23,113,121,1) 0%, rgba(234,236,216,1) 66%, rgba(162,222,233,1) 100%);
         margin: 20px !important;
     }
+
 }
   
   @media screen and (max-width: 576px) {

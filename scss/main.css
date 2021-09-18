@@ -118,8 +118,15 @@ address {
   margin: 15px 5px 15px 10px;
 }
 
+.shopImg__formato:hover {
+  -webkit-filter: sepia(80%);
+          filter: sepia(80%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
 .shopImg__formato--redondeo {
-  border-radius: 35%;
+  border: 2px solid black;
 }
 
 /* Botones de las cards*/
@@ -168,64 +175,107 @@ address {
 /*===================================================================================
 ================== PAGINA CONTACTO ESTILOS ==============================
 =====================================================================================*/
-#frmContacto {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
+#sectionContacto {
+  padding: 0 !important;
+}
+
+.formulario {
+  margin: 30px 0 50px 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100vh;
 }
 
-#frmContacto input {
-  width: 110%;
-  height: 35px;
+.formulario .center {
+  position: relative;
+  padding: 50px 50px;
+  background: #fff;
+  border-radius: 10px;
+  background: lightgrey;
+  border-radius: 50px;
 }
 
-.contacto__formato_texto {
-  font-style: italic;
-  font-weight: bolder;
-  font-size: 0.9rem;
+.formulario .center .h2Contacto {
+  font-size: 2em;
+  border-left: 5px solid dodgerblue;
+  padding: 10px;
+  color: #000;
+  letter-spacing: 5px;
+  margin-bottom: 60px;
+  font-weight: bold;
+  padding-left: 10px;
 }
 
-.contacto__formato_texto--color {
-  color: #545454;
+.formulario .center .inputbox {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 40px;
+  background-color: white;
 }
 
-/* 7.1.1 - Estilo al Frame que contiene los controles */
-.contacto__frame {
-  margin: 5%;
-  padding: 2%;
+.formulario .center .inputbox:last-child {
+  margin-bottom: 0;
 }
 
-.contacto__frame--color {
-  background-color: lightgray;
-  border-radius: 5px;
+.formulario .center .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  font-size: 1.2em;
 }
 
-.contacto__frame__legenda {
-  color: #545454;
-  font-style: italic;
-  font-family: handlee;
-  font-weight: bolder;
-  font-size: x-large;
-  text-shadow: 2px 2px 3px grey;
-  margin-top: 20px;
+.formulario .center .inputbox .formLabel {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-size: 1em;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
-/* 7.1.2 - Formato a los bloques de los controles*/
-.formulario__formato {
-  margin-left: 3%;
+.formulario .center .textoArea {
+  position: relative;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.formulario .center .textoArea textarea {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.formulario .center .textoArea .formLabel {
+  position: absolute;
+  top: 7px;
+  left: 20px;
+  font-size: 1em;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.center .inputbox input:focus ~ .formLabel,
+.center .inputbox input:valid ~ .formLabel,
+.center .textoArea textarea:focus ~ .formLabel,
+.center .textoArea textarea:valid ~ .formLabel {
+  -webkit-transform: translateX(-13px) translateY(-35px);
+          transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
 }
 
 /* 7.1.3 - Formato a los botones + hover */
@@ -246,10 +296,24 @@ address {
   color: black;
   -webkit-box-shadow: 5px 5px 20px #3a3f3b;
           box-shadow: 5px 5px 20px #3a3f3b;
+  -webkit-transition: all .6s;
+  transition: all .6s;
 }
 
 .contacto__foot_fontContacto_ {
   font-family: courgette;
+}
+
+/* Piso el formato de boostrap para el tamaño del botón */
+.btn-sm {
+  width: 140px;
+}
+
+/******QUERY MEDIA - CONTACTO******************/
+@media (max-width: 768px) {
+  .h2Contacto {
+    font-size: 1.3rem !important;
+  }
 }
 
 /*===================================================================================
@@ -768,8 +832,11 @@ span {
 ================== QUERY MEDIA: SECCION REGALOS =================================
 =====================================================================================*/
 @media screen and (max-width: 576px) {
+  #h2 {
+    font-size: 1.16rem !important;
+  }
   .encabezado_h2 {
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
   }
   .encabezado_h3 {
     font-size: 1.12rem !important;
@@ -1141,6 +1208,9 @@ span {
     text-align: center;
     padding-left: 20px;
     margin-top: 15px;
+  }
+  .regalostitulo {
+    font-size: 1.4rem;
   }
 }
 
@@ -1940,5 +2010,77 @@ span {
 .slider__clientes .slideCard {
   height: 100px;
   width: 250px;
+}
+
+#info {
+  padding: 0;
+}
+
+#info .pasionDiv {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#info .pasionDiv .pasionCard {
+  display: inline-block;
+  width: 50%;
+  padding: 4rem 1rem 3rem 1rem;
+  background-color: teal;
+  position: relative;
+  -webkit-box-shadow: 6px 6px 5px #e6cd89;
+          box-shadow: 6px 6px 5px #e6cd89;
+}
+
+#info .pasionDiv .pasionCard:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  background-color: skyblue;
+  top: 0px;
+  right: 0px;
+  border-bottom: 20px solid #006767;
+  border-left: 20px solid #006767;
+  border-right: 20px solid lightgray;
+  border-top: 20px solid lightgray;
+  position: absolute;
+  -webkit-filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.5));
+}
+
+#info .pasionDiv .pasionCard:before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-top: 20px solid #006767;
+  border-right: 20px solid #006767;
+  border-left: 20px solid lightgray;
+  border-bottom: 20px solid lightgray;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  -webkit-filter: drop-shadow(7px -7px 5px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(7px -7px 5px rgba(0, 0, 0, 0.5));
+  margin-right: 10%;
+}
+
+#info .pasionDiv .pasionCard:nth-of-type(1) {
+  margin-right: 9%;
+}
+
+.tituloPasion {
+  color: snow;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.parrafoPasion {
+  color: snow;
+  line-height: 140%;
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */
