@@ -1,4 +1,8 @@
 
+/*===================================================================================
+==================SECCION CLIENTES CARROUSEL - INDEX.HTML ==============================
+=====================================================================================*/
+
 @mixin white-gradient {
 	background: linear-gradient(to right,  rgb(255, 255, 255) 0%,rgba(255,255,255,0) 100%);
 
@@ -14,12 +18,15 @@ $animationSpeed: 40s;
 
 
 
-// Estilo
+/* FORMATO A LA SECCION */
 
 #sectionClientes{
     padding: 0 0 40px 0 !important;
 
 }
+
+
+/* FORMATO AL CARROUSEL */
 
 .slider__clientes {
 	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);

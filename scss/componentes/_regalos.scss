@@ -1,5 +1,8 @@
+ /*===================================================================================
+================== SECCION REGALOS Y BENEFICIOS -INDEX =================================
+=====================================================================================*/
 
-/* Seccion de regalos y promos */
+/* FORMATO A LA ESTRUCTURA DE LOS DIVS */
 
 .main-container {
     background-color: #ffffff;
@@ -13,7 +16,7 @@
     padding: 30px;
     overflow: hidden;
 
-
+/* ASIGNA IMAGEN Y FORMATO DE FONDO */
   }
   .main-container__image {
     background-image: url(../images/regalo.jpg);
@@ -29,6 +32,8 @@
           }
 
   }
+
+  /* CONTENIDO AL 1ER DIV  */
   .main-container__info {
     background: #000;
     display: flex;
@@ -69,6 +74,7 @@
       transition:all .5s ease-in-out;
   }
 
+    /* FORMATO AL 2DO DIV  */
   .open-container {
     color: #000;
     font-weight: bold;
@@ -77,6 +83,8 @@
     overflow: hidden;
         
   }
+
+    /* IMAGEN DEL 2DO DIV  */
   .open-container__image {
     background-image: url(../images/regalo2.jpg);
     background-size: cover;

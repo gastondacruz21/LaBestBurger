@@ -1,8 +1,15 @@
+ /*===================================================================================
+================== SECCION PASION DEL INDEX.HTML =================================
+=====================================================================================*/
+$Negrita_valor: 400;
+$formato: 0px;
 
+/* FORMATO A LA TARJETA */
 #info{
 
     padding: 0 ;
 
+    /* ESTILO A LA TARJETA */
     .pasionDiv{
         
         width: 100%;
@@ -19,11 +26,11 @@
                 {
                   content: "";
                   display: block;
-                  width: 0px;
-                  height: 0px;
+                  width: $formato;
+                  height: $formato;
                   background-color: skyblue;
-                  top: 0px;
-                  right: 0px;
+                  top: $formato;
+                  right: $formato;
                   border-bottom: 20px solid darken(teal, 5%);
                   border-left: 20px solid darken(#008080, 5%);
                   border-right: 20px solid lightgray;
@@ -35,14 +42,14 @@
                 {
                   content: "";
                   display: block;
-                  width: 0px;
-                  height: 0px;
+                  width: $formato;
+                  height: $formato;
                   border-top: 20px solid darken(teal, 5%);
                   border-right: 20px solid darken(teal, 5%);
                   border-left: 20px solid lightgray;
                   border-bottom: 20px solid lightgray;
-                  bottom: 0px;
-                  left: 0px;
+                  bottom: $formato;
+                  left: $formato;
                   position: absolute;
                   filter: drop-shadow(7px -7px 5px rgba(0,0,0,0.5));
                   margin-right: 10%;
@@ -55,10 +62,13 @@
 
         }
     }
+
+    /* TITULO DE LA TARJETA DE PASION*/
+    
 .tituloPasion{
     color: snow;
     margin-bottom: 1rem;
-    font-weight: 900;
+    font-weight: $Negrita_valor + 500;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 1.2rem;
@@ -68,5 +78,5 @@
 {
     color: snow;
     line-height: 140%;
-    font-weight: 400;
+    font-weight: $Negrita_valor;
 } 

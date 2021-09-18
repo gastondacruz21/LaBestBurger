@@ -57,6 +57,9 @@ address {
 #btnMainPage {
   background-image: url("../images/volver.png"); }
 
+/*===================================================================================
+================== ESTILO A LA PAG INDEX.HTML =================================
+=====================================================================================*/
 /* Formato se las secciones */
 #mainFormato {
   padding: 0 !important; }
@@ -222,7 +225,9 @@ address {
 .btn-sm {
   width: 140px; }
 
-/******QUERY MEDIA - CONTACTO******************/
+/*===================================================================================
+================== QUERY MEDIA CONTACTO =================================
+=====================================================================================*/
 @media (max-width: 768px) {
   .h2Contacto {
     font-size: 1.3rem !important; } }
@@ -313,6 +318,9 @@ address {
         transform: scale(1, 1.02);
         opacity: 0.5; } }
 
+/*===================================================================================
+================== TABLAS FORMATO =================================
+=====================================================================================*/
 /* Edicion de TABLAS */
 .table__formato {
   margin: 0 auto;
@@ -742,7 +750,10 @@ span {
   .pFormat {
     font-size: 0.8rem !important; } }
 
-/* Seccion de regalos y promos */
+/*===================================================================================
+================== SECCION REGALOS Y BENEFICIOS -INDEX =================================
+=====================================================================================*/
+/* FORMATO A LA ESTRUCTURA DE LOS DIVS */
 .main-container {
   background-color: #ffffff;
   padding: 30px;
@@ -753,7 +764,8 @@ span {
 .main-container-row {
   margin-bottom: 20px;
   padding: 30px;
-  overflow: hidden; }
+  overflow: hidden;
+  /* ASIGNA IMAGEN Y FORMATO DE FONDO */ }
 
 .main-container__image {
   background-image: url(../images/regalo.jpg);
@@ -765,6 +777,7 @@ span {
     filter: sepia(80%);
     transition: all .5s ease-in-out; }
 
+/* CONTENIDO AL 1ER DIV  */
 .main-container__info {
   background: #000;
   display: flex;
@@ -801,6 +814,7 @@ span {
   color: #928b8b;
   transition: all .5s ease-in-out; }
 
+/* FORMATO AL 2DO DIV  */
 .open-container {
   color: #000;
   font-weight: bold;
@@ -808,6 +822,7 @@ span {
   margin-bottom: 25px;
   overflow: hidden; }
 
+/* IMAGEN DEL 2DO DIV  */
 .open-container__image {
   background-image: url(../images/regalo2.jpg);
   background-size: cover;
@@ -1051,9 +1066,11 @@ span {
 /*===================================================================================
 ==================SECCION OPINION - PROMOS ===========================================
 =====================================================================================*/
+/* SECCION DE OPINIONES CARDS - FORMATO A LA SECCION*/
 #sectionSugerencias {
   padding: 0 !important; }
 
+/* FORMATO A LA TARJETA*/
 .cardOpinion {
   height: 60vh;
   width: 100%;
@@ -1115,6 +1132,7 @@ span {
   .borderCard:hover {
     border: 1px solid white; }
 
+/* SECCION DE OPINION - FORMATO AL PARRAFO*/
 .pCard {
   opacity: 0;
   transition: opacity 1s;
@@ -1283,19 +1301,27 @@ span {
           opacity: 1;
           color: black; } }
 
+/*===================================================================================
+================== SECCION CONSULTA  =================================
+=====================================================================================*/
 #sectionConsulta {
   padding: 0 !important;
   background-color: lightgrey; }
 
+/*===================================================================================
+==================SECCION CLIENTES CARROUSEL - INDEX.HTML ==============================
+=====================================================================================*/
 @keyframes scroll {
   0% {
     transform: translateX(0); }
   100% {
     transform: translateX(calc(-250px * 7)); } }
 
+/* FORMATO A LA SECCION */
 #sectionClientes {
   padding: 0 0 40px 0 !important; }
 
+/* FORMATO AL CARROUSEL */
 .slider__clientes {
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   height: 100px;
@@ -1325,8 +1351,13 @@ span {
     height: 100px;
     width: 250px; }
 
+/*===================================================================================
+================== SECCION PASION DEL INDEX.HTML =================================
+=====================================================================================*/
+/* FORMATO A LA TARJETA */
 #info {
-  padding: 0; }
+  padding: 0;
+  /* ESTILO A LA TARJETA */ }
   #info .pasionDiv {
     width: 100%;
     margin: 0 auto; }
@@ -1368,6 +1399,7 @@ span {
       #info .pasionDiv .pasionCard:nth-of-type(1) {
         margin-right: 9%; }
 
+/* TITULO DE LA TARJETA DE PASION*/
 .tituloPasion {
   color: snow;
   margin-bottom: 1rem;

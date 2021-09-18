@@ -899,6 +899,10 @@ li a{
 
 }
 
+/*===================================================================================
+================== QUERY MEDIA PASION INDEX.HTML ===================================
+=====================================================================================*/
+
 
 @media screen and (max-width: 600px) {
 
@@ -1488,7 +1492,7 @@ margin: 10px 0;
 
 /* formato imagen de fondo */
 .errorPage__formato {
-    background-image: url('../images/Error404.jpg') !important;
+    background-image: url('../images/error404.jpg') !important;
     background-repeat: no-repeat !important;
     background-size:contain !important;
     background-position: center !important;
@@ -1505,21 +1509,21 @@ margin: 10px 0;
     left: 5%;
 }
 
+.encabezado_h1--color{
+    color: rgb(34, 34, 92) ;
+}
+
 .encabezado_h2--position{
     position: relative;
-    top:80px;
+    top:110px;
     left: 5%;
 }
 
 .botonHome--position{
     position: relative;
-    top:65px;
+    top:90px;
     left: 5%;
 }
-
-
-
-
 
 
 /*===================================================================================
@@ -1620,8 +1624,3 @@ background: linear-gradient(90deg, rgba(23,113,121,1) 0%, rgba(234,236,216,1) 66
     transition: .3s transform cubic-bezier(.25,.46,.45,1);
   }
 
-
-
-
-
-  
