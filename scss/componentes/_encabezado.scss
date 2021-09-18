@@ -99,6 +99,12 @@ $decoracion: none;
 ================== QUERY MEDIA: SECCION REGALOS =================================
 =====================================================================================*/
 
+@media (max-width: 768px) {
+
+    #h2{
+        font-size: 1.2rem !important;
+    }
+}
 
 @media screen and (max-width: 576px) {
 

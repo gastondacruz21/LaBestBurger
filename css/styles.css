@@ -1510,7 +1510,7 @@ margin: 10px 0;
 }
 
 .encabezado_h1--color{
-    color: rgb(34, 34, 92); 
+    color: rgb(96, 96, 197) !important; 
 }
 
 .encabezado_h2--position{
@@ -1521,7 +1521,7 @@ margin: 10px 0;
 
 .botonHome--position{
     position: relative;
-    top:90px;
+    top:90px ;
     left: 5%;
 }
 
