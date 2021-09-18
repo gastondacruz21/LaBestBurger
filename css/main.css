@@ -695,6 +695,13 @@ span {
 /*===================================================================================
 ==================QUERY MEDIA - PROMO CARDS ==========================================
 =====================================================================================*/
+/* query media para los titulos de las tarjetas */
+@media (max-width: 768px) {
+  .perfil__titulo {
+    font-size: 1.3rem !important; }
+  .about {
+    font-size: 1rem !important; } }
+
 @media screen and (min-width: 768px) {
   .card-wrapper {
     display: flex;
